@@ -16,7 +16,7 @@ alignment with user needs and enhancing user experience.
    - Incorporate any feedback or insights gained from user feedback.
 
 ## Deliverables
-1. [Figma project]():
+1. [Figma project](https://www.figma.com/design/NUDRs01QWl8D5Ca1PlhFGa/High-Fidelity-Prototype?node-id=0-1&p=f&t=MAHootb5qA0zTmbp-0):
    - A Figma link containing the high-fidelity designs of your application.
    - Ensure the assets are well-organized with clear naming conventions for ease of assessment.
 2. [Design Justification Report](https://docs.google.com/document/d/1dct7iAX81LqvuwVzXiehv-7XPur79W-0aB0ytEmymUY/edit?usp=sharing) (Team):
