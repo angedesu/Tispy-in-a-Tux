@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flashcards_0: -3772778719532806073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
