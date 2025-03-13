@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f205f605e1933de4d87b9d3bb0ad353c
+guid: 6c38f901c2d8a4b5cba3d408c1d37df3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2442900698686321967
-    second: profile_pic_default_0
+      213: -1365396307950040909
+    second: btn_calendar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: profile_pic_default_0
+      name: btn_calendar_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2570ce0e3de6e120800000000000000
-      internalID: 2442900698686321967
+      spriteID: 3b80207ca432d0de0800000000000000
+      internalID: -1365396307950040909
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      profile_pic_default_0: 2442900698686321967
+      btn_calendar_0: -1365396307950040909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
