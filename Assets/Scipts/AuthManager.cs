@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Extensions;
 using TMPro;
 using System.Threading.Tasks;
 
@@ -27,6 +28,11 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField passwordRegisterField;
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
+    
+    // Password Reset variables
+    [Header("Password Reset")]
+    public TMP_InputField resetEmailField;
+    public TMP_Text resetFeedbackText;
     
     void Awake()
     {
@@ -64,6 +70,36 @@ public class AuthManager : MonoBehaviour
     {
         //Call the register coroutine passing the email, password, and username
         StartCoroutine(Register(emailRegisterField.text, passwordRegisterField.text, usernameRegisterField.text));
+    }
+    
+    public void SendPasswordResetEmail()
+    {
+        string email = resetEmailField.text;
+
+        if (string.IsNullOrEmpty(email))
+        {
+            resetFeedbackText.text = "Please enter your email.";
+            return;
+        }
+
+        auth.SendPasswordResetEmailAsync(email).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("SendPasswordResetEmailAsync was canceled.");
+                resetFeedbackText.text = "Request canceled.";
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Error sending password reset email: " + task.Exception);
+                resetFeedbackText.text = "Error: " + task.Exception.InnerExceptions[0].Message;
+                return;
+            }
+
+            Debug.Log("Password reset email sent successfully.");
+            resetFeedbackText.text = "Password reset email sent! Check your inbox.";
+        });
     }
     
     private IEnumerator Login(string _email, string _password)
@@ -186,6 +222,8 @@ public class AuthManager : MonoBehaviour
                         //Now return to login screen
                         UIManager.instance.LoginScreen();
                         warningRegisterText.text = "";
+                        warningLoginText.text = "";
+                        confirmLoginText.text = "Registered!";
                     }
                 }
             }
