@@ -20,7 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/checkInScreen/checkInScreen.unity
     guid: 07f6b2c4d90544b64a1bd1e66e2e5d8e
+  - enabled: 1
+    path: Assets/Scenes/ProfilePage/profile.unity
+    guid: 04ee9fff7571442388722de2a291a427
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a9c8d8175b80f4511a419627aed27e7f, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9e10fd78c5f524fa79270245230bbfaf, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

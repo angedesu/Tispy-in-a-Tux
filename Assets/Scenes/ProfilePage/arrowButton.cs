@@ -1,15 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ProfileSelection
+namespace profile
 {
     public class arrowButton : MonoBehaviour
     {
         public void PreviousScreen()
         {
-            // Use scene name or scene index
-            SceneManager.LoadScene("Scenes/ProfilePage/profile");
+            // Use scene name or scene index 
+            SceneManager.LoadScene("homeScreen");
         }
     }
 }
-
