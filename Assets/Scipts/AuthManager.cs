@@ -174,7 +174,7 @@ public class AuthManager : MonoBehaviour
                 FirebaseException firebaseEx = RegisterTask.Exception.GetBaseException() as FirebaseException;
                 AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
-                string message = "Register Failed!";
+                string message = "Invalid Email";
                 switch (errorCode)
                 {
                     case AuthError.MissingEmail:
