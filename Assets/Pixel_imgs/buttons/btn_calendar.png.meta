@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      btn_calendar_0: -1365396307950040909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
