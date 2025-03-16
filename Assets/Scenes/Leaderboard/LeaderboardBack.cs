@@ -7,7 +7,9 @@ namespace Leaderboard
     {
         public void PreviousScreen()
         {
-            // Use scene name or scene index 
+            // Use scene name or scene index
+            UnityEngine.SceneManagement.Scene scene = SceneManager.GetActiveScene();
+            Debug.Log("Active Scene is '" + scene.name + "'.");
             SceneManager.LoadScene("homeScreen");
         }
     }
