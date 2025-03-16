@@ -1,6 +1,14 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class NewEmptyCSharpScript
+namespace Leaderboard
 {
-    
+    public class Leaderboard
+    {
+        Dictionary<string, int> ranking;
+        //Fetch for Leaderboard
+        //private void Fetch();
+    }
 }
+    

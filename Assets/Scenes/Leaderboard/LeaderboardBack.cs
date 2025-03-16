@@ -8,7 +8,7 @@ namespace Leaderboard
         public void PreviousScreen()
         {
             // Use scene name or scene index 
-            SceneManager.LoadScene("profilePage");
+            SceneManager.LoadScene("homeScreen");
         }
     }
 }

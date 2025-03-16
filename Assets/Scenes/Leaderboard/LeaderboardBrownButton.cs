@@ -3,17 +3,17 @@ using UnityEngine.SceneManagement;
 
 namespace Leaderboard
 {
-    public class brownButton : MonoBehaviour
+    public class BrownButton : MonoBehaviour
     {
         public void Right()
         {
             // Use scene name or scene index 
-            SceneManager.LoadScene("leaderboard");
+            SceneManager.LoadScene("Leaderboard");
         }
         public void Left()
         {
             // Use scene name or scene index 
-            SceneManager.LoadScene("top3Leaderboard");
+            SceneManager.LoadScene("Top3Leaderboard");
         }
     }
 }
