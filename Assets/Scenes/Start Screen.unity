@@ -1560,6 +1560,10 @@ PrefabInstance:
       value: Scene Transition
       objectReference: {fileID: 0}
     - target: {fileID: 3208206278675427404, guid: 55f457a610f30a64bbd365688a599c5e, type: 3}
+      propertyPath: myButton
+      value: 
+      objectReference: {fileID: 1684074609}
+    - target: {fileID: 3208206278675427404, guid: 55f457a610f30a64bbd365688a599c5e, type: 3}
       propertyPath: transition
       value: 
       objectReference: {fileID: 2588072603632878196}

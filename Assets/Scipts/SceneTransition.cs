@@ -1,18 +1,26 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class SceneTransition : MonoBehaviour
 {   
     public Animator transition;
     public float transitionTime = 1f;
+    public Button myButton;
     
-    // Update is called once per frame
+    /*// Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             LoadNextScene();
         }
+    }*/
+
+    void Start()
+    {
+        myButton.onClick.AddListener(LoadNextScene);
     }
 
     public void LoadNextScene()
