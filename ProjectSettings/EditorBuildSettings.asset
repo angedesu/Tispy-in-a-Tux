@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ProfilePage/profile.unity
+    guid: 04ee9fff7571442388722de2a291a427
+  - enabled: 1
+    path: Assets/Scenes/profileSelection/profileSelection.unity
+    guid: b2711efc74d954945821239986bdba98
+  - enabled: 1
+    path: Assets/Scenes/checkInScreen/checkInScreen.unity
+    guid: 07f6b2c4d90544b64a1bd1e66e2e5d8e
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard/Leaderboard.unity
+    guid: 62e85187c19bb42668fc332b763aa385
+  - enabled: 1
+    path: Assets/Scenes/freindScreen/friendScreen.unity
+    guid: ff138496548a842ebae37695cc580750
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

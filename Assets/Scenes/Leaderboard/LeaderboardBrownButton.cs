@@ -6,6 +6,10 @@ namespace Leaderboard
 {
     public class BrownButton : MonoBehaviour
     {
+        public void OnClick()
+        {
+            SceneManager.LoadScene("profile");
+        }
         public void Right()
         {
             // Use scene name or scene index 

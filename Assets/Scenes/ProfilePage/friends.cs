@@ -10,7 +10,7 @@ public class friends : MonoBehaviour, IPointerDownHandler
     public void NextScreen()
     {
         // change to the actual scene name
-        SceneManager.LoadScene("checkInScreen");
+        SceneManager.LoadScene("friendScreen");
     }
 
     public void OnPointerDown(PointerEventData eventData)

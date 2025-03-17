@@ -10,7 +10,7 @@ public class leaderboards : MonoBehaviour, IPointerDownHandler
     public void NextScreen()
     {
         // change to the actual screen
-        SceneManager.LoadScene("checkInScreen");
+        SceneManager.LoadScene("Leaderboard");
     }
 
     public void OnPointerDown(PointerEventData eventData)
