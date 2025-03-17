@@ -8,7 +8,7 @@ namespace ProfileSelection
         public void PreviousScreen()
         {
             // Use scene name or scene index
-            SceneManager.LoadScene("checkInScreen");
+            SceneManager.LoadScene("Scenes/ProfilePage/profile");
         }
     }
 }
