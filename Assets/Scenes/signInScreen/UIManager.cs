@@ -43,4 +43,11 @@ public class UIManager : MonoBehaviour
         loginUI.SetActive(false);
         forgotPasswordUI.SetActive(true);
     }
+	
+	public void Exit() //Back button
+    {
+        loginUI.SetActive(false);
+        registerUI.SetActive(false);
+        forgotPasswordUI.SetActive(false);
+    }
 }
