@@ -8,7 +8,7 @@ namespace profile
         public void PreviousScreen()
         {
             // Use scene name or scene index 
-            SceneManager.LoadScene("homeScreen");
+            SceneManager.LoadScene(6);
         }
     }
 }
