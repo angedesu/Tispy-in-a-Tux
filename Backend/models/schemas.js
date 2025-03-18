@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-// ✅ Define User Schema
+// Define User Schema
 const userSchema = new mongoose.Schema({
   uid: { type: String, required: true, unique: true }, // Firebase UID
   username: { type: String, required: true, unique: true },
@@ -21,6 +21,6 @@ const userSchema = new mongoose.Schema({
   ]
 });
 
-// ✅ Create and Export User Model
+// Create and Export User Model
 const User = mongoose.model("User", userSchema);
 module.exports = User;

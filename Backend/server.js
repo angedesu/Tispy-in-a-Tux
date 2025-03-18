@@ -35,11 +35,11 @@ async function authenticateToken(req, res, next) {
 
   try {
     const decodedToken = await admin.auth().verifyIdToken(token);
-    console.log("✅ Token Verified:", decodedToken.uid);
+  //  console.log("✅ Token Verified:", decodedToken.uid);
     req.user = decodedToken;
     next();
   } catch (error) {
-    console.log("❌ Token Verification Failed:", error.message);
+  //  console.log("❌ Token Verification Failed:", error.message);
     res.status(403).json({ error: "Unauthorized - Invalid Token" });
   }
 }
@@ -47,7 +47,7 @@ async function authenticateToken(req, res, next) {
 // 🔹 Register User and Assign Achievements
 app.post("/register", authenticateToken, async (req, res) => {
   try {
-    console.log("📡 Received /register request");
+  //  console.log("📡 Received /register request");
 
     const { username } = req.body;
     const uid = req.user.uid;
@@ -57,10 +57,10 @@ app.post("/register", authenticateToken, async (req, res) => {
     }
 
     // Check if username already exists
-    const existingUser = await User.findOne({ username });
-    if (existingUser) {
-      return res.status(400).json({ error: "Username already taken" });
-    }
+    // const existingUser = await User.findOne({ username });
+    // if (existingUser) {
+    //   return res.status(400).json({ error: "Username already taken" });
+    // }
 
     // Default achievements list
     const defaultAchievements = [
