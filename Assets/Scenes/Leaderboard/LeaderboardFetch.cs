@@ -1,19 +1,35 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
 
 namespace Leaderboard
 {
-    public struct LeaderboardEntry
+    public class Leaderboard : MonoBehaviour
     {
-        public string user;
-        public int score;
-        //I'm looking up if I need to do operator overload or something else to get these sorted correctly
-    }
-    public class Leaderboard
-    {
+        public struct LeaderboardEntry
+        {
+            public string user;
+            public int score;
+            //I'm looking up if I need to do operator overload or something else to get these sorted correctly
+        }
         List<LeaderboardEntry> ranking;
+        public async void Start()
+        {
+            //Run code on scene loading
+            //Set up the leaderboard
+            await this.Fetch();
+            this.SortLeaderboard();
+            //Create objects for each item in the list
+            //Populate each objects text with the getLeaderboardEntry function
+        }
+        public string getLeaderboardEntry(int index)
+        {
+            string EntryString;
+            EntryString = ranking[index].user + " " + ranking[index].score + " wins";
+            return EntryString;
+        }
         private Leaderboard()
         {
             ranking = new List<LeaderboardEntry>();
