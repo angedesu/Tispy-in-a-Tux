@@ -55,6 +55,10 @@ namespace Leaderboard
         private void SortLeaderboard()
         {
             //Sort the entire leaderboard
+            ranking.Sort(delegate (LeaderboardEntry player1, LeaderboardEntry player2)
+            {
+                return player1.score.CompareTo(player2.score);
+            });
         }
     }
 }
