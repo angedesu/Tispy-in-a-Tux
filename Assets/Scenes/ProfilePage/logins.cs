@@ -6,6 +6,8 @@ public class Logins : MonoBehaviour, IPointerDownHandler
 {
     public GameObject unpressedButton;
     public GameObject pressedButton;
+    public GameObject loginPanel;
+    
 
     void Start()
     {
@@ -15,9 +17,7 @@ public class Logins : MonoBehaviour, IPointerDownHandler
     private void NextScreen()
     {
         // overlay the sign-in page 
-        
-        // dim background 
-        
+        loginPanel.SetActive(true);
     }
 
     public void OnPointerDown(PointerEventData eventData)
