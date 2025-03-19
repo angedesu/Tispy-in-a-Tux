@@ -5,6 +5,7 @@ using Firebase.Auth;
 using Firebase.Extensions;
 using TMPro;
 using System.Threading.Tasks;
+using UnityEngine.Networking;
 
 public class AuthManager : MonoBehaviour
 {
@@ -34,6 +35,13 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField resetEmailField;
     public TMP_Text resetFeedbackText;
     
+    [System.Serializable]
+    public class UserData
+    {
+        public string username;
+    }
+    
+    //have firebase running
     void Awake()
     {
         //Check that all of the necessary dependencies for Firebase are present on the system
@@ -51,14 +59,12 @@ public class AuthManager : MonoBehaviour
             }
         });
     }
-    
     private void InitializeFirebase()
     {
         Debug.Log("Setting up Firebase Auth");
         //Set the authentication instance object
         auth = FirebaseAuth.DefaultInstance;
     }
-    
     //Function for the login button
     public void LoginButton()
     {
@@ -71,7 +77,7 @@ public class AuthManager : MonoBehaviour
         //Call the register coroutine passing the email, password, and username
         StartCoroutine(Register(emailRegisterField.text, passwordRegisterField.text, usernameRegisterField.text));
     }
-    
+    //Function to send password reset to email
     public void SendPasswordResetEmail()
     {
         string email = resetEmailField.text;
@@ -94,14 +100,14 @@ public class AuthManager : MonoBehaviour
             {
                 Debug.LogError("Error sending password reset email: " + task.Exception);
                 resetFeedbackText.text = "Error: " + task.Exception.InnerExceptions[0].Message;
-                return;
+
             }
 
             Debug.Log("Password reset email sent successfully.");
             resetFeedbackText.text = "Password reset email sent! Check your inbox.";
         });
     }
-    
+    //Function for user to log in
     private IEnumerator Login(string _email, string _password)
     {
         //Call the Firebase auth signin function passing the email and password
@@ -142,12 +148,54 @@ public class AuthManager : MonoBehaviour
             //User is now logged in
             //Now get the result
             User = LoginTask.Result.User;
-            Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
+            Debug.Log($"User signed in: {User.Email}");
+            
+            // retrieve Firebase ID Token
+            Task<string> tokenTask = User.TokenAsync(true);
+            yield return new WaitUntil(predicate: () => tokenTask.IsCompleted);
+
+            if (tokenTask.Exception != null)
+            {
+                Debug.LogError("Failed to get ID Token: " + tokenTask.Exception);
+            }
+            else
+            {
+                string idToken = tokenTask.Result;
+                Debug.Log("Firebase ID Token: " + idToken);
+
+                // send this token to MongoDB Backend
+                StartCoroutine(SendTokenToBackend(idToken));
+            }
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
         }
     }
-    
+    // send the ID token to server.js to authenticate it from firebase
+    private IEnumerator SendTokenToBackend(string idToken)
+    {
+        string apiUrl = "http://localhost:3000/userdata";
+
+        UnityWebRequest request = UnityWebRequest.Get(apiUrl);
+
+        // ✅ Properly set the Authorization header
+        request.SetRequestHeader("Authorization", "Bearer " + idToken);
+        request.SetRequestHeader("Content-Type", "application/json"); // Ensures correct format
+
+        Debug.Log("📡 Sending token to backend: " + idToken);
+
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("❌ Error fetching user data: " + request.error);
+            Debug.LogError("🔍 Server Response: " + request.downloadHandler.text);
+        }
+        else
+        {
+            Debug.Log("✅ User data from MongoDB: " + request.downloadHandler.text);
+        }
+    }
+    //Function for users to register
     private IEnumerator Register(string _email, string _password, string _username)
     {
         if (_username == "")
@@ -225,8 +273,56 @@ public class AuthManager : MonoBehaviour
                         warningLoginText.text = "";
                         confirmLoginText.text = "Registered!";
                     }
+                    
+                    // Retrieve Firebase ID Token
+                    Task<string> tokenTask = User.TokenAsync(true);
+                    yield return new WaitUntil(() => tokenTask.IsCompleted);
+
+                    if (tokenTask.Exception != null)
+                    {
+                        Debug.LogError("Failed to get ID Token: " + tokenTask.Exception);
+                        yield break;
+                    }
+
+                    string idToken = tokenTask.Result;
+                    Debug.Log("Firebase ID Token: " + idToken);
+
+                    // Send username + token to backend
+                    StartCoroutine(SendUserDataToBackend(idToken, _username));
                 }
             }
+        }
+    }
+    //Sends user data from unity to mongodb
+    private IEnumerator SendUserDataToBackend(string idToken, string username)
+    {
+        string apiUrl = "http://localhost:3000/register";
+
+        // Proper JSON Serialization
+        UserData userData = new UserData { username = username };
+        string jsonData = JsonUtility.ToJson(userData);
+
+        UnityWebRequest request = new UnityWebRequest(apiUrl, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+
+        request.SetRequestHeader("Authorization", "Bearer " + idToken);
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        Debug.Log("📡 Sending user data to backend...");
+        Debug.Log("🔹 JSON Payload: " + jsonData); // Log JSON payload
+
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("Error saving user: " + request.error);
+            Debug.LogError("Server Response: " + request.downloadHandler.text);
+        }
+        else
+        {
+            Debug.Log("User saved successfully: " + request.downloadHandler.text);
         }
     }
 }
