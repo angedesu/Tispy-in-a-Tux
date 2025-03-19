@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/achievement/Achievement.unity
     guid: dca8643d04ff54483a588f938cbee9f2
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard/Top3Leaderboard.unity
+    guid: f8bb1d983227c453b8dabd031c325e35
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
