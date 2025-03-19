@@ -15,6 +15,8 @@ namespace Leaderboard
             //I'm looking up if I need to do operator overload or something else to get these sorted correctly
         }
         List<LeaderboardEntry> ranking;
+        public GameObject playerRow;
+        public Transform leaderboardRow;
         public async void Start()
         {
             //Run code on scene loading
@@ -23,6 +25,10 @@ namespace Leaderboard
             this.SortLeaderboard();
             //Create objects for each item in the list
             //Populate each objects text with the getLeaderboardEntry function
+            foreach (LeaderboardEntry player in ranking)
+            {
+                //Instatiate object
+            }
         }
         public string getLeaderboardEntry(int index)
         {
