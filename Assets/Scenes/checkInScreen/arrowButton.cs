@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace CheckInScreen
 {
-    public class arrowButton : MonoBehaviour
+    public class ArrowButton : MonoBehaviour
     {
         public void PreviousScreen()
         {

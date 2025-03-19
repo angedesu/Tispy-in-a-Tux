@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "374910297638",
+    "project_id": "tipsy-in-a-tux",
+    "storage_bucket": "tipsy-in-a-tux.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374910297638:ios:ef3b6253ac1ad3ffd928e7",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.com.unity.template.mobile2D"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe1zDrFc1JLh8sybYyIfOfcwBwFeXHYNc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,15 +2,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class logins : MonoBehaviour, IPointerDownHandler
+public class Logins : MonoBehaviour, IPointerDownHandler
 {
     public GameObject unpressedButton;
     public GameObject pressedButton;
+    public GameObject loginPanel;
     
-    public void NextScreen()
+
+    void Start()
     {
-        // Change to actual screen
-        SceneManager.LoadScene("profileSelection");
+        // check if user has logged in => display the logout button
+    }
+    
+    private void NextScreen()
+    {
+        // overlay the sign-in page 
+        loginPanel.SetActive(true);
     }
 
     public void OnPointerDown(PointerEventData eventData)

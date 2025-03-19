@@ -2,15 +2,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class leaderboards : MonoBehaviour, IPointerDownHandler
+public class Leaderboards : MonoBehaviour, IPointerDownHandler
 {
     public GameObject unpressedButton;
     public GameObject pressedButton;
 
-    public void NextScreen()
+    private void NextScreen()
     {
         // change to the actual screen
-        SceneManager.LoadScene("checkInScreen");
+        SceneManager.LoadScene("Scenes/Leaderboard/Top3Leaderboard");
     }
 
     public void OnPointerDown(PointerEventData eventData)
