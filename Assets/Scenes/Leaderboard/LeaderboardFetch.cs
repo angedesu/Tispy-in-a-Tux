@@ -16,6 +16,7 @@ namespace Leaderboard
         }
         List<LeaderboardEntry> ranking;
         public GameObject playerRow;
+        public Text rowText;
         public Transform leaderboardRow;
         public async void Start()
         {
@@ -25,9 +26,14 @@ namespace Leaderboard
             this.SortLeaderboard();
             //Create objects for each item in the list
             //Populate each objects text with the getLeaderboardEntry function
+            Vector3 position = leaderboardRow.position;
             foreach (LeaderboardEntry player in ranking)
             {
                 //Instatiate object
+                rowText.text = player.user+ " " + player.score + " wins";
+                position.y -= 90;
+                leaderboardRow.position = position;
+                Instantiate(playerRow, leaderboardRow);
             }
         }
         public string getLeaderboardEntry(int index)
