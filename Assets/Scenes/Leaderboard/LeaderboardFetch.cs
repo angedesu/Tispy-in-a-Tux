@@ -5,10 +5,10 @@ using System;
 
 namespace Leaderboard
 {
-    public class LeaderboardEntry
+    public struct LeaderboardEntry
     {
-        string user;
-        int score;
+        public string user;
+        public int score;
         //I'm looking up if I need to do operator overload or something else to get these sorted correctly
     }
     public class Leaderboard
@@ -23,7 +23,7 @@ namespace Leaderboard
             //Create a new leaderboard
             Leaderboard newBoard = new Leaderboard();
             //Setup the leaderboard
-            // await newBoard.Fetch();
+            await newBoard.Fetch();
             newBoard.SortLeaderboard();
             /*This is my best attempt at a async constructor
             *Hopefully it doesn't have a memory leak or anything
@@ -35,6 +35,19 @@ namespace Leaderboard
         //Fetch for Leaderboard
         private async Task Fetch()
         {
+            //Dummy debug code
+            //*
+            string[] players = { "Alice", "Bob", "Charlie", "Dan", "Evan" };
+            int[] wins = { 50, 40, 30, 10, 5 };
+            for (int i = 0; i < 5; i++)
+            {
+                LeaderboardEntry profile = new LeaderboardEntry
+                {
+                    score = wins[i],
+                    user = players[i]
+                };
+            }
+            //*/
             //Connect to the database
             //Make a call to users & wins
             //Insert that data into the Leaderboard
