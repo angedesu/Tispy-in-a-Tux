@@ -9,7 +9,7 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private Slider masterSlider;
 
     private void Start()
-    {
+    {   
         if (PlayerPrefs.HasKey("userMusicVolume") || PlayerPrefs.HasKey("userSfxVolume") || PlayerPrefs.HasKey("userMasterVolume"))
         {
             LoadVolume();
