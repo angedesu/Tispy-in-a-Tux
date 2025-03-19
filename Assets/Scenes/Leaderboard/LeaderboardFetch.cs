@@ -23,7 +23,7 @@ namespace Leaderboard
             //Create a new leaderboard
             Leaderboard newBoard = new Leaderboard();
             //Setup the leaderboard
-            await newBoard.Fetch();
+            // await newBoard.Fetch();
             newBoard.SortLeaderboard();
             /*This is my best attempt at a async constructor
             *Hopefully it doesn't have a memory leak or anything

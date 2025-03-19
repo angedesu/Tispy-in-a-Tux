@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class checkIn : MonoBehaviour, IPointerDownHandler
+public class CheckIn : MonoBehaviour, IPointerDownHandler
 {
     public GameObject unpressedButton;
     public GameObject pressedButton;
     
-    public void NextScreen()
+    private void NextScreen()
     {
         SceneManager.LoadScene("checkInScreen");
     }

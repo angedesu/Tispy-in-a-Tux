@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
-public class profilePicture : MonoBehaviour
+public class ProfilePicture : MonoBehaviour
 {
     public GameObject[] profilePictures;
     public string[] profiles = { "picture01", "picture02", "picture03", "picture04", "picture05", "picture06",
@@ -26,7 +26,7 @@ public class profilePicture : MonoBehaviour
         // go through each image and enable the one that is selected, disable the rest
         for (int i = 0; i < profilePictures.Length; i++)
         {
-            // if the image is the profile slected, enable
+            // if the image is the profile selected, enable
             if (i == index)
             {
                 profilePictures[i].SetActive(true);

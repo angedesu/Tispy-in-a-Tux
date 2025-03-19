@@ -5,7 +5,7 @@ public class ChangeScene: MonoBehaviour
 {
     public void GoToHomeScreen()
     {
-        SceneManager.LoadScene("Home Screen");
+        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
 
     public void GoToStartScreen()

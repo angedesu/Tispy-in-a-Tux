@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 namespace profile
 {
-    public class arrowButton : MonoBehaviour
+    public class ArrowButton : MonoBehaviour
     {
         public void PreviousScreen()
         {
             // Use scene name or scene index 
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene("homeScreen");
         }
     }
 }
