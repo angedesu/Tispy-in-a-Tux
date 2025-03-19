@@ -3,29 +3,34 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace Leaderboard
 {
-    public class Leaderboard : MonoBehaviour
+    public class Top3Leaderboard : MonoBehaviour
     {
         public struct LeaderboardEntry
         {
-            public LeaderboardEntry(string u = "", int s = 0)
+            public LeaderboardEntry(string u = "", int s = 0, int p = 0)
             {
                 user = u;
                 score = s;
+                profile = p;
             }
-            //WHY DO STRUCTS HAVE CONSTRUCTORS. THEY AREN'T OBJECTS. WHY IS C# MAKING THEM CLASSES
-            //WHY EVEN HAVE STRUCTS
-            //C# is evidence God is dead. Microsoft is evil. Who makes a struct a class?!
+            //Reusing the other leaderboard script as a base
+            //reworking what I can for the other leaderboard
+            //I realized I can't use the same script for both, and need seperate scripts
             public string user;
+            public int profile;
             public int score;
-            //I'm looking up if I need to do operator overload or something else to get these sorted correctly
+            //We need the user's profile for display, score for sorting...
+            //Assuming I don't figure out how to pull from the database sorted
+            //Which is pretty likely, I'm just tired
         }
         List<LeaderboardEntry> ranking;
-        public GameObject playerRow;
-        public Text rowText;
-        public Transform leaderboardRow;
+        public GameObject playerRepresentation;
+        public Text playerName;
+        public Transform parentObject;
         public void Start()
         {
             Debug.Log("Leaderboard Script loaded");
@@ -35,9 +40,11 @@ namespace Leaderboard
             this.SortLeaderboard();
             //Create objects for each item in the list
             //Populate each objects text with the getLeaderboardEntry function
-            Vector3 position = leaderboardRow.position;
-            foreach (LeaderboardEntry player in ranking)
+            Vector3 position = parentObject.position;
+            for (int i = 0; i < 3; i++)
             {
+                //I'm too tired to fix this at the moment
+                /*
                 Debug.Log("In Loop. Player is " + player.user);
                 //Instatiate object
                 rowText.text = player.user+ " " + player.score + " wins";
@@ -47,22 +54,18 @@ namespace Leaderboard
                 //It should be
                 //position.y -= 90;
                 position.y -= 2.5f;
+                */ //There
             }
         }
-        public string getLeaderboardEntry(int index)
+        private Top3Leaderboard()
         {
-            string EntryString;
-            EntryString = ranking[index].user + " " + ranking[index].score + " wins";
-            return EntryString;
-        }
-        private Leaderboard()
-        {
+            //I can trim the list after the sort. Or maybe just pull it sorted?
             ranking = new List<LeaderboardEntry>();
         }
-        static async Task<Leaderboard> GetLeaderboard()
+        static async Task<Top3Leaderboard> GetLeaderboard()
         {
             //Create a new leaderboard
-            Leaderboard newBoard = new Leaderboard();
+            Top3Leaderboard newBoard = new Top3Leaderboard();
             //Setup the leaderboard
             newBoard.Fetch();
             newBoard.SortLeaderboard();
