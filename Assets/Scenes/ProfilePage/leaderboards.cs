@@ -10,7 +10,7 @@ public class Leaderboards : MonoBehaviour, IPointerDownHandler
     private void NextScreen()
     {
         // change to the actual screen
-        SceneManager.LoadScene("Scenes/Leaderboard/Leaderboard");
+        SceneManager.LoadScene("Scenes/Leaderboard/Top3Leaderboard");
     }
 
     public void OnPointerDown(PointerEventData eventData)
