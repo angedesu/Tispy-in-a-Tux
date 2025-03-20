@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Tipsy.sln"
+    "dotnet.defaultSolution": "Tispy-in-a-Tux.sln"
 }
