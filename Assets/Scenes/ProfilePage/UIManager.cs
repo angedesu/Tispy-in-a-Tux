@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject loginUI;
     public GameObject registerUI;
     public GameObject forgotPasswordUI;
+	public GameObject dimBackground;
 
     private void Awake()
     {
@@ -46,8 +48,10 @@ public class UIManager : MonoBehaviour
 	
 	public void Exit() //Back button
     {
-        loginUI.SetActive(false);
-        registerUI.SetActive(false);
-        forgotPasswordUI.SetActive(false);
+        SceneManager.LoadScene("profile");
+    	if (dimBackground != null)
+    	{
+        	dimBackground.SetActive(false); // Hide dim background
+    	}
     }
 }
