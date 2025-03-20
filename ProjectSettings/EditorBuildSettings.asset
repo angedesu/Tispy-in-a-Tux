@@ -6,9 +6,34 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  m_configObjects:
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9e10fd78c5f524fa79270245230bbfaf, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    path: Assets/Scenes/Start Screen.unity
+    guid: c68fc6c6bd2623b4b9817635548d9011
+  - enabled: 1
+    path: Assets/Scenes/HomeScreen/homeScreen.unity
+    guid: 11fb2f5d8699544798ed11ce168b2275
+  - enabled: 1
+    path: Assets/Scenes/ProfilePage/profile.unity
+    guid: 04ee9fff7571442388722de2a291a427
+  - enabled: 1
+    path: Assets/Scenes/profileSelection/profileSelection.unity
+    guid: b2711efc74d954945821239986bdba98
+  - enabled: 1
+    path: Assets/Scenes/checkInScreen/checkInScreen.unity
+    guid: 07f6b2c4d90544b64a1bd1e66e2e5d8e
+  - enabled: 1
+    path: Assets/Scenes/friendScreen/friendScreen.unity
+    guid: 7d2b82e6bc7fe4834889f6d2d7922e9c
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard/Leaderboard.unity
+    guid: 62e85187c19bb42668fc332b763aa385
+  - enabled: 1
+    path: Assets/Scenes/ProfilePage/Sign-in.unity
+    guid: 6452dc1f727cd4a46b456f8b9ee577cf
+  - enabled: 1
+    path: Assets/Scenes/achievement/Achievement.unity
+    guid: dca8643d04ff54483a588f938cbee9f2
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard/Top3Leaderboard.unity
+    guid: f8bb1d983227c453b8dabd031c325e35
+  m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
