@@ -148,14 +148,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2083602806}
+  m_Children: []
   m_Father: {fileID: 295572633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.85396, y: 0.107}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -220, y: 44}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4295502
 MonoBehaviour:
@@ -204,15 +203,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.1
-  m_fontSizeBase: 0.1
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -338,7 +337,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnViewFriendsButtonClicked
         m_Mode: 1
@@ -576,6 +575,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 208281889}
   - {fileID: 1408569549}
   - {fileID: 816953097}
   - {fileID: 1011263785}
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnAddFriendsButtonClicked
         m_Mode: 1
@@ -795,15 +795,30 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208281889}
-  - component: {fileID: 208281888}
+  - component: {fileID: 208281890}
   m_Layer: 0
-  m_Name: friendButtonSwitch
+  m_Name: Friend Menu Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &208281888
+--- !u!4 &208281889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208281887}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -29, y: -1, z: -10302.749}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 160176952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &208281890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -822,21 +837,6 @@ MonoBehaviour:
   addContainer: {fileID: 495581070}
   requestContainer: {fileID: 1808087402}
   titleText: {fileID: 816953098}
---- !u!4 &208281889
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208281887}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1668.1323, y: 748.1165, z: -5.3958282}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268446457
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,20 +902,21 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295572632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11567.215}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1271335217}
   - {fileID: 4295501}
+  - {fileID: 2083602806}
   - {fileID: 1514099642}
   - {fileID: 1869911868}
   m_Father: {fileID: 160176952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.03438, y: 79.11621}
-  m_SizeDelta: {x: 2.1059, y: 0.4118}
+  m_AnchoredPosition: {x: -132.86, y: 86.24}
+  m_SizeDelta: {x: 1557.62, y: 258.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295572634
 MonoBehaviour:
@@ -1037,7 +1038,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnSendRequestButtonClicked
         m_Mode: 1
@@ -1112,17 +1113,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369393483}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 765550907}
+  m_Father: {fileID: 495581071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.829, y: 0.0000014901}
-  m_SizeDelta: {x: 0.44122, y: 0.10679}
+  m_AnchoredPosition: {x: 205, y: 2}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369393485
 MonoBehaviour:
@@ -1345,8 +1346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.848, y: -0.072}
-  m_SizeDelta: {x: 0.2, y: 0.2}
+  m_AnchoredPosition: {x: 500, y: -0.072}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485744412
 MonoBehaviour:
@@ -1456,20 +1457,21 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495581070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11567.215}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1740859879}
   - {fileID: 765550907}
+  - {fileID: 369393484}
   - {fileID: 743742841}
   - {fileID: 1556274526}
   m_Father: {fileID: 160176952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.03438, y: 79.11621}
-  m_SizeDelta: {x: 2.1059, y: 0.4118}
+  m_AnchoredPosition: {x: -132.86, y: 86.24}
+  m_SizeDelta: {x: 1557.62, y: 258.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &495581072
 MonoBehaviour:
@@ -1748,7 +1750,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnSendRequestButtonClicked
         m_Mode: 1
@@ -1915,17 +1917,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621456784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 662945061}
+  m_Father: {fileID: 1808087403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.829, y: 0.0000014901}
-  m_SizeDelta: {x: 0.44122, y: 0.10679}
+  m_AnchoredPosition: {x: 205, y: 2}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &621456786
 MonoBehaviour:
@@ -2055,14 +2057,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 621456785}
+  m_Children: []
   m_Father: {fileID: 1808087403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.138, y: 0.107}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -220, y: 44}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662945062
 MonoBehaviour:
@@ -2197,8 +2198,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.138, y: -0.006}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -221, y: -33}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743742842
 MonoBehaviour:
@@ -2328,14 +2329,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 369393484}
+  m_Children: []
   m_Father: {fileID: 495581071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.138, y: 0.107}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -220, y: 44}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765550908
 MonoBehaviour:
@@ -2656,7 +2656,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnAddFriendsButtonClicked
         m_Mode: 1
@@ -2984,7 +2984,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnSendRequestButtonClicked
         m_Mode: 1
@@ -3469,8 +3469,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.838, y: 0}
-  m_SizeDelta: {x: 0.25, y: 0.25}
+  m_AnchoredPosition: {x: -620, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204783653
 MonoBehaviour:
@@ -3592,7 +3592,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnAddFriendsButtonClicked
         m_Mode: 1
@@ -3676,8 +3676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243.55396, y: 0}
-  m_SizeDelta: {x: 0.25, y: 0.25}
+  m_AnchoredPosition: {x: -620, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271335218
 MonoBehaviour:
@@ -3935,7 +3935,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnViewFriendsButtonClicked
         m_Mode: 1
@@ -4300,8 +4300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.85396, y: -0.006}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -221, y: -33}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514099643
 MonoBehaviour:
@@ -4350,15 +4350,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.1
-  m_fontSizeBase: 0.1
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4436,8 +4436,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.138, y: -0.006}
-  m_SizeDelta: {x: 0.78194, y: 0.10679}
+  m_AnchoredPosition: {x: -221, y: -33}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524120016
 MonoBehaviour:
@@ -4630,7 +4630,7 @@ GameObject:
   - component: {fileID: 1556274528}
   - component: {fileID: 1556274527}
   m_Layer: 0
-  m_Name: Unadd Friend Button
+  m_Name: Add Friend Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4652,8 +4652,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.837, y: -0.072}
-  m_SizeDelta: {x: 0.2, y: 0.2}
+  m_AnchoredPosition: {x: 621, y: -0.072}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556274527
 MonoBehaviour:
@@ -5001,8 +5001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.838, y: 0}
-  m_SizeDelta: {x: 0.25, y: 0.25}
+  m_AnchoredPosition: {x: -620, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740859880
 MonoBehaviour:
@@ -5107,12 +5107,13 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808087402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -11567.215}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1204783652}
   - {fileID: 662945061}
+  - {fileID: 621456785}
   - {fileID: 1524120015}
   - {fileID: 2060673001}
   - {fileID: 485744411}
@@ -5120,8 +5121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.03438, y: 79.11621}
-  m_SizeDelta: {x: 2.1059, y: 0.4118}
+  m_AnchoredPosition: {x: -132.86, y: 86.24}
+  m_SizeDelta: {x: 1557.62, y: 258.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808087404
 MonoBehaviour:
@@ -5174,7 +5175,7 @@ GameObject:
   - component: {fileID: 1869911870}
   - component: {fileID: 1869911869}
   m_Layer: 0
-  m_Name: Unadd Friend Button
+  m_Name: Remove Friend Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5196,8 +5197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -241.87895, y: -0.072}
-  m_SizeDelta: {x: 0.2, y: 0.2}
+  m_AnchoredPosition: {x: 621, y: -0.072}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869911869
 MonoBehaviour:
@@ -5645,7 +5646,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208281888}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FriendButtonSwitch, Assembly-CSharp
         m_MethodName: OnViewFriendsButtonClicked
         m_Mode: 1
@@ -5730,8 +5731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.665, y: -0.072}
-  m_SizeDelta: {x: 0.2, y: 0.2}
+  m_AnchoredPosition: {x: 667, y: -0.072}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060673002
 MonoBehaviour:
@@ -5840,17 +5841,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083602805}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4295501}
+  m_Father: {fileID: 295572633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.829, y: 0.0000014901}
-  m_SizeDelta: {x: 0.44122, y: 0.10679}
+  m_AnchoredPosition: {x: 205, y: 2}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083602807
 MonoBehaviour:
@@ -5899,15 +5900,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.1
-  m_fontSizeBase: 0.1
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5960,4 +5961,3 @@ SceneRoots:
   - {fileID: 380208499}
   - {fileID: 160176952}
   - {fileID: 1537175998}
-  - {fileID: 208281889}
