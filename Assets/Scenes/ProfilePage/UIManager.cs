@@ -34,13 +34,13 @@ public class UIManager : MonoBehaviour
         forgotPasswordUI.SetActive(false);
     }
 
-    public void RegisterScreen() // Regester button
+    public void RegisterScreen() // Register button
     {
         loginUI.SetActive(false);
         registerUI.SetActive(true);
     }
 
-    public void ForgotScreen() //
+    public void ForgotScreen() // 
     {
         loginUI.SetActive(false);
         forgotPasswordUI.SetActive(true);
