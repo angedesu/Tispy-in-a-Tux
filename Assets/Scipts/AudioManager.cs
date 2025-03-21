@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip backgroundMusic;
     public AudioClip doorOpenSound;
     public AudioClip buttonClickSound;
+    public AudioClip BookOpenSound;
+    public AudioClip ToolsTouchingSound;
     
     
     // Audio manager is a singleton (only 1 instance throughout scenes)

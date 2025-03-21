@@ -10,9 +10,8 @@ public class PlayDoorSound: MonoBehaviour
 
     private void PlaySound()
     {   
-        // Run the PlaySFX function from the Audio Manager
-        AudioManager.instance.PlaySFX(AudioManager.instance.doorOpenSound); 
+        // Run the PlaySFX function from the Audio Manager, Replace "doorOpenSound" with the sound you want
+        AudioManager.instance.PlaySFX(AudioManager.instance.doorOpenSound);
     }
 
-    
 }
