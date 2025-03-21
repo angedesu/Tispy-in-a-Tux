@@ -936,18 +936,18 @@ PrefabInstance:
     - target: {fileID: 536929163119030837, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 13983934}
+      objectReference: {fileID: 368487627}
     - target: {fileID: 536929163119030837, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 536929163119030837, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ForgotScreen
+      value: SendPasswordResetEmail
       objectReference: {fileID: 0}
     - target: {fileID: 536929163119030837, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
+      value: AuthManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 536929163119030837, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1016,6 +1016,34 @@ PrefabInstance:
     - target: {fileID: 5281744199473170439, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_RenderMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 13983934}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoginScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291814418770175082, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5899815966153980764, guid: d060138a258a44495a0c88e2c6f57c3e, type: 3}
       propertyPath: m_LocalScale.x
