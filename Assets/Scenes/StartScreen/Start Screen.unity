@@ -814,6 +814,8 @@ MonoBehaviour:
   backgroundMusic: {fileID: 8300000, guid: dee422358faec4a4ea2df09b8d6fca22, type: 3}
   doorOpenSound: {fileID: 8300000, guid: 3faea29ecca355047a42a474e6111ff7, type: 3}
   buttonClickSound: {fileID: 8300000, guid: b23a757eb00781145a2a8fbd866922dc, type: 3}
+  BookOpenSound: {fileID: 8300000, guid: e91a04ee15326594b9e85b558d7f14a6, type: 3}
+  ToolsTouchingSound: {fileID: 8300000, guid: e098f11fd7c6eeb419f68464b5d63ba4, type: 3}
 --- !u!4 &858326871
 Transform:
   m_ObjectHideFlags: 0
