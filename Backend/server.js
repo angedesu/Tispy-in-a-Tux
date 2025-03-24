@@ -24,7 +24,7 @@ mongoose.connect(mongoUri, {
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch(err => console.error("❌ MongoDB Connection Error:", err));
 
-// 🔹 Middleware: Verify Firebase ID Token
+// Middleware: Verify Firebase ID Token
 async function authenticateToken(req, res, next) {
   console.log("📡 Incoming Headers:", req.headers);
   const token = req.headers.authorization?.split("Bearer ")[1];
@@ -44,7 +44,7 @@ async function authenticateToken(req, res, next) {
   }
 }
 
-// 🔹 Register User and Assign Achievements
+// Register User and Assign Achievements
 app.post("/register", authenticateToken, async (req, res) => {
   try {
     console.log("📡 Received /register request");
@@ -81,7 +81,7 @@ app.post("/register", authenticateToken, async (req, res) => {
   }
 });
 
-// 🔹 Fetch User Achievements
+// Fetch User Achievements
 app.get("/user-achievements", authenticateToken, async (req, res) => {
   try {
     const user = await User.findOne({ uid: req.user.uid });
@@ -97,7 +97,7 @@ app.get("/user-achievements", authenticateToken, async (req, res) => {
   }
 });
 
-// 🔹 Update User Achievement Progress
+// Update User Achievement Progress
 app.post("/update-achievement", authenticateToken, async (req, res) => {
   try {
     const { achievement_name, progress } = req.body;
@@ -136,6 +136,23 @@ app.post("/update-achievement", authenticateToken, async (req, res) => {
   }
 });
 
-// 🔹 Start the Server
+// Fetch Full User Data
+app.get("/userdata", authenticateToken, async (req, res) => {
+  try {
+    const user = await User.findOne({ uid: req.user.uid });
+
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    res.json({ user });
+  } catch (error) {
+    console.error("❌ Error fetching user data:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
+// Start the Server
 const PORT = 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));

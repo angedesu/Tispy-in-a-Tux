@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 263692d3f619646ad97623de9af5544d
+guid: e613f7ce0e0ba43ada91363bd52031cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1655921489673168708
-    second: grey_0
+      213: 5786465989973217381
+    second: Chilled Martini Glass_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grey_0
+      name: Chilled Martini Glass_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 13
-        width: 295
-        height: 275
+        x: 6
+        y: 0
+        width: 29
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 447a7e742d30bf610800000000000000
-      internalID: 1655921489673168708
+      spriteID: 5609b3de828ad4050800000000000000
+      internalID: 5786465989973217381
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      grey_0: 1655921489673168708
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
