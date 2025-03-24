@@ -11,7 +11,7 @@ public class XpProgress : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("xpPoints");
         PlayerPrefs.DeleteKey("xpLevel");
-        PlayerPrefs.SetInt("xpPoints", 139);
+        PlayerPrefs.SetInt("xpPoints", 456);
         PlayerPrefs.Save();
         // get the current fill of the progress bar
         CurrentFill();
