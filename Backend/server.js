@@ -81,61 +81,6 @@ app.post("/register", authenticateToken, async (req, res) => {
   }
 });
 
-// Fetch User Achievements
-app.get("/user-achievements", authenticateToken, async (req, res) => {
-  try {
-    const user = await User.findOne({ uid: req.user.uid });
-
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-
-    res.json({ achievements: user.achievements });
-  } catch (error) {
-    console.error("❌ Error fetching achievements:", error);
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// Update User Achievement Progress
-app.post("/update-achievement", authenticateToken, async (req, res) => {
-  try {
-    const { achievement_name, progress } = req.body;
-
-    if (!achievement_name || progress == null) {
-      return res.status(400).json({ error: "Missing required fields" });
-    }
-
-    const user = await User.findOne({ uid: req.user.uid });
-
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-
-    const achievement = user.achievements.find(a => a.name === achievement_name);
-    if (!achievement) {
-      return res.status(404).json({ error: "Achievement not found" });
-    }
-
-    // Update progress
-    achievement.progress += progress;
-
-    // Mark as "ACHIEVED" if target is met
-    if (achievement.progress >= achievement.target) {
-      achievement.status = "ACHIEVED";
-      achievement.progress = achievement.target;
-    }
-
-    user.save();
-    console.log("✅ Achievement updated:", achievement);
-
-    res.json({ message: "Achievement updated!", achievement });
-  } catch (error) {
-    console.error("❌ Error updating achievement:", error);
-    res.status(500).json({ error: error.message });
-  }
-});
-
 // Fetch Full User Data
 app.get("/userdata", authenticateToken, async (req, res) => {
   try {
