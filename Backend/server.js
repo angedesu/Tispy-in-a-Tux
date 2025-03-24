@@ -52,25 +52,14 @@ app.post("/register", authenticateToken, async (req, res) => {
     const { username } = req.body;
     const uid = req.user.uid;
 
-    if (!username) {
-      return res.status(400).json({ error: "Username is required" });
-    }
-
     // Check if username already exists
     const existingUser = await User.findOne({ username });
     if (existingUser) {
       return res.status(400).json({ error: "Username already taken" });
     }
 
-    // Default achievements list
-    const defaultAchievements = [
-      { name: "First Drink", description: "Make your first drink!", target: 1 },
-      { name: "Winner", description: "Win 1 game in Competitve Mode", target: 1 },
-      { name: "Mix Master", description: "Make 100 drinks!", target: 100 }
-    ].map(a => ({ ...a, status: "NOT_ACHIEVED", progress: 0 }));
-
     // Create new user with default achievements
-    const user = new User({ uid, username, achievements: defaultAchievements });
+    const user = new User({ uid, username });
     await user.save();
 
     console.log("✅ User registered:", user);
@@ -96,6 +85,26 @@ app.get("/userdata", authenticateToken, async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+// checks if username exists
+app.get('/check-username', async (req, res) => {
+  const username = req.query.username;
+  if (!username) return res.status(400).json({ error: "Missing username" });
+
+  try {
+      const user = await User.findOne({ username });
+
+      if (user) {
+          return res.status(200).json({ exists: true });
+      } else {
+          return res.status(200).json({ exists: false });
+      }
+  } catch (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Server error" });
+  }
+});
+
 
 
 // Start the Server

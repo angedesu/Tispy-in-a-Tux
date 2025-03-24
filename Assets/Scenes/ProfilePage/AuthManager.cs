@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Firebase;
@@ -210,6 +211,15 @@ public class AuthManager : MonoBehaviour
         }
         else 
         {
+            // Check MongoDB for existing username
+            bool usernameTaken = true;
+            yield return StartCoroutine(CheckUsernameExists(_username, result => usernameTaken = result));
+
+            if (usernameTaken)
+            {
+                warningRegisterText.text = "Username Already Taken!";
+                yield break;
+            }
             //Call the Firebase auth signin function passing the email and password
             Task<AuthResult> RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
             //Wait until the task completes
@@ -325,4 +335,34 @@ public class AuthManager : MonoBehaviour
             Debug.Log("User saved successfully: " + request.downloadHandler.text);
         }
     }
+    // checks if username exists
+    private IEnumerator CheckUsernameExists(string username, Action<bool> callback)
+    {
+        string uri = $"http://localhost:3000/check-username?username={UnityWebRequest.EscapeURL(username)}";
+
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Error checking username: " + webRequest.error);
+                callback(true); // fallback to "exists" to be safe
+            }
+            else
+            {
+                // Parse the JSON response
+                string json = webRequest.downloadHandler.text;
+                var result = JsonUtility.FromJson<UsernameCheckResult>(json);
+                callback(result.exists);
+            }
+        }
+    }
+
+    [System.Serializable]
+    private class UsernameCheckResult
+    {
+        public bool exists;
+    }
+
 }
