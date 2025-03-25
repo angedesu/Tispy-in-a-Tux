@@ -7,6 +7,7 @@ using Firebase.Extensions;
 using TMPro;
 using System.Threading.Tasks;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class AuthManager : MonoBehaviour
 {
@@ -39,7 +40,27 @@ public class AuthManager : MonoBehaviour
     [System.Serializable]
     public class UserData
     {
+        public string _id;
+        public string uid;
         public string username;
+        public int level;
+        public int xp;
+        public int wins;
+        public int profile_icon;
+        public int streak_count;
+        public string[] achievements;
+        public int __v;
+    }
+
+    [System.Serializable]
+    public class UserWrapper
+    {
+        public UserData user;
+    }
+    [System.Serializable]
+    private class UsernameCheckResult
+    {
+        public bool exists;
     }
     
     //have firebase running
@@ -193,7 +214,16 @@ public class AuthManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("✅ User data from MongoDB: " + request.downloadHandler.text);
+            UserWrapper userWrapper = JsonUtility.FromJson<UserWrapper>(request.downloadHandler.text);
+            UserData user = userWrapper.user;
+
+            // ✅ Save user data to static class
+            UserSession.Username = user.username;
+            UserSession.Level = user.level;
+            UserSession.XP = user.xp;
+
+            // ✅ Load profile scene
+            SceneManager.LoadScene("profile");
         }
     }
     //Function for users to register
@@ -358,11 +388,4 @@ public class AuthManager : MonoBehaviour
             }
         }
     }
-
-    [System.Serializable]
-    private class UsernameCheckResult
-    {
-        public bool exists;
-    }
-
 }

@@ -9,10 +9,10 @@ public class XpProgress : MonoBehaviour
     public GameObject levelText;
     void Start()
     {
-        PlayerPrefs.DeleteKey("xpPoints");
-        PlayerPrefs.DeleteKey("xpLevel");
-        PlayerPrefs.SetInt("xpPoints", 456);
-        PlayerPrefs.Save();
+//        PlayerPrefs.DeleteKey("xpPoints");
+//        PlayerPrefs.DeleteKey("xpLevel");
+ //       PlayerPrefs.SetInt("xpPoints", 456);
+ //       PlayerPrefs.Save();
         // get the current fill of the progress bar
         CurrentFill();
         UpdateLevelText();
@@ -50,34 +50,29 @@ public class XpProgress : MonoBehaviour
         }
         return level;
     }
-    void UpdateLevel(int number1, int number2)
+    public void UpdateLevel(int number1, int number2)
     {
         // update the xp level on file for the player
         int level = number1 + number2;
         PlayerPrefs.SetInt("xpLevel", level);
         PlayerPrefs.Save();
     }
-    void UpdatePoints(int points)
+    public void UpdatePoints(int points)
     {
         // update the points on file for the player
         PlayerPrefs.SetInt("xpPoints", points);
         PlayerPrefs.Save();
     }
-    void CurrentFill()
-    {
-        // get the points and level on file, find the new levels that will be added to the current levels
-        int points = PlayerPrefs.GetInt("xpPoints", 0);
-        int oldLevel = PlayerPrefs.GetInt("xpLevel", 0);
-        int currentLevel = PlayerLevel(points);
+	public void CurrentFill()
+	{
+	    int points = PlayerPrefs.GetInt("xpPoints", 0);
+    	int level = PlayerPrefs.GetInt("xpLevel", 0);
 
-        // calculate the points that will be used for the progress bar, update the player's level, and 
-        // update the player's points
-        int newPoints = points % max;
-        UpdateLevel(currentLevel, oldLevel);
-        UpdatePoints(newPoints);
-        
-        // fill the progress bar with the player's new points calculated
-        float fillAmount = (float)newPoints / (float)max;
-        mask.fillAmount = fillAmount;
-    }
+ 	     // XP progress within this level
+    	int newPoints = points % max;
+
+    	// Fill the progress bar
+    	float fillAmount = (float)newPoints / (float)max;
+    	mask.fillAmount = fillAmount;
+}
 }
