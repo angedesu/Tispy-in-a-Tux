@@ -1,6 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class arrowButton
+public class BackButton : MonoBehaviour
 {
-    
+    public void Back()
+    {
+        SceneManager.LoadScene("Scenes/learnSelection/learnSelect");
+    }
 }

@@ -35,5 +35,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leaderboard/Top3Leaderboard.unity
     guid: f8bb1d983227c453b8dabd031c325e35
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/theorySelect.unity
+    guid: 4fcfa3eb985554a34a5fd4f029746705
+  - enabled: 1
+    path: Assets/Scenes/learnSelection/learnSelect.unity
+    guid: 2f1e98b41f2274906b4dfcc86c72ef45
+  - enabled: 1
+    path: Assets/Scenes/gameSelection/gameSelect.unity
+    guid: bfcaf6d920d1448fcbd85283fd579dbe
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
