@@ -40,7 +40,7 @@ public class SelectionManager : MonoBehaviour
     public void timerSelected()
     {
         // change the scene to correct scene
-        SceneManager.LoadScene("timerScene");
+        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
 
     public void theorySelected()
@@ -51,6 +51,6 @@ public class SelectionManager : MonoBehaviour
     public void cardsSelected()
     {
         // change to correct scene
-        SceneManager.LoadScene("cardScene");
+        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
 }

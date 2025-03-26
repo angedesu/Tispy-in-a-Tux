@@ -6,13 +6,13 @@ public class SelectedManager : MonoBehaviour
     public void playSelected()
     {
         // replace with correct scene
-        SceneManager.LoadScene("playScene");
+        SceneManager.LoadScene("Scenes/gameSelection/gameSelect");
     }
 
     public void recipeSelected()
     {
         // replace with corrent scene
-        SceneManager.LoadScene("recipeScene");
+        SceneManager.LoadScene("Scenes/ProfilePage/profile");
     }
 
     public void toolsSelected()
