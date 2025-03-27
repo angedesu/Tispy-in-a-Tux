@@ -6,6 +6,7 @@ public class ProfileUIManager : MonoBehaviour
     public TMP_Text usernameText;
     public TMP_Text levelText;
     public XpProgress xpProgressBar;
+    public TMP_Text gameidText;
 
     void Start()
     {
@@ -13,6 +14,7 @@ public class ProfileUIManager : MonoBehaviour
         string username = UserSession.Username;
         int level = UserSession.Level;
         int xp = UserSession.XP;
+        int gameid = UserSession.GameID;
 
         // updates the UI
         usernameText.text = username;
@@ -22,6 +24,9 @@ public class ProfileUIManager : MonoBehaviour
         PlayerPrefs.SetInt("xpPoints", xp);
         PlayerPrefs.SetInt("xpLevel", level);
         PlayerPrefs.Save();
+        
+        // updates id text 
+        gameidText.text = "ID: " + gameid;
 
         xpProgressBar.CurrentFill();
         xpProgressBar.UpdateLevelText();

@@ -42,6 +42,7 @@ public class AuthManager : MonoBehaviour
     {
         public string _id;
         public string uid;
+		public int gameID;
         public string username;
         public int level;
         public int xp;
@@ -171,6 +172,7 @@ public class AuthManager : MonoBehaviour
             }
             else
             {
+				// THIS IS THE AUTH TOKEN
                 string idToken = tokenTask.Result;
                 Debug.Log("Firebase ID Token: " + idToken);
 
@@ -210,6 +212,7 @@ public class AuthManager : MonoBehaviour
             UserSession.Username = user.username;
             UserSession.Level = user.level;
             UserSession.XP = user.xp;
+			UserSession.GameID = user.gameID;
 
             // Load profile scene
             SceneManager.LoadScene("profile");
