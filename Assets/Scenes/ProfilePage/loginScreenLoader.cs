@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class LoginSceneLoader : MonoBehaviour
 {
     public GameObject dimBackground;
-    public string overlaySceneName = "Sign-in"; // Change this to the actual scene name
+    public string overlaySceneName = "Sign-in";
     
     public void LoadOverlayScene()
     {

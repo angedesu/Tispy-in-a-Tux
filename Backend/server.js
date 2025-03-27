@@ -9,20 +9,20 @@ const app = express();
 app.use(cors()); // Allow requests from Unity
 app.use(express.json());
 
-// ✅ Initialize Firebase Admin SDK
+// Initialize Firebase Admin SDK
 const serviceAccount = require("./firebase-adminsdk.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
 
-// ✅ Connect to MongoDB
+// Connect to MongoDB
 const mongoUri = process.env.MONGO_URI;
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-  .then(() => console.log("✅ Connected to MongoDB"))
-  .catch(err => console.error("❌ MongoDB Connection Error:", err));
+  .then(() => console.log("Connected to MongoDB!"))
+  .catch(err => console.error("MongoDB Connection Error:", err));
 
 // Middleware: Verify Firebase ID Token
 async function authenticateToken(req, res, next) {
@@ -35,19 +35,19 @@ async function authenticateToken(req, res, next) {
 
   try {
     const decodedToken = await admin.auth().verifyIdToken(token);
-    console.log("✅ Token Verified:", decodedToken.uid);
+    console.log("Token Verified:", decodedToken.uid);
     req.user = decodedToken;
     next();
   } catch (error) {
-    console.log("❌ Token Verification Failed:", error.message);
+    console.log("Token Verification Failed:", error.message);
     res.status(403).json({ error: "Unauthorized - Invalid Token" });
   }
 }
 
-// Register User and Assign Achievements
+// Register User
 app.post("/register", authenticateToken, async (req, res) => {
   try {
-    console.log("📡 Received /register request");
+//    console.log("Received /register request");
 
     const { username } = req.body;
     const uid = req.user.uid;
@@ -58,14 +58,14 @@ app.post("/register", authenticateToken, async (req, res) => {
       return res.status(400).json({ error: "Username already taken" });
     }
 
-    // Create new user with default achievements
+    // Create new user
     const user = new User({ uid, username });
     await user.save();
 
-    console.log("✅ User registered:", user);
+    console.log("User registered:", user);
     res.json({ message: "User registered successfully!", user });
   } catch (error) {
-    console.error("❌ Error registering user:", error);
+    console.error("Error registering user:", error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -81,7 +81,7 @@ app.get("/userdata", authenticateToken, async (req, res) => {
 
     res.json({ user });
   } catch (error) {
-    console.error("❌ Error fetching user data:", error);
+    console.error("Error fetching user data:", error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -109,4 +109,4 @@ app.get('/check-username', async (req, res) => {
 
 // Start the Server
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

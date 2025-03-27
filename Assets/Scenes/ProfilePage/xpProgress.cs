@@ -40,6 +40,7 @@ public class XpProgress : MonoBehaviour
     	int newLevel = totalXP / max;
 
     	// Update PlayerPrefs
+		// Need to update the backend with this data
     	PlayerPrefs.SetInt("xpPoints", totalXP);
     	PlayerPrefs.SetInt("xpLevel", newLevel);
     	PlayerPrefs.Save();

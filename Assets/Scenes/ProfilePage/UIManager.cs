@@ -25,33 +25,32 @@ public class UIManager : MonoBehaviour
             Destroy(this);
         }
     }
-
-    //Functions to change the login screen UI
-    public void LoginScreen() //Back button
+	// shows log in screen
+    public void LoginScreen()
     {
         loginUI.SetActive(true);
         registerUI.SetActive(false);
         forgotPasswordUI.SetActive(false);
     }
-
-    public void RegisterScreen() // Register button
+	// shows sign in screen
+    public void RegisterScreen()
     {
         loginUI.SetActive(false);
         registerUI.SetActive(true);
     }
-
-    public void ForgotScreen() // 
+	// shows forgot password screen
+    public void ForgotScreen()
     {
         loginUI.SetActive(false);
         forgotPasswordUI.SetActive(true);
     }
-	
-	public void Exit() //Back button
+	//exit out from sign in screen to profile screen
+	public void Exit()
     {
         SceneManager.LoadScene("profile");
     	if (dimBackground != null)
     	{
-        	dimBackground.SetActive(false); // Hide dim background
+        	dimBackground.SetActive(false);
     	}
     }
 }

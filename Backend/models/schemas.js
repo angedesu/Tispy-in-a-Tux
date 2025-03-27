@@ -1,26 +1,32 @@
 const mongoose = require("mongoose");
 
-// ✅ Define User Schema
 const userSchema = new mongoose.Schema({
-  uid: { type: String, required: true, unique: true }, // Firebase UID
+  uid: { type: String, required: true, unique: true }, // firebase UID
+  gameID: { type: String, unique: true, default: generateGameID },
   username: { type: String, required: true, unique: true },
   level: { type: Number, default: 1 },
   xp: { type: Number, default: 0 },
   wins: { type: Number, default: 0 },
   profile_icon: { type: Number, default: 0 },
   streak_count: { type: Number, default: 0 },
+  friends: [{ type: String }],
+  friendRequests: [{ type: String }],
+  sentRequests: [{ type: String }],
   achievements: [
     {
-      name: { type: String, required: true }, // Achievement Name
-      description: { type: String, required: true }, // Description
+      name: { type: String, required: true },
+      description: { type: String, required: true },
       status: { type: String, enum: ["NOT_ACHIEVED", "ACHIEVED"], default: "NOT_ACHIEVED" },
-      progress: { type: Number, default: 0 }, // User's progress
-      target: { type: Number, required: true }, // Required progress to complete
+      progress: { type: Number, default: 0 },
+      target: { type: Number, required: true },
       updated_at: { type: Date, default: Date.now }
     }
   ]
 });
 
-// ✅ Create and Export User Model
 const User = mongoose.model("User", userSchema);
 module.exports = User;
+
+function generateGameID() {
+  return Math.floor(100000 + Math.random() * 900000); // 6-digit ID
+}
