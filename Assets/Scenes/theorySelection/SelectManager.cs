@@ -53,4 +53,9 @@ public class SelectManager : MonoBehaviour
         // change to correct scene
         SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
+    
+    public void Back()
+    {
+        SceneManager.LoadScene("Scenes/learnSelection/learnSelect");
+    }
 }
