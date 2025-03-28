@@ -11,18 +11,6 @@ namespace profilePage
 
         public string[] profiles = { "picture01", "picture02", "picture03", "picture04", "picture05", "picture06",
             "picture07", "picture08"};
-
-        public void selectedProfile()
-        {
-            
-            profile = grab the users document 
-                look for the profile field and return that number 
-                
-                number = the returned 
-                
-        }
-        
-        
         
     private void Start()
         {
