@@ -53,4 +53,9 @@ public class SelectionManager : MonoBehaviour
         // change to correct scene
         SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
+    
+    public void PreviousScreen()
+    {
+        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+    }
 }

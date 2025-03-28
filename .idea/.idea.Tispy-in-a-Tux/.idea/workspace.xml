@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="" />
+    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Bar Spoon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Bar Spoon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Martini Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Martini Glass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Stemmed Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Stemmed Glass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Highball Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Highball Glass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Mixing Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Mixing Glass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Muddler.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Muddler.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Old Fashion Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Old Fashion Glass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Strainer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Strainer.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/learnSelection/SelectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/arrowButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/arrowButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/learnSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/learnSelection/learnSelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/arrowButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/arrowButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/buttonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/profileSelection/buttonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/profileSelection.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/profileSelection/profileSelection.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/SelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/SelectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/arrowButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/arrowButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/theorySelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/theorySelect.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,20 +64,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/flashcards",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
