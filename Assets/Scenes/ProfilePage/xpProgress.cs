@@ -27,7 +27,7 @@ public class XpProgress : MonoBehaviour
     
 	// user levels up when they hit 100 xp points and updates their level
 	// we will be calling this function when a user gains xp
-    public void AddXP(int gainXP)
+	public void AddXP(int gainXP)
 	{
     	// Get current total XP
     	int currentXP = PlayerPrefs.GetInt("xpPoints", 0);
@@ -40,6 +40,7 @@ public class XpProgress : MonoBehaviour
     	int newLevel = totalXP / max;
 
     	// Update PlayerPrefs
+		// Need to update the backend with this data
     	PlayerPrefs.SetInt("xpPoints", totalXP);
     	PlayerPrefs.SetInt("xpLevel", newLevel);
     	PlayerPrefs.Save();
@@ -48,7 +49,6 @@ public class XpProgress : MonoBehaviour
     	UpdateLevelText();
     	CurrentFill();
 	}
-
 	public void CurrentFill()
 	{
 	    int points = PlayerPrefs.GetInt("xpPoints", 0);

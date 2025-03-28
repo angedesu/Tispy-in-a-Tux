@@ -42,6 +42,7 @@ public class AuthManager : MonoBehaviour
     {
         public string _id;
         public string uid;
+		public int gameID;
         public string username;
         public int level;
         public int xp;
@@ -66,13 +67,13 @@ public class AuthManager : MonoBehaviour
     //have firebase running
     void Awake()
     {
-        //Check that all of the necessary dependencies for Firebase are present on the system
+        //check that all necessary dependencies for Firebase are there on the system
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
             dependencyStatus = task.Result;
             if (dependencyStatus == DependencyStatus.Available)
             {
-                //If they are avalible Initialize Firebase
+                // initialize Firebase
                 InitializeFirebase();
             }
             else
@@ -83,20 +84,18 @@ public class AuthManager : MonoBehaviour
     }
     private void InitializeFirebase()
     {
-        Debug.Log("Setting up Firebase Auth");
-        //Set the authentication instance object
+        // set the authentication instance object
         auth = FirebaseAuth.DefaultInstance;
     }
     //Function for the login button
     public void LoginButton()
     {
-        //Call the login coroutine passing the email and password
+        // log in button with email and password fields
         StartCoroutine(Login(emailLoginField.text, passwordLoginField.text));
     }
-    //Function for the register button
+    // register button with email password and username fields
     public void RegisterButton()
     {
-        //Call the register coroutine passing the email, password, and username
         StartCoroutine(Register(emailRegisterField.text, passwordRegisterField.text, usernameRegisterField.text));
     }
     //Function to send password reset to email
@@ -109,22 +108,14 @@ public class AuthManager : MonoBehaviour
             resetFeedbackText.text = "Please enter your email.";
             return;
         }
-
+		// sends reset email to email
         auth.SendPasswordResetEmailAsync(email).ContinueWithOnMainThread(task =>
         {
-            if (task.IsCanceled)
-            {
-                Debug.LogError("SendPasswordResetEmailAsync was canceled.");
-                resetFeedbackText.text = "Request canceled.";
-                return;
-            }
             if (task.IsFaulted)
             {
                 Debug.LogError("Error sending password reset email: " + task.Exception);
-                resetFeedbackText.text = "Error: " + task.Exception.InnerExceptions[0].Message;
-
+                resetFeedbackText.text = "Not A Valid Email";
             }
-
             Debug.Log("Password reset email sent successfully.");
             resetFeedbackText.text = "Password reset email sent! Check your inbox.";
         });
@@ -134,7 +125,6 @@ public class AuthManager : MonoBehaviour
     {
         //Call the Firebase auth signin function passing the email and password
         Task<AuthResult> LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
-        //Wait until the task completes
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
 
         if (LoginTask.Exception != null)
@@ -182,6 +172,7 @@ public class AuthManager : MonoBehaviour
             }
             else
             {
+				// THIS IS THE AUTH TOKEN
                 string idToken = tokenTask.Result;
                 Debug.Log("Firebase ID Token: " + idToken);
 
@@ -199,30 +190,31 @@ public class AuthManager : MonoBehaviour
 
         UnityWebRequest request = UnityWebRequest.Get(apiUrl);
 
-        // ✅ Properly set the Authorization header
+        //  properly set the Authorization header
         request.SetRequestHeader("Authorization", "Bearer " + idToken);
         request.SetRequestHeader("Content-Type", "application/json"); // Ensures correct format
 
-        Debug.Log("📡 Sending token to backend: " + idToken);
+        Debug.Log("Sending token to backend: " + idToken);
 
         yield return request.SendWebRequest();
 
         if (request.result != UnityWebRequest.Result.Success)
         {
-            Debug.LogError("❌ Error fetching user data: " + request.error);
-            Debug.LogError("🔍 Server Response: " + request.downloadHandler.text);
+            Debug.LogError("Error fetching user data: " + request.error);
+            Debug.LogError("Server Response: " + request.downloadHandler.text);
         }
         else
         {
             UserWrapper userWrapper = JsonUtility.FromJson<UserWrapper>(request.downloadHandler.text);
             UserData user = userWrapper.user;
 
-            // ✅ Save user data to static class
+            // Save user data to static class in usersession.cs
             UserSession.Username = user.username;
             UserSession.Level = user.level;
             UserSession.XP = user.xp;
+			UserSession.GameID = user.gameID;
 
-            // ✅ Load profile scene
+            // Load profile scene
             SceneManager.LoadScene("profile");
         }
     }
@@ -231,17 +223,17 @@ public class AuthManager : MonoBehaviour
     {
         if (_username == "")
         {
-            //If the username field is blank show a warning
+            // if username is blank
             warningRegisterText.text = "Missing Username";
         }
         else if(passwordRegisterField.text != passwordRegisterVerifyField.text)
         {
-            //If the password does not match show a warning
+            // if passwords dont match
             warningRegisterText.text = "Password Does Not Match!";
         }
         else 
         {
-            // Check MongoDB for existing username
+            // checks if username is taken in mongodb
             bool usernameTaken = true;
             yield return StartCoroutine(CheckUsernameExists(_username, result => usernameTaken = result));
 
@@ -252,12 +244,11 @@ public class AuthManager : MonoBehaviour
             }
             //Call the Firebase auth signin function passing the email and password
             Task<AuthResult> RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
-            //Wait until the task completes
             yield return new WaitUntil(predicate: () => RegisterTask.IsCompleted);
 
             if (RegisterTask.Exception != null)
             {
-                //If there are errors handle them
+                // checks for user errors
                 Debug.LogWarning(message: $"Failed to register task with {RegisterTask.Exception}");
                 FirebaseException firebaseEx = RegisterTask.Exception.GetBaseException() as FirebaseException;
                 AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
@@ -282,7 +273,7 @@ public class AuthManager : MonoBehaviour
             }
             else
             {
-                //User has now been created
+                //User has been created
                 //Now get the result
                 User = RegisterTask.Result.User;
 
@@ -293,12 +284,11 @@ public class AuthManager : MonoBehaviour
 
                     //Call the Firebase auth update user profile function passing the profile with the username
                     Task ProfileTask = User.UpdateUserProfileAsync(profile);
-                    //Wait until the task completes
                     yield return new WaitUntil(predicate: () => ProfileTask.IsCompleted);
 
                     if (ProfileTask.Exception != null)
                     {
-                        //If there are errors handle them
+                        // debug code for errors
                         Debug.LogWarning(message: $"Failed to register task with {ProfileTask.Exception}");
                         FirebaseException firebaseEx = ProfileTask.Exception.GetBaseException() as FirebaseException;
                         AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
@@ -306,15 +296,14 @@ public class AuthManager : MonoBehaviour
                     }
                     else
                     {
-                        //Username is now set
-                        //Now return to login screen
+                        // return to sign in screen
                         UIManager.instance.LoginScreen();
                         warningRegisterText.text = "";
                         warningLoginText.text = "";
                         confirmLoginText.text = "Registered!";
                     }
                     
-                    // Retrieve Firebase ID Token
+                    // Retrieve Firebase ID Token to register the user in mongodb
                     Task<string> tokenTask = User.TokenAsync(true);
                     yield return new WaitUntil(() => tokenTask.IsCompleted);
 
@@ -327,7 +316,7 @@ public class AuthManager : MonoBehaviour
                     string idToken = tokenTask.Result;
                     Debug.Log("Firebase ID Token: " + idToken);
 
-                    // Send username + token to backend
+                    // Send username + token to backend/mongodb
                     StartCoroutine(SendUserDataToBackend(idToken, _username));
                 }
             }
@@ -338,7 +327,7 @@ public class AuthManager : MonoBehaviour
     {
         string apiUrl = "http://localhost:3000/register";
 
-        // Proper JSON Serialization
+        // JSON Serialization
         UserData userData = new UserData { username = username };
         string jsonData = JsonUtility.ToJson(userData);
 
@@ -350,8 +339,8 @@ public class AuthManager : MonoBehaviour
         request.SetRequestHeader("Authorization", "Bearer " + idToken);
         request.SetRequestHeader("Content-Type", "application/json");
 
-        Debug.Log("📡 Sending user data to backend...");
-        Debug.Log("🔹 JSON Payload: " + jsonData); // Log JSON payload
+        Debug.Log("Sending user data to backend...");
+        Debug.Log("JSON Payload: " + jsonData);
 
         yield return request.SendWebRequest();
 
