@@ -105,6 +105,146 @@ app.get('/check-username', async (req, res) => {
   }
 });
 
+// views users friends
+app.get('/friends/:gameID', async (req, res) => {
+  try {
+    const user = await User.findOne({ gameID: req.params.gameID });
+
+    if (!user) return res.status(404).send("User not found");
+
+    // populate usernames of friends
+    const friends = await User.find({ gameID: { $in: user.friends } }, 'username gameID');
+
+    res.json(friends);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// user sends friend request to a user
+app.post('/send-friend-request', async (req, res) => {
+  const { fromGameID, toGameID } = req.body;
+
+  try {
+    const sender = await User.findOne({ gameID: fromGameID });
+    const receiver = await User.findOne({ gameID: toGameID });
+
+    if (!sender || !receiver) return res.status(404).send("User not found");
+
+    if (receiver.friendRequests.includes(fromGameID)) {
+      return res.status(400).send("Friend request already sent");
+    }
+
+    receiver.friendRequests.push(fromGameID);
+    sender.sentRequests.push(toGameID);
+
+    await receiver.save();
+    await sender.save();
+
+    res.send("Friend request sent");
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// accepts friend request if they are in the array
+app.post('/accept-friend-request', async (req, res) => {
+  const { fromGameID, toGameID } = req.body;
+
+  try {
+    const receiver = await User.findOne({ gameID: toGameID });
+    const sender = await User.findOne({ gameID: fromGameID });
+
+    if (!receiver || !sender) return res.status(404).send("User not found");
+
+    if (!receiver.friendRequests.includes(fromGameID)) {
+      return res.status(400).send("No pending request from this user");
+    }
+
+    // Add each other as friends
+    receiver.friends.push(fromGameID);
+    sender.friends.push(toGameID);
+
+    // Remove request entries
+    receiver.friendRequests = receiver.friendRequests.filter(id => id !== fromGameID);
+    sender.sentRequests = sender.sentRequests.filter(id => id !== toGameID);
+
+    await receiver.save();
+    await sender.save();
+
+    res.send("Friend request accepted");
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// delete friend from friends array
+app.post('/delete-friend', async (req, res) => {
+  const { userGameID, friendGameID } = req.body;
+
+  try {
+    const user = await User.findOne({ gameID: userGameID });
+    const friend = await User.findOne({ gameID: friendGameID });
+
+    if (!user || !friend) return res.status(404).send("User not found");
+
+    user.friends = user.friends.filter(id => id !== friendGameID);
+    friend.friends = friend.friends.filter(id => id !== userGameID);
+
+    await user.save();
+    await friend.save();
+
+    res.send("Friend removed");
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// rejecting friend request
+app.post('/reject-friend-request', async (req, res) => {
+  const { fromGameID, toGameID } = req.body;
+
+  try {
+    const receiver = await User.findOne({ gameID: toGameID }); // The user who received the request
+    const sender = await User.findOne({ gameID: fromGameID }); // The one who sent the request
+
+    if (!receiver || !sender) return res.status(404).send("User not found");
+
+    // Make sure the request actually exists
+    if (!receiver.friendRequests.includes(fromGameID)) {
+      return res.status(400).send("No such friend request to reject");
+    }
+
+    // Remove the friend request
+    receiver.friendRequests = receiver.friendRequests.filter(id => id !== fromGameID);
+    sender.sentRequests = sender.sentRequests.filter(id => id !== toGameID);
+
+    await receiver.save();
+    await sender.save();
+
+    res.send("Friend request rejected");
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// view the friend request received
+app.get('/received-requests/:gameID', async (req, res) => {
+  try {
+    const user = await User.findOne({ gameID: req.params.gameID });
+
+    if (!user) return res.status(404).send("User not found");
+
+    const received = await User.find(
+      { gameID: { $in: user.friendRequests } },
+      'username gameID'
+    );
+
+    res.json(received);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
 
 
 // Start the Server
