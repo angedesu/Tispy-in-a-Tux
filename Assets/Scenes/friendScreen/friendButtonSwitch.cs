@@ -3,18 +3,16 @@ using UnityEngine.UI;
 using TMPro;
 
 public class FriendButtonSwitch : MonoBehaviour
-{
+{	
+
     // Main Containers
     public GameObject viewFriendsContainer;
     public GameObject addFriendsContainer;
-    public GameObject sendRequestContainer;
-
-    // Additional Containers
-    public GameObject viewContainer;
-    public GameObject addContainer;
-    public GameObject requestContainer;
+    public GameObject requestFriendsContainer;
 
     public TextMeshProUGUI titleText;
+
+	public friendSystem friendSystemScript;
 
     private enum FriendState { ViewFriends, AddFriends, SendRequest }
     private FriendState currentState;
@@ -23,21 +21,25 @@ public class FriendButtonSwitch : MonoBehaviour
     {
         // Default state to View Friends
         SetState(FriendState.ViewFriends);
+		friendSystemScript.ShowFriends();
     }
 
     public void OnViewFriendsButtonClicked()
     {
         SetState(FriendState.ViewFriends);
+		friendSystemScript.ShowFriends();
     }
 
     public void OnAddFriendsButtonClicked()
     {
         SetState(FriendState.AddFriends);
+		friendSystemScript.ShowAddableUsers();
     }
 
     public void OnSendRequestButtonClicked()
     {
         SetState(FriendState.SendRequest);
+		//friendSystemScript.ShowAddableUsers();
     }
 
     private void SetState(FriendState newState)
@@ -48,15 +50,9 @@ public class FriendButtonSwitch : MonoBehaviour
 
     private void UpdateUI()
     {
-        // Enable/Disable main containers
-        viewFriendsContainer.SetActive(currentState == FriendState.ViewFriends);
+		viewFriendsContainer.SetActive(currentState == FriendState.ViewFriends);
         addFriendsContainer.SetActive(currentState == FriendState.AddFriends);
-        sendRequestContainer.SetActive(currentState == FriendState.SendRequest);
-
-        // Enable/Disable additional containers
-        viewContainer.SetActive(currentState == FriendState.ViewFriends);
-        addContainer.SetActive(currentState == FriendState.AddFriends);
-        requestContainer.SetActive(currentState == FriendState.SendRequest);
+        requestFriendsContainer.SetActive(currentState == FriendState.SendRequest);
 
         // Update title text
         switch (currentState)

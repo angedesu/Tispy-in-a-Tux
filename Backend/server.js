@@ -246,6 +246,34 @@ app.get('/received-requests/:gameID', async (req, res) => {
   }
 });
 
+// view all users that are NOT friends or in friend requests
+app.get('/non-friends/:gameID', async (req, res) => {
+  try {
+    const currentUser = await User.findOne({ gameID: req.params.gameID });
+
+    if (!currentUser) return res.status(404).send("User not found");
+
+    const excludedGameIDs = [
+      currentUser.gameID,
+      ...currentUser.friends,
+      ...currentUser.sentRequests,
+      ...currentUser.friendRequests
+    ];
+
+    // Find users NOT in the excluded list
+    const nonFriends = await User.find(
+      { gameID: { $nin: excludedGameIDs } },
+      'username gameID level'
+    );
+
+    res.json(nonFriends);
+  } catch (err) {
+    console.error("Error fetching non-friends:", err);
+    res.status(500).send(err.message);
+  }
+});
+
+
 
 // Start the Server
 const PORT = 3000;
