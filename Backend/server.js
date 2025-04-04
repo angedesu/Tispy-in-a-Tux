@@ -113,7 +113,7 @@ app.get('/friends/:gameID', async (req, res) => {
     if (!user) return res.status(404).send("User not found");
 
     // populate usernames of friends
-    const friends = await User.find({ gameID: { $in: user.friends } }, 'username gameID');
+    const friends = await User.find({ gameID: { $in: user.friends } }, 'username gameID level');
 
     res.json(friends);
   } catch (err) {
