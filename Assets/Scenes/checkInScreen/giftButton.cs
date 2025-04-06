@@ -75,11 +75,11 @@ public class giftButton : MonoBehaviour
         // PlayerPrefs.Save();
         
         // retrieve the latest login and create a variable for today 
-        string lastLogin = PlayerPrefs.GetString("lastLogin", "");
+        string lastClaim = PlayerPrefs.GetString("lastClaim", "");
         DateTime now = DateTime.Today;
         
-        // subtract today and last login () to get how long ago they claimed in days
-        TimeSpan span = now - DateTime.Parse(lastLogin);
+        // subtract today and last claim () to get how long ago they claimed in days
+        TimeSpan span = now - DateTime.Parse(lastClaim);
         int days = span.Days;
         
         // time span is integers so 1.5 days is 1 day and 12 hours NOT 1.5 days... half a day is not 0.5 days, instead 
