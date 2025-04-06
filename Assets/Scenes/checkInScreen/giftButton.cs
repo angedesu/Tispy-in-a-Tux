@@ -18,6 +18,7 @@ public class giftButton : MonoBehaviour
         CheckGiftStatus();
         // on start, display the current streak number, before they press the gift 
         CheckStreakNumber();
+        
     }
     public void OnClick()
     {
@@ -69,9 +70,9 @@ public class giftButton : MonoBehaviour
     void UpdateLogin()
     {
         // create variable for today's date and save it as the lastLogin (latest) date
-        string today = DateTime.Today.ToString("MM/dd/yyyy");
-        PlayerPrefs.SetString("lastLogin", today);
-        PlayerPrefs.Save();
+        // string today = DateTime.Today.ToString("MM/dd/yyyy");
+        // PlayerPrefs.SetString("lastLogin", today);
+        // PlayerPrefs.Save();
         
         // retrieve the latest login and create a variable for today 
         string lastLogin = PlayerPrefs.GetString("lastLogin", "");
@@ -104,5 +105,6 @@ public class giftButton : MonoBehaviour
         string number = streakNumber.GetComponent<TMP_Text>().text;
         PlayerPrefs.SetString("streakNumber", number);
         PlayerPrefs.Save();
+        UserSessionStreak.streak_count = int.Parse(number);
     }
 }
