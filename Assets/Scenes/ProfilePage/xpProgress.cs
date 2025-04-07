@@ -15,7 +15,7 @@ public class XpProgress : MonoBehaviour
     {
 //        PlayerPrefs.DeleteKey("xpPoints");
 //        PlayerPrefs.DeleteKey("xpLevel");
- //       PlayerPrefs.SetInt("xpPoints", 456);
+        PlayerPrefs.SetInt("xpPoints", 456);
  //       PlayerPrefs.Save();
         // get the current fill of the progress bar
         CurrentFill();
@@ -39,7 +39,7 @@ public class XpProgress : MonoBehaviour
         string number = PlayerPrefs.GetInt("xpLevel", 0).ToString();
         levelText.GetComponent<TMP_Text>().text = $"{number}";
         
-        UserSession.Level = int.Parse(number);
+        // UserSession.Level = int.Parse(number);
     }
     
 	// user levels up when they hit 100 xp points and updates their level
@@ -73,7 +73,7 @@ public class XpProgress : MonoBehaviour
 
  	     // XP progress within this level
     	int newPoints = points % max;
-	    UserSession.XP = newPoints;
+	    // UserSession.XP = newPoints;
 
     	// fill the progress bar
     	float fillAmount = (float)newPoints / (float)max;

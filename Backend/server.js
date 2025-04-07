@@ -273,6 +273,20 @@ app.get('/non-friends/:gameID', async (req, res) => {
   }
 });
 
+// get the streaks variable 
+apt.get('/streak-counter/:gameID', async (req, res) => {
+  try{
+    const currentUser = await User.findOne({gameid: req.params.gameid});
+    
+    if (!currentUser) return res.status(404).send("User not found");
+    
+    
+  }
+  catch (err) {
+    console.error("Error fetching streak counter:", err);
+    res.status(500).send(err.message);
+  }
+})
 
 
 // Start the Server

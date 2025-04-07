@@ -41,7 +41,7 @@ public class loginToggleButton : MonoBehaviour
 
         // Clear session values if needed
         PlayerPrefs.DeleteAll();
-        UserSession.Username = "Please Sign In";
+        UserSession.Username = "Guest";
         UserSession.Level = 0;
         UserSession.XP = 0;
 
