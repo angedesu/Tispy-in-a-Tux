@@ -3,8 +3,8 @@ guid: ef86f444d2a0049bf9e0078531f72924
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8766053268124304372
-    second: Muddler_0
+      213: 5192532461150825883
+    second: muddler_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Muddler_0
+      name: muddler_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 31
-        height: 30
+        x: 6
+        y: 12
+        width: 55
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0c7c474ff8b85680800000000000000
-      internalID: -8766053268124304372
+      spriteID: b9d649f13c49f0840800000000000000
+      internalID: 5192532461150825883
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Muddler_0: -8766053268124304372
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
