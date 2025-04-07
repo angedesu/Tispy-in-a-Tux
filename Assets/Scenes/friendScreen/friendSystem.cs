@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
+using System.Text;
 using TMPro;
 
 public class friendSystem : MonoBehaviour
@@ -19,36 +20,35 @@ public class friendSystem : MonoBehaviour
     public GameObject viewFriendItemPrefab;      // For viewing existing friends
     public GameObject addFriendItemPrefab;       // For addable users
     public GameObject requestFriendItemPrefab;   // For incoming requests
-
     public Transform friendListContainer;        // Shared container
     private GameObject currentPrefab;            // Prefab used for this tab
 
     void Start()
     {
-        // Nothing for now; tab buttons call ShowFriends(), etc.
-    }
 
+    }
+	// shows list of friends
     public void ShowFriends()
     {
         currentPrefab = viewFriendItemPrefab;
         ClearFriendListUI();
         StartCoroutine(GetFriends(UserSession.GameID));
     }
-
+	// shows all users that have not been added or in "friend requests"
     public void ShowAddableUsers()
     {
         currentPrefab = addFriendItemPrefab;
         ClearFriendListUI();
         StartCoroutine(GetUsers(UserSession.GameID));
     }
-
+	// shows users that sent a friend request
     public void ShowRequests()
     {
         currentPrefab = requestFriendItemPrefab;
         ClearFriendListUI();
         StartCoroutine(GetRequests(UserSession.GameID));
     }
-
+	// clears list ui
     private void ClearFriendListUI()
     {
         foreach (Transform child in friendListContainer)
@@ -56,7 +56,7 @@ public class friendSystem : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
-
+	// gets all friends from backend api
     private IEnumerator GetFriends(int gameID)
     {
         string url = $"http://localhost:3000/friends/{gameID}";
@@ -79,7 +79,7 @@ public class friendSystem : MonoBehaviour
             }
         }
     }
-
+	// gets all users from backend api
     private IEnumerator GetUsers(int gameID)
     {
         string url = $"http://localhost:3000/non-friends/{gameID}";
@@ -102,7 +102,7 @@ public class friendSystem : MonoBehaviour
             }
         }
     }
-
+	// gets all the users who has requested the user (you)
     private IEnumerator GetRequests(int gameID)
     {
         string url = $"http://localhost:3000/received-requests/{gameID}";
@@ -125,7 +125,7 @@ public class friendSystem : MonoBehaviour
             }
         }
     }
-
+	// this adds the prefab from unity to the friends
     private void AddFriendToUI(Friend friend)
     {
         if (currentPrefab == null)
@@ -138,7 +138,86 @@ public class friendSystem : MonoBehaviour
         friendItem friendUI = item.GetComponent<friendItem>();
         if (friendUI != null)
         {
-            friendUI.SetFriendData(friend.username, friend.gameID, friend.level);
+            friendUI.Setup(friend.username, friend.gameID, friend.level, this);
+        }
+    }
+    // Send friend request from current user to another user
+    public void SendFriendRequest(int toGameID)
+    {
+        StartCoroutine(PostRequest("http://localhost:3000/send-friend-request", new
+        {
+            fromGameID = UserSession.GameID,
+            toGameID = toGameID
+        }, "Friend request sent"));
+    }
+    // Accept a friend request from another user
+    public void AcceptFriendRequest(int fromGameID)
+    {
+        StartCoroutine(PostRequest("http://localhost:3000/accept-friend-request", new
+        {
+            fromGameID = fromGameID,
+            toGameID = UserSession.GameID
+        }, "Friend request accepted"));
+    }
+    // Reject a friend request from another user
+    public void RejectFriendRequest(int fromGameID)
+    {
+        StartCoroutine(PostRequest("http://localhost:3000/reject-friend-request", new
+        {
+            fromGameID = fromGameID,
+            toGameID = UserSession.GameID
+        }, "Friend request rejected"));
+    }
+    // Delete a friend
+    public void DeleteFriend(int friendGameID)
+    {
+        StartCoroutine(PostRequest("http://localhost:3000/delete-friend", new
+        {
+            userGameID = UserSession.GameID,
+            friendGameID = friendGameID
+        }, "Friend removed"));
+    }
+    // Generic POST helper
+    private IEnumerator PostRequest(string url, object bodyObject, string successMessage)
+    {
+        string jsonBody = JsonUtility.ToJson(new Wrapper(bodyObject));
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
+
+        UnityWebRequest request = new UnityWebRequest(url, "POST");
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError($"Error calling {url}: {request.error}");
+            Debug.LogError("Response: " + request.downloadHandler.text);
+        }
+        else
+        {
+            Debug.Log(successMessage);
+        }
+    }
+    [System.Serializable]
+    private class Wrapper
+    {
+        public int fromGameID;
+        public int toGameID;
+        public int userGameID;
+        public int friendGameID;
+
+        public Wrapper(object obj)
+        {
+            foreach (var prop in obj.GetType().GetFields())
+            {
+                var value = prop.GetValue(obj);
+                if (prop.Name == "fromGameID") fromGameID = (int)value;
+                if (prop.Name == "toGameID") toGameID = (int)value;
+                if (prop.Name == "userGameID") userGameID = (int)value;
+                if (prop.Name == "friendGameID") friendGameID = (int)value;
+            }
         }
     }
 }

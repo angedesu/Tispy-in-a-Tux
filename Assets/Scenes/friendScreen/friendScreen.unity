@@ -692,13 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779aa22f7e2a8431eb8386150fbd63b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendsScrollView: {fileID: 1173169694}
   viewFriendsContainer: {fileID: 1011263784}
   addFriendsContainer: {fileID: 1752099333}
-  sendRequestContainer: {fileID: 268446457}
-  viewContainer: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
-  addContainer: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
-  requestContainer: {fileID: 6972262357068004496, guid: 8052002a026ea4923a4329859dfc2d4f, type: 3}
+  requestFriendsContainer: {fileID: 268446457}
   titleText: {fileID: 816953098}
   friendSystemScript: {fileID: 2146792952}
 --- !u!1 &268446457
@@ -710,6 +706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 268446458}
+  - component: {fileID: 268446459}
   m_Layer: 0
   m_Name: Request Friends Container
   m_TagString: Untagged
@@ -740,6 +737,22 @@ RectTransform:
   m_AnchoredPosition: {x: 1001.13477, y: 206.72403}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &268446459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268446457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f338864e7863b407e99c0290fa2a3fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewFriendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  addFriendItemPrefab: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
+  requestFriendItemPrefab: {fileID: 6972262357068004496, guid: 8052002a026ea4923a4329859dfc2d4f, type: 3}
+  friendListContainer: {fileID: 1019737667}
 --- !u!1 &359547091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1581,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1599,7 +1612,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -33.852654, y: 0, z: 0, w: 5.0412393}
+  m_margin: {x: -33.852654, y: 0, z: 35.456802, w: 5.0412393}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1954,7 +1967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f338864e7863b407e99c0290fa2a3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  viewFriendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  addFriendItemPrefab: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
+  requestFriendItemPrefab: {fileID: 6972262357068004496, guid: 8052002a026ea4923a4329859dfc2d4f, type: 3}
   friendListContainer: {fileID: 1019737667}
 --- !u!1 &1019737666
 GameObject:
@@ -3716,7 +3731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f338864e7863b407e99c0290fa2a3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendItemPrefab: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
+  viewFriendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  addFriendItemPrefab: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
+  requestFriendItemPrefab: {fileID: 6972262357068004496, guid: 8052002a026ea4923a4329859dfc2d4f, type: 3}
   friendListContainer: {fileID: 1019737667}
 --- !u!1 &1794256282
 GameObject:
@@ -4398,7 +4415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f338864e7863b407e99c0290fa2a3fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  viewFriendItemPrefab: {fileID: 1199334822182459992, guid: 0303a32bcaffd48159e96adbd210b700, type: 3}
+  addFriendItemPrefab: {fileID: 8174806882812190157, guid: 7f7588af75afe4bc8a33da305c65cec4, type: 3}
+  requestFriendItemPrefab: {fileID: 6972262357068004496, guid: 8052002a026ea4923a4329859dfc2d4f, type: 3}
   friendListContainer: {fileID: 1019737667}
 --- !u!4 &2146792953
 Transform:

@@ -23,23 +23,23 @@ public class FriendButtonSwitch : MonoBehaviour
         SetState(FriendState.ViewFriends);
 		friendSystemScript.ShowFriends();
     }
-
+    // shows ui for "Viewed friends"
     public void OnViewFriendsButtonClicked()
     {
         SetState(FriendState.ViewFriends);
 		friendSystemScript.ShowFriends();
     }
-
+    // shows ui for "to add a friend"
     public void OnAddFriendsButtonClicked()
     {
         SetState(FriendState.AddFriends);
 		friendSystemScript.ShowAddableUsers();
     }
-
+    // shows ui for "friend requests" sent from a user
     public void OnSendRequestButtonClicked()
     {
         SetState(FriendState.SendRequest);
-		//friendSystemScript.ShowAddableUsers();
+        friendSystemScript.ShowRequests();
     }
 
     private void SetState(FriendState newState)
@@ -47,7 +47,7 @@ public class FriendButtonSwitch : MonoBehaviour
         currentState = newState;
         UpdateUI();
     }
-
+    // ui manager, when a button is beting clicked
     private void UpdateUI()
     {
 		viewFriendsContainer.SetActive(currentState == FriendState.ViewFriends);
