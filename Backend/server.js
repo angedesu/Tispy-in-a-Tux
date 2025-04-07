@@ -105,6 +105,22 @@ app.get('/check-username', async (req, res) => {
   }
 });
 
+// List all achievements
+app.get("/achievement/list", async (req, res) => {
+  try {
+    res.json({ achievement: ACHIEVEMENTS });
+  } catch (error) {
+    console.error("Error listing achievements:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// All achievements
+const ACHIEVEMENTS = [
+  {name: "Welcome!", description: "Launch the game for the first time"},
+  {name: "DJ", description: "Modify audio settings"}
+]
+
 
 
 // Start the Server
