@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b694f3d05bc7a42ceadf64e77f9267a6
+guid: e1920744f4dc048958453a8b5fea2b5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5443128122325987034
-    second: Mixing Glass_0
+      213: 6407139274015823053
+    second: cocktail-glass-pixilart (1) 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mixing Glass_0
+      name: cocktail-glass-pixilart (1) 1_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1
-        width: 32
-        height: 38
+        x: 217
+        y: 208
+        width: 597
+        height: 597
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62112d9cfcf1674b0800000000000000
-      internalID: -5443128122325987034
+      spriteID: dc4da26293bbae850800000000000000
+      internalID: 6407139274015823053
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mixing Glass_0: -5443128122325987034
+      cocktail-glass-pixilart (1) 1_0: 6407139274015823053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
