@@ -2722,6 +2722,7 @@ MonoBehaviour:
   usernameText: {fileID: 946290713}
   levelText: {fileID: 1899574391}
   xpProgressBar: {fileID: 1338285430}
+  gameidText: {fileID: 668301953}
 --- !u!1 &1852197898
 GameObject:
   m_ObjectHideFlags: 0
