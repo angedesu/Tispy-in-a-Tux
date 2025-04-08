@@ -330,19 +330,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4638022364757042467}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8174954844944955944}
-        m_TargetAssemblyTypeName: friendItem, Assembly-CSharp
-        m_MethodName: OnAcceptFriendRequestClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6072928941947606820
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,19 +450,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8636794631060608644}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8174954844944955944}
-        m_TargetAssemblyTypeName: friendItem, Assembly-CSharp
-        m_MethodName: OnRejectFriendRequestClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6490072239710802575
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +599,6 @@ GameObject:
   - component: {fileID: 2744535272830246180}
   - component: {fileID: 4373318802748380105}
   - component: {fileID: 2255957500283778715}
-  - component: {fileID: 6780689319317000184}
   m_Layer: 0
   m_Name: Request Container
   m_TagString: Untagged
@@ -710,22 +685,10 @@ MonoBehaviour:
   usernameText: {fileID: 4535510426660738711}
   idText: {fileID: 5737784503244095513}
   levelText: {fileID: 1922150748558874458}
---- !u!114 &6780689319317000184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6972262357068004496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f338864e7863b407e99c0290fa2a3fa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  viewFriendItemPrefab: {fileID: 0}
-  addFriendItemPrefab: {fileID: 0}
-  requestFriendItemPrefab: {fileID: 0}
-  friendListContainer: {fileID: 0}
+  deleteButton: {fileID: 0}
+  sendFriendRequestButton: {fileID: 0}
+  acceptFriendRequestButton: {fileID: 8337734638389691600}
+  requestFriendButton: {fileID: 8443150711225016869}
 --- !u!1 &7173044330291967937
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +736,10 @@ MonoBehaviour:
   usernameText: {fileID: 4535510426660738711}
   idText: {fileID: 5737784503244095513}
   levelText: {fileID: 1922150748558874458}
+  deleteButton: {fileID: 0}
+  sendFriendRequestButton: {fileID: 0}
+  acceptFriendRequestButton: {fileID: 0}
+  requestFriendButton: {fileID: 0}
 --- !u!1 &8615946487206055916
 GameObject:
   m_ObjectHideFlags: 0

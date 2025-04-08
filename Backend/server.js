@@ -211,8 +211,9 @@ app.post('/accept-friend-request', async (req, res) => {
     sender.friends.push(toGameID);
 
     // Remove request entries
-    receiver.friendRequests = receiver.friendRequests.filter(id => id !== fromGameID);
-    sender.sentRequests = sender.sentRequests.filter(id => id !== toGameID);
+    receiver.friendRequests = receiver.friendRequests.filter(id => id.toString() !== fromGameID.toString());
+    sender.sentRequests = sender.sentRequests.filter(id => id.toString() !== toGameID.toString());
+
 
     await receiver.save();
     await sender.save();
@@ -225,13 +226,12 @@ app.post('/accept-friend-request', async (req, res) => {
 
 // delete friend from friends array
 app.post('/delete-friend', async (req, res) => {
-  const { userGameID, friendGameID } = req.body;
+  const userGameID = req.body.userGameID?.toString().trim();
+  const friendGameID = req.body.friendGameID?.toString().trim();
 
   try {
     const user = await User.findOne({ gameID: userGameID });
     const friend = await User.findOne({ gameID: friendGameID });
-
-    if (!user || !friend) return res.status(404).send("User not found");
 
     user.friends = user.friends.filter(id => id !== friendGameID);
     friend.friends = friend.friends.filter(id => id !== userGameID);
@@ -241,6 +241,7 @@ app.post('/delete-friend', async (req, res) => {
 
     res.send("Friend removed");
   } catch (err) {
+    console.error("Delete friend error:", err);
     res.status(500).send(err.message);
   }
 });
@@ -272,6 +273,7 @@ app.post('/reject-friend-request', async (req, res) => {
     res.status(500).send(err.message);
   }
 });
+
 
 
 // Start the Server
