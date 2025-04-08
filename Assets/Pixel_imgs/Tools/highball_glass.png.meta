@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      highball_glass_0: 7309052224007534530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
