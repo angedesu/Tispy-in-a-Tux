@@ -279,14 +279,34 @@ apt.get('/streak-counter/:gameID', async (req, res) => {
     const currentUser = await User.findOne({gameid: req.params.gameid});
     
     if (!currentUser) return res.status(404).send("User not found");
-    
-    
+    res.json({streak_counter: currentUser.streak_counter});
   }
   catch (err) {
     console.error("Error fetching streak counter:", err);
     res.status(500).send(err.message);
   }
 })
+
+// 
+app.patch('/streak-counter/:gameID', async (req, res) => {
+  try{
+    const {streak} = req.body;
+
+    const updatedUser = await User.findOneAndUpdate(
+        {gameID: req.params.gameID},  // find the right user
+        {$set: {streak_counter: streak}},   // only update the streak
+        {new: true}                   // return the updated user
+    );
+
+    if (!updatedUser) return res.status(404).send("User not found");
+
+    res.json(updatedUser);
+  }
+  catch (err) {
+    console.error("Error fetching streak counter:", err);
+    res.status(500).send(err.message);
+  }
+});
 
 
 // Start the Server
