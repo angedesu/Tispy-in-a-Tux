@@ -28,5 +28,5 @@ const User = mongoose.model("User", userSchema);
 module.exports = User;
 
 function generateGameID() {
-  return Math.floor(100000 + Math.random() * 900000); // 6-digit ID
+  return String(Math.floor(100000 + Math.random() * 900000)); // 6-digit ID
 }

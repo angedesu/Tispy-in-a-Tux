@@ -119,19 +119,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6753182061666545183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4980930637613216145}
-        m_TargetAssemblyTypeName: friendItem, Assembly-CSharp
-        m_MethodName: OnDeleteFriendClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1199334822182459992
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +217,10 @@ MonoBehaviour:
   usernameText: {fileID: 2063345253274976166}
   idText: {fileID: 6213762625388456432}
   levelText: {fileID: 7990224991705436630}
+  deleteButton: {fileID: 1185501654212978121}
+  sendFriendRequestButton: {fileID: 0}
+  acceptFriendRequestButton: {fileID: 0}
+  requestFriendButton: {fileID: 0}
 --- !u!1 &2741658162694136125
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,3 +751,7 @@ MonoBehaviour:
   usernameText: {fileID: 2063345253274976166}
   idText: {fileID: 6213762625388456432}
   levelText: {fileID: 7990224991705436630}
+  deleteButton: {fileID: 0}
+  sendFriendRequestButton: {fileID: 0}
+  acceptFriendRequestButton: {fileID: 0}
+  requestFriendButton: {fileID: 0}

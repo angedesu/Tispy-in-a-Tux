@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 // this script gets the users from backend for friends section
 public class friendItem : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class friendItem : MonoBehaviour
 	
     private int gameID;
     private friendSystem friendSystem;
+    public Button deleteButton;
+    public Button sendFriendRequestButton;
+    public Button acceptFriendRequestButton;
+    public Button requestFriendButton;
 
     public void Setup(string username, int id, int level, friendSystem system)
     {
@@ -23,6 +28,29 @@ public class friendItem : MonoBehaviour
 
         gameID = id;
         friendSystem = system;
+        if (deleteButton != null)
+        {
+            deleteButton.onClick.RemoveAllListeners();
+            deleteButton.onClick.AddListener(OnDeleteFriendClicked);
+        }
+
+        if (sendFriendRequestButton != null)
+        {
+            sendFriendRequestButton.onClick.RemoveAllListeners();
+            sendFriendRequestButton.onClick.AddListener(OnSendFriendRequestClicked);
+        }
+
+        if (acceptFriendRequestButton != null)
+        {
+            acceptFriendRequestButton.onClick.RemoveAllListeners();
+            acceptFriendRequestButton.onClick.AddListener(OnAcceptFriendRequestClicked);
+        }
+
+        if (requestFriendButton != null)
+        {
+            requestFriendButton.onClick.RemoveAllListeners();
+            requestFriendButton.onClick.AddListener(OnRejectFriendRequestClicked);
+        }
     }
 
     public void OnSendFriendRequestClicked()

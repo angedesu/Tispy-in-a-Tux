@@ -180,7 +180,7 @@ public class friendSystem : MonoBehaviour
     // Generic POST helper
     private IEnumerator PostRequest(string url, object bodyObject, string successMessage)
     {
-        string jsonBody = JsonUtility.ToJson(new Wrapper(bodyObject));
+        string jsonBody = JsonConvert.SerializeObject(bodyObject);
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
 
         UnityWebRequest request = new UnityWebRequest(url, "POST");
@@ -199,25 +199,6 @@ public class friendSystem : MonoBehaviour
         {
             Debug.Log(successMessage);
         }
-    }
-    [System.Serializable]
-    private class Wrapper
-    {
-        public int fromGameID;
-        public int toGameID;
-        public int userGameID;
-        public int friendGameID;
 
-        public Wrapper(object obj)
-        {
-            foreach (var prop in obj.GetType().GetFields())
-            {
-                var value = prop.GetValue(obj);
-                if (prop.Name == "fromGameID") fromGameID = (int)value;
-                if (prop.Name == "toGameID") toGameID = (int)value;
-                if (prop.Name == "userGameID") userGameID = (int)value;
-                if (prop.Name == "friendGameID") friendGameID = (int)value;
-            }
-        }
     }
 }
