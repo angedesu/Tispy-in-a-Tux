@@ -751,7 +751,6 @@ GameObject:
   - component: {fileID: 971556142}
   - component: {fileID: 971556141}
   - component: {fileID: 971556140}
-  - component: {fileID: 971556143}
   m_Layer: 5
   m_Name: arrowButton
   m_TagString: Untagged
@@ -822,8 +821,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 971556143}
-        m_TargetAssemblyTypeName: arrowButton, Assembly-CSharp
+      - m_Target: {fileID: 1771764038}
+        m_TargetAssemblyTypeName: profilePage.ButtonManager, Assembly-CSharp
         m_MethodName: PreviousScreen
         m_Mode: 1
         m_Arguments:
@@ -872,18 +871,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971556138}
   m_CullTransparentMesh: 1
---- !u!114 &971556143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971556138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d1f78b41b1648b994a99a6d47a1759, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1158312401
 GameObject:
   m_ObjectHideFlags: 0

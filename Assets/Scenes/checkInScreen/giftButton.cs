@@ -18,6 +18,7 @@ public class giftButton : MonoBehaviour
         CheckGiftStatus();
         // on start, display the current streak number, before they press the gift 
         CheckStreakNumber();
+        
     }
     public void OnClick()
     {
@@ -69,16 +70,16 @@ public class giftButton : MonoBehaviour
     void UpdateLogin()
     {
         // create variable for today's date and save it as the lastLogin (latest) date
-        string today = DateTime.Today.ToString("MM/dd/yyyy");
-        PlayerPrefs.SetString("lastLogin", today);
-        PlayerPrefs.Save();
+        // string today = DateTime.Today.ToString("MM/dd/yyyy");
+        // PlayerPrefs.SetString("lastLogin", today);
+        // PlayerPrefs.Save();
         
         // retrieve the latest login and create a variable for today 
-        string lastLogin = PlayerPrefs.GetString("lastLogin", "");
+        string lastClaim = PlayerPrefs.GetString("lastClaim", "");
         DateTime now = DateTime.Today;
         
-        // subtract today and last login () to get how long ago they claimed in days
-        TimeSpan span = now - DateTime.Parse(lastLogin);
+        // subtract today and last claim () to get how long ago they claimed in days
+        TimeSpan span = now - DateTime.Parse(lastClaim);
         int days = span.Days;
         
         // time span is integers so 1.5 days is 1 day and 12 hours NOT 1.5 days... half a day is not 0.5 days, instead 
@@ -104,5 +105,6 @@ public class giftButton : MonoBehaviour
         string number = streakNumber.GetComponent<TMP_Text>().text;
         PlayerPrefs.SetString("streakNumber", number);
         PlayerPrefs.Save();
+        UserSessionStreak.streak_count = int.Parse(number);
     }
 }

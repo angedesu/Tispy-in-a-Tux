@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace profilePage
 {
@@ -10,7 +11,7 @@ namespace profilePage
 
         public string[] profiles = { "picture01", "picture02", "picture03", "picture04", "picture05", "picture06",
             "picture07", "picture08"};
-
+        
     private void Start()
         {
             // for testing
@@ -51,6 +52,12 @@ namespace profilePage
                     profilePictures[i].color = Color.white;
                 }
             }
+        }
+        
+        public void PreviousScreen()
+        {
+            // Use scene name or scene index
+            SceneManager.LoadScene("Scenes/ProfilePage/profile");
         }
     }
 }
