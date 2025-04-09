@@ -31,4 +31,8 @@ public class ChangeMetronome : MonoBehaviour
         }
     }
 
+    public void ImageOriginal() {
+        theImage.sprite = originalSprite;
+    }
+
 }
