@@ -59,7 +59,17 @@ app.post("/register", authenticateToken, async (req, res) => {
     }
 
     // Create new user
-    const user = new User({ uid, username });
+    const user = new User({ 
+      uid: uid, 
+      username: username,
+      achievements: ACHIEVEMENTS.map(ach => ({
+        name: ach.name,
+        description: ach.description,
+        progress: 0,
+        target: ach.target
+      }))
+    
+    });
     await user.save();
 
     console.log("User registered:", user);
@@ -103,6 +113,55 @@ app.get('/check-username', async (req, res) => {
       console.error(err);
       return res.status(500).json({ error: "Server error" });
   }
+});
+
+
+// Static achievements
+const ACHIEVEMENTS = [
+  {name: "Welcome!", description: "Launch the game for the first time", target: 1},
+  {name: "DJ", description: "Change the sound settings", target: 1},
+  {name: "Power of friendship", description: "Send a friend request", target: 1},
+  {name: "Avatar", description: "Change your profile picture", target: 1}
+]
+
+// View user achivements
+app.get('/achievements/:gameID', async (req, res) => {
+  try {
+    const user = await User.findOne({ gameID: req.params.gameID }, 'achievements');
+
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    res.json({ achievements: user.achievements });
+
+  } catch (error) {
+    console.error("Error fetching user achievements:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Update user achivement progress
+app.put('achievements/:gameID/:achivementName', async (req, res) => {
+  const { gameID, achievementName } = req.params;
+  const { newProgress } = req.body;
+
+  try {
+    const user = await User.findOne({ gameID: gameID });
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    const achivementToUpdate = user.achievements.find(ach => ach.name == achievementName);
+    if (!achivementToUpdate) return res.status(404).json({ error: "Achievement not found" });
+
+    achivementToUpdate.progress = newProgress;
+    await user.save();
+
+    res.status(200).json({ message: "Achievement progress updated successfully" });
+
+
+  } catch (error) {
+    console.error("Error updating achievement progress:", error);
+    res.status(500).json({ error: error.message });
+  }
+
 });
 
 // views users friends
