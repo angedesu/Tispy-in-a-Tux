@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bartender_closedEyes_0: 7936794556305329488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

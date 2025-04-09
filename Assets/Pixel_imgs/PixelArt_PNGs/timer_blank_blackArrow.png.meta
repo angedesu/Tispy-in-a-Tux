@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      timer_blank_blackArrow_0: 2097191015191212348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

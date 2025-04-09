@@ -40,7 +40,7 @@ public class SelectionManager : MonoBehaviour
     public void timerSelected()
     {
         // change the scene to correct scene
-        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+        SceneManager.LoadScene("Scenes/PouringTimer/PouringTimer");
     }
 
     public void theorySelected()

@@ -276,7 +276,7 @@ app.post('/reject-friend-request', async (req, res) => {
 
 
 // get the streak_counter variable 
-apt.get('/streak-counter/:gameID', async (req, res) => {
+app.get('/streak-counter/:gameID', async (req, res) => {
   try{
     const currentUser = await User.findOne({gameid: req.params.gameid});
     
