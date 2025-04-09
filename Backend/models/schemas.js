@@ -16,10 +16,8 @@ const userSchema = new mongoose.Schema({
     {
       name: { type: String, required: true },
       description: { type: String, required: true },
-      status: { type: String, enum: ["NOT_ACHIEVED", "ACHIEVED"], default: "NOT_ACHIEVED" },
       progress: { type: Number, default: 0 },
-      target: { type: Number, required: true },
-      updated_at: { type: Date, default: Date.now }
+      target: {type: Number, required: true}
     }
   ]
 });
