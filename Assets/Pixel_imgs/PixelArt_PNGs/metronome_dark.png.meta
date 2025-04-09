@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      metronome_dark_0: 1335558274688739200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
