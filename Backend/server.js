@@ -121,6 +121,51 @@ app.get('/friends/:gameID', async (req, res) => {
   }
 });
 
+// view the friend request received
+app.get('/received-requests/:gameID', async (req, res) => {
+  try {
+    const user = await User.findOne({ gameID: req.params.gameID });
+
+    if (!user) return res.status(404).send("User not found");
+
+    const received = await User.find(
+      { gameID: { $in: user.friendRequests } },
+      'username gameID'
+    );
+
+    res.json(received);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// view all users that are NOT friends or in friend requests
+app.get('/non-friends/:gameID', async (req, res) => {
+  try {
+    const currentUser = await User.findOne({ gameID: req.params.gameID });
+
+    if (!currentUser) return res.status(404).send("User not found");
+
+    const excludedGameIDs = [
+      currentUser.gameID,
+      ...currentUser.friends,
+      ...currentUser.sentRequests,
+      ...currentUser.friendRequests
+    ];
+
+    // Find users NOT in the excluded list
+    const nonFriends = await User.find(
+      { gameID: { $nin: excludedGameIDs } },
+      'username gameID level'
+    );
+
+    res.json(nonFriends);
+  } catch (err) {
+    console.error("Error fetching non-friends:", err);
+    res.status(500).send(err.message);
+  }
+});
+ 
 // user sends friend request to a user
 app.post('/send-friend-request', async (req, res) => {
   const { fromGameID, toGameID } = req.body;
@@ -166,8 +211,9 @@ app.post('/accept-friend-request', async (req, res) => {
     sender.friends.push(toGameID);
 
     // Remove request entries
-    receiver.friendRequests = receiver.friendRequests.filter(id => id !== fromGameID);
-    sender.sentRequests = sender.sentRequests.filter(id => id !== toGameID);
+    receiver.friendRequests = receiver.friendRequests.filter(id => id.toString() !== fromGameID.toString());
+    sender.sentRequests = sender.sentRequests.filter(id => id.toString() !== toGameID.toString());
+
 
     await receiver.save();
     await sender.save();
@@ -180,13 +226,12 @@ app.post('/accept-friend-request', async (req, res) => {
 
 // delete friend from friends array
 app.post('/delete-friend', async (req, res) => {
-  const { userGameID, friendGameID } = req.body;
+  const userGameID = req.body.userGameID?.toString().trim();
+  const friendGameID = req.body.friendGameID?.toString().trim();
 
   try {
     const user = await User.findOne({ gameID: userGameID });
     const friend = await User.findOne({ gameID: friendGameID });
-
-    if (!user || !friend) return res.status(404).send("User not found");
 
     user.friends = user.friends.filter(id => id !== friendGameID);
     friend.friends = friend.friends.filter(id => id !== userGameID);
@@ -196,6 +241,7 @@ app.post('/delete-friend', async (req, res) => {
 
     res.send("Friend removed");
   } catch (err) {
+    console.error("Delete friend error:", err);
     res.status(500).send(err.message);
   }
 });
@@ -228,52 +274,8 @@ app.post('/reject-friend-request', async (req, res) => {
   }
 });
 
-// view the friend request received
-app.get('/received-requests/:gameID', async (req, res) => {
-  try {
-    const user = await User.findOne({ gameID: req.params.gameID });
 
-    if (!user) return res.status(404).send("User not found");
-
-    const received = await User.find(
-      { gameID: { $in: user.friendRequests } },
-      'username gameID'
-    );
-
-    res.json(received);
-  } catch (err) {
-    res.status(500).send(err.message);
-  }
-});
-
-// view all users that are NOT friends or in friend requests
-app.get('/non-friends/:gameID', async (req, res) => {
-  try {
-    const currentUser = await User.findOne({ gameID: req.params.gameID });
-
-    if (!currentUser) return res.status(404).send("User not found");
-
-    const excludedGameIDs = [
-      currentUser.gameID,
-      ...currentUser.friends,
-      ...currentUser.sentRequests,
-      ...currentUser.friendRequests
-    ];
-
-    // Find users NOT in the excluded list
-    const nonFriends = await User.find(
-      { gameID: { $nin: excludedGameIDs } },
-      'username gameID level'
-    );
-
-    res.json(nonFriends);
-  } catch (err) {
-    console.error("Error fetching non-friends:", err);
-    res.status(500).send(err.message);
-  }
-});
-
-// get the streaks variable 
+// get the streak_counter variable 
 apt.get('/streak-counter/:gameID', async (req, res) => {
   try{
     const currentUser = await User.findOne({gameid: req.params.gameid});
@@ -283,11 +285,8 @@ apt.get('/streak-counter/:gameID', async (req, res) => {
   }
   catch (err) {
     console.error("Error fetching streak counter:", err);
-    res.status(500).send(err.message);
-  }
-})
-
-// 
+   
+// update streak_counter
 app.patch('/streak-counter/:gameID', async (req, res) => {
   try{
     const {streak} = req.body;

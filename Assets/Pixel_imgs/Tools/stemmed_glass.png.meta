@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stemmed_glass_0: 5590645586169205928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

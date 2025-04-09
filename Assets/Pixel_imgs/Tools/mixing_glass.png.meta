@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mixing_glass_0: 4938112023643952849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

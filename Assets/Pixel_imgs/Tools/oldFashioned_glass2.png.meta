@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oldFashioned_glass2_0: 9012347797640752635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

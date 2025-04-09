@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      martini_glass_chilled_0: 8058698114292193623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
