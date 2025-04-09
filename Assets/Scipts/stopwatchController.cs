@@ -11,8 +11,8 @@ public class stopWatchController : MonoBehaviour, IPointerDownHandler
     private bool isPaused = false;
 
     private RectTransform stopwatchRect;
-    private Vector2 stemAreaCenter = new Vector2(0.5f, 0.15f);
-    private float stemAreaRadius = 0.1f;
+    private Vector2 stemAreaCenter = new Vector2(0.5f, 0.9f);
+    private float stemAreaRadius = 0.5f;
 
     void Start() {
         stopwatchRect = GetComponent<RectTransform>();
@@ -35,8 +35,11 @@ public class stopWatchController : MonoBehaviour, IPointerDownHandler
         RectTransformUtility.ScreenPointToLocalPointInRectangle(stopwatchRect, eventData.position, eventData.enterEventCamera, out localPoint);
         Vector2 normalizedPoint = new Vector2((localPoint.x / stopwatchRect.rect.width) + 0.5f, (localPoint.y / stopwatchRect.rect.height) + 0.5f);
 
+        Debug.Log("Clicked at normalized position!" + normalizedPoint);
+
         if (Vector2.Distance(normalizedPoint, stemAreaCenter) <= stemAreaRadius) // click in stem area, reset timer
         {
+            Debug.Log("Clicked on Stem!");
             ResetStopWatch();
         }
         else // click in the rest of the stopwatch area
