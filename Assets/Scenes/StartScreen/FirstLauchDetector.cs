@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FirstLauchDetector : MonoBehaviour
 {
-    private const string FirstLaunchKey;
+    private const string FirstLaunchKey = "FirstLauchDetector";
     
     void Start()
     {   
