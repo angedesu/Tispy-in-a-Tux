@@ -27,6 +27,7 @@ public class DisplayAchievement : MonoBehaviour
     // Keep track of the displayed achievements
     public Dictionary<string, AchievementItem> displayedAchievements = new Dictionary<string, AchievementItem>(); 
     
+    private bool achievementsLoaded = false; 
     
     // Keys for keeping track of achievement
     private const string FirstLaunchKey = "FirstLaunchDetector";
@@ -65,7 +66,8 @@ public class DisplayAchievement : MonoBehaviour
             {
                 AddAchievementToUI(achievement);
             }
-            Debug.Log("Got the achievements:");
+            achievementsLoaded = true;
+            Debug.Log("Achievements loaded");
         }
     }
 
@@ -119,15 +121,17 @@ public class DisplayAchievement : MonoBehaviour
     private IEnumerator WaitForAchievements()
     {
         // Wait for to populate displayedAchievements
-        yield return null;
+        yield return new WaitUntil(() => achievementsLoaded);
         FirstLaunchAchievement();
     }
     
     private void FirstLaunchAchievement()
     {   
         Debug.Log("FirstLaunchAchievement() called");
+        Debug.Log("displayedAchievements contains keys: " + string.Join(", ", displayedAchievements.Keys));
+        Debug.Log($"First Launch key: {PlayerPrefs.GetInt(FirstLaunchKey, 0)}");
         if (PlayerPrefs.GetInt(FirstLaunchKey, 0) == 1)
-        {
+        {  
             if (displayedAchievements.ContainsKey("Welcome!"))
             {
                 displayedAchievements["Welcome!"].UpdateProgress(1);
@@ -138,7 +142,7 @@ public class DisplayAchievement : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Welcome not found in displayed achievement list");
+                Debug.LogError("Welcome! not found in displayed achievement list");
             }
         }
     }

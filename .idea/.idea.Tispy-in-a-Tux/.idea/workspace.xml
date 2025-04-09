@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScreen/Start Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScreen/Start Screen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/achievement/Achievement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/achievement/Achievement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scipts/VolumeSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scipts/VolumeSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/models/schemas.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/models/schemas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/achievement/DisplayAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/achievement/DisplayAchievement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,7 @@
       <workItem from="1741729032856" duration="43895000" />
       <workItem from="1742541403424" duration="4667000" />
       <workItem from="1744094496692" duration="15997000" />
-      <workItem from="1744181654039" duration="17490000" />
+      <workItem from="1744181654039" duration="19538000" />
     </task>
     <servers />
   </component>

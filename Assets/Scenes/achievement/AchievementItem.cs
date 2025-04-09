@@ -45,7 +45,8 @@ public class AchievementItem : MonoBehaviour
     
     // Update achievement progress
     public void UpdateProgress(int newProgress)
-    {
+    {   
+        Debug.Log("UpdateProgress called");
         progressBar.value = newProgress;
 
         statusText.text = $"{newProgress}/{progressBar.maxValue}";
