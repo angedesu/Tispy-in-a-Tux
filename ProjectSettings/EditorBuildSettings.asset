@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gameSelection/gameSelect.unity
     guid: bfcaf6d920d1448fcbd85283fd579dbe
+  - enabled: 1
+    path: Assets/Scenes/RecipeBook/RecipeBookSearch.unity
+    guid: 2361fec1f4f8be942a8ad3f1027d0702
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9e10fd78c5f524fa79270245230bbfaf, type: 2}
   m_UseUCBPForAssetBundles: 0
