@@ -56,7 +56,7 @@ public class stopWatch : MonoBehaviour
         int seconds = Mathf.FloorToInt(elapsedTime % 60);
 
         // Format & display the time
-        stopwatchText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        stopwatchText.text = string.Format("{00:00}:{01:00}", minutes, seconds);
     }
 
 }
