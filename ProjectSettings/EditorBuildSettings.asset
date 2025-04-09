@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/gameSelection/gameSelect.unity
     guid: bfcaf6d920d1448fcbd85283fd579dbe
   - enabled: 1
+    path: Assets/Scenes/RecipeBook/RecipeBookSearch.unity
+    guid: 2361fec1f4f8be942a8ad3f1027d0702
+  - enabled: 1
     path: Assets/Scenes/theorySelection/ingredients/ingredients.unity
     guid: 81910064bcfdc42d48f8e1a0a2fe7322
   - enabled: 1
