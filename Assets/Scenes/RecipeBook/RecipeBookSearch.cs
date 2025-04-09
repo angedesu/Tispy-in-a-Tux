@@ -70,7 +70,8 @@ namespace RecipeBook
                     if (item.Contains(filterString))
                     {
                         return true;
-                    } else
+                    }
+                    else
                     {
                         continue; //This is terrible practice... but I do it because SLOC is used as a metric of my performance
                         //Really I should have written this function three seperate times and not used the above switch case to again
@@ -140,6 +141,7 @@ namespace RecipeBook
             this.Fetch();
             this.SortMarshal();
             //Create objects for each item in the list
+            recipeGameObjectList = new List<GameObject>();
             //Populate each objects text with the getLeaderboardEntry function
             Vector3 position = recipeRowStart.position;
             foreach (Recipe recipeEntry in marshalRecipeList)
@@ -149,17 +151,16 @@ namespace RecipeBook
                 recipeText.text = recipeEntry.name;
                 GameObject tmp = Instantiate(recipeTemplate, recipeRowStart);
                 tmp.transform.position = position;
-                //I have no clue why unity is offsetting these so much
-                //It should be
-                //position.y -= 90;
-                position.y -= 2.5f;
+                //It was probably a scale issue on the leaderboard version... sigh...
+                position.y -= 100f;
+                recipeGameObjectList.Add(tmp);
             }
         }
         private RecipeBook()
         {
             marshalRecipeList = new List<Recipe>();
         }
-        static async Task<RecipeBook> GetRecipes()
+        private static async Task<RecipeBook> GetRecipes()
         {
             //Create a new leaderboard
             RecipeBook newBook = new RecipeBook();
@@ -179,11 +180,9 @@ namespace RecipeBook
             Debug.Log("Recipe Book Fetch called");
             //Dummy debug code
             //*
-            string[] players = { "Alice", "Bob", "Charlie", "Dan", "Evan" };
-            int[] wins = { 50, 40, 30, 10, 5 };
             for (int i = 0; i < 5; i++)
             {
-                Recipe entry = new Recipe("Recipe " + i, false);
+                Recipe entry = new Recipe("Recipe " + i, i%2 == 0);
                 //This is going to need some type of scanning to construct each recipe...
                 //I need more info on the API I'm connecting to
                 marshalRecipeList.Add(entry);
@@ -201,7 +200,7 @@ namespace RecipeBook
             //Sort the Marshal list
             marshalRecipeList.Sort(delegate (Recipe r1, Recipe r2)
             {
-                return r2.name.CompareTo(r1.name);
+                return r1.name.CompareTo(r2.name);
             });
         }
         //The Sergent list is always made from a copy of the sorted marshal,
@@ -212,7 +211,7 @@ namespace RecipeBook
             //Sort the Sergent list
             sergentRecipeList.Sort(delegate (Recipe r1, Recipe r2)
             {
-                return r2.name.CompareTo(r1.name);
+                return r1.name.CompareTo(r2.name);
             });
         }
         //This is the important list for sorting
@@ -229,9 +228,14 @@ namespace RecipeBook
             }
             recipeGameObjectList.Clear();
             //Create a new copy of the sergent list
+            if (sergentRecipeList is not null)
+            {
+                sergentRecipeList.Clear();
+            }
             sergentRecipeList = new List<Recipe>(marshalRecipeList);
             //Drop whitespace from filters if necessary. Requires testing if necessary
             //Iterate through the new sergent list and make sure the recipe matches our filters
+            List<Recipe> DropList = new List<Recipe>();
             foreach (Recipe r in sergentRecipeList)
             {
                 if (r.nameCheck(nameFilter))
@@ -245,7 +249,7 @@ namespace RecipeBook
                     else
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                         continue;
                     }
                 }
@@ -256,7 +260,7 @@ namespace RecipeBook
                     if (nameWhitelist)
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                     }
                     else
                     {
@@ -277,7 +281,7 @@ namespace RecipeBook
                 {
                     //This recipe does not match the virgin filter
                     //Drop it
-                    sergentRecipeList.Remove(r);
+                    DropList.Add(r);
                 }
                 if (r.ingredientCheck(ingredientFilter))
                 {
@@ -290,7 +294,7 @@ namespace RecipeBook
                     else
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                         continue;
                     }
                 }
@@ -301,7 +305,7 @@ namespace RecipeBook
                     if (ingredientWhitelist)
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                     }
                     else
                     {
@@ -319,7 +323,7 @@ namespace RecipeBook
                     else
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                         continue;
                     }
                 }
@@ -330,13 +334,34 @@ namespace RecipeBook
                     if (toolWhitelist)
                     {
                         //Drop it
-                        sergentRecipeList.Remove(r);
+                        DropList.Add(r);
                     }
                     else
                     {
                         //Do nothing
                     }
                 }
+            }
+            //Iterate through the droplist and drop those items
+            //Yeah, it'd probably have been more efficient to only add items to the sergent list if they matched. I coded the first half, thinking I could drop as I scanned, I couldn't
+            //Either way... more SLOP I mean SLOC!
+            foreach (Recipe r in DropList)
+            {
+                sergentRecipeList.Remove(r);
+            }
+            //Create the new gameObjects for the filtered recipes
+            Vector3 position = recipeRowStart.position;
+            recipeGameObjectList = new List<GameObject>();
+            foreach (Recipe r in sergentRecipeList)
+            {
+                Debug.Log("In Loop, Filtered Recipes. Recipe is " + r.name);
+                //Instatiate object
+                recipeText.text = r.name;
+                GameObject tmp = Instantiate(recipeTemplate, recipeRowStart);
+                tmp.transform.position = position;
+                //It was probably a scale issue on the leaderboard version... sigh...
+                position.y -= 100f;
+                recipeGameObjectList.Add(tmp);
             }
         }
     }
