@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/Background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/Quit Loading Screen (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/Quit Loading Screen (1).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/gameScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/gameScreen.unity" afterDir="false" />
-    </list>
+    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +113,7 @@
       <workItem from="1742541403424" duration="4667000" />
       <workItem from="1744094496692" duration="15997000" />
       <workItem from="1744181654039" duration="19538000" />
-      <workItem from="1744783077956" duration="535000" />
+      <workItem from="1744783077956" duration="1077000" />
     </task>
     <servers />
   </component>
