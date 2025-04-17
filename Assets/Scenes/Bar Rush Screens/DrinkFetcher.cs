@@ -61,17 +61,17 @@ public class DrinkFetcher : MonoBehaviour
         //create list with all the ingredients
         List<string> allPossibleIngredients = new List<string>
         {
-            // alcohol
+            // alcohol (24)
             "Tequila", "Triple sec", "Campari", "Sweet Vermouth", "Scotch", "Drambuie", "Brandy", "White Creme de Menthe",
             "Gin", "gin", "Bourbon", "Dry Vermouth", "Blended whiskey", "Light rum", "Cognac", "Cointreau", "Apricot brandy", "Apple brandy",
-            "Light rum", "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port",
-            // mixers
-            "Lime juice", "Angostura bitters", "Pineapple juice", "Maraschino liqueur", "Grenadine", "Light cream", "Orange bitters",
+            "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port", "Maraschino liqueur",
+            // mixers (20)
+            "Lime juice", "Angostura bitters", "Pineapple juice", "Grenadine", "Light cream", "Orange bitters",
             "Orange Juice", "Lemon juice", "Club soda", "Soda Water", "Sugar syrup", "Peach Bitters", "Peychaud bitters", "Water", "Cream",
-            "Vanilla extract", "Carbonated water",
-            //garnish
-            "Salt", "Orange peel", "Lemon peel", "Sugar", "Olive", "Maraschino cherry", "Lemon", "Cherry", "Lime",
-            "Powdered sugar", "Lemon Juice", "Nutmeg", "Anis", "Orange", "Egg white", "Mint", "Egg Yolk",
+            "Vanilla extract", "Carbonated water", "Egg white", "Egg Yolk", "Sugar",
+            //garnish (13)
+            "Salt", "Orange peel", "Lemon peel", "Olive", "Maraschino cherry", "Lemon", "Cherry", "Lime",
+            "Powdered sugar", "Nutmeg", "Anis", "Orange", "Mint",
         };
         //create a dictionary for the drink ingredients. if ingredient in the drink return 1, else return 0
         Dictionary<string, int> allIngredients = new Dictionary<string, int>();
