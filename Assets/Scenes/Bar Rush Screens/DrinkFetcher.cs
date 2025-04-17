@@ -2,14 +2,18 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json.Linq;
 using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 
 public class DrinkFetcher : MonoBehaviour
 {
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI ingredientsText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Header("Search Options")]
-    public string drinkToSearch = "margarita"; // This will show in the Inspector
+    public string drinkToSearch = "margarita";
 
-    [ContextMenu("Fetch Drink Info")] // This lets you right-click and trigger from Inspector
+    [ContextMenu("Fetch Drink Info")] // for debug
     public void FetchDrinkInfo()
     {
         StartCoroutine(GetDrinkData(drinkToSearch));
@@ -30,37 +34,75 @@ public class DrinkFetcher : MonoBehaviour
         if (request.result != UnityWebRequest.Result.Success)
         {
             Debug.Log("Error: " + request.error);
+            yield break;
+        }
+        string json = request.downloadHandler.text;
+        JObject data = JObject.Parse(json);
+
+        JToken drink = data["drinks"]?[0];
+        if (drink == null)
+        {
+            Debug.LogWarning("No drink found.");
+            yield break;
+        }
+        
+        HashSet<string> drinkIngredients = new HashSet<string>();
+        for (int i = 1; i <= 15; i++)
+        {
+            string key = $"strIngredient{i}";
+            string ingredient = drink[key]?.ToString()?.Trim();
+
+            if (!string.IsNullOrEmpty(ingredient))
+            {
+                drinkIngredients.Add(ingredient);
+                Debug.Log($"- {ingredient}");
+            }
+        }
+        //create list with all the ingredients
+        List<string> allPossibleIngredients = new List<string>
+        {
+            // alcohol
+            "Tequila", "Triple sec", "Campari", "Sweet Vermouth", "Scotch", "Drambuie", "Brandy", "White Creme de Menthe",
+            "Gin", "gin", "Bourbon", "Dry Vermouth", "Blended whiskey", "Light rum", "Cognac", "Cointreau", "Apricot brandy", "Apple brandy",
+            "Light rum", "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port",
+            // mixers
+            "Lime juice", "Angostura bitters", "Pineapple juice", "Maraschino liqueur", "Grenadine", "Light cream", "Orange bitters",
+            "Orange Juice", "Lemon juice", "Club soda", "Soda Water", "Sugar syrup", "Peach Bitters", "Peychaud bitters", "Water", "Cream",
+            "Vanilla extract", "Carbonated water",
+            //garnish
+            "Salt", "Orange peel", "Lemon peel", "Sugar", "Olive", "Maraschino cherry", "Lemon", "Cherry", "Lime",
+            "Powdered sugar", "Lemon Juice", "Nutmeg", "Anis", "Orange", "Egg white", "Mint", "Egg Yolk",
+        };
+        //create a dictionary for the drink ingredients. if ingredient in the drink return 1, else return 0
+        Dictionary<string, int> allIngredients = new Dictionary<string, int>();
+        foreach (string ingredient in allPossibleIngredients)
+        {
+            allIngredients[ingredient] = drinkIngredients.Contains(ingredient) ? 1 : 0;
+        }
+
+        // Output
+        // Set title
+        if (titleText != null)
+        {
+            titleText.text = drink["strDrink"]?.ToString() ?? "Unknown Drink";
         }
         else
         {
-            string json = request.downloadHandler.text;
-            JObject data = JObject.Parse(json);
-
-            JToken drink = data["drinks"]?[0];
-            if (drink != null)
-            {
-                string name = drink["strDrink"]?.ToString();
-                Debug.Log($"Drink Name: {name}");
-                
-                Debug.Log("Ingredients:");
-                for (int i = 0; i <= 15; i++)
-                {
-                    string key = $"strIngredient{i}";
-                    string ingredient = drink[key]?.ToString();
-
-                    if (!string.IsNullOrEmpty(ingredient))
-                    {
-                        Debug.Log($"- {ingredient}");
-                    }
-                    else
-                    {
-                        Debug.LogWarning("No drink found with that name.");
-                    }
-                }
-            }
+            Debug.LogWarning("Title Text not assigned.");
+        }
+        string outputText = "";
+        foreach (string ingredient in drinkIngredients)
+        {
+            outputText += $"- {ingredient}\n";
         }
         
-        
-
+        if (ingredientsText != null)
+        {
+            ingredientsText.text = outputText;
+        }
+        else
+        {
+            Debug.LogWarning("Ingredients Text not assigned.");
+        }
     }
 }

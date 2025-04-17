@@ -588,8 +588,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012398, y: 199}
-  m_SizeDelta: {x: 214.36, y: 51.79}
+  m_AnchoredPosition: {x: 0, y: 201}
+  m_SizeDelta: {x: 450.14, y: 61.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78816403
 MonoBehaviour:
@@ -1882,6 +1882,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1029988438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029988440}
+  - component: {fileID: 1029988439}
+  m_Layer: 0
+  m_Name: Drink Fetcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1029988439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029988438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4664aae3c9ac934b8570bed5a135eb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleText: {fileID: 78816403}
+  ingredientsText: {fileID: 1717084749}
+  drinkToSearch: Americano
+--- !u!4 &1029988440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029988438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.399713, y: 1.8717989, z: 0.025076346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240589511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,10 +2912,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'aklsdjfklsad falsdkfj laksdjf lksadjf lkasdjf lksadjf lksajdf lkasjdflk
-    sajdflk jsadlfk jasdlkfjlkfj lksjdfkla sdjfklasjd fklsadjf klsadfj jsadlfk jasdlkfjlkfj
-    lksjdfkl asdjfklas jdfklsadjf klsadfj jsadlfk jasdlkfjlkfj lksjdfkla sdjfklas
-    dfklsadjf dfklsadjf dfklsadjf '
+  m_text: '- ingredient
+
+    - ingredient
+
+    - ingredient
+
+    - ingredient
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2895,13 +2947,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3254,3 +3306,4 @@ SceneRoots:
   - {fileID: 1879431487}
   - {fileID: 962697420}
   - {fileID: 1914803344}
+  - {fileID: 1029988440}
