@@ -79,8 +79,12 @@ public class DrinkFetcher : MonoBehaviour
         {
             allIngredients[ingredient] = drinkIngredients.Contains(ingredient) ? 1 : 0;
         }
-
-        // Output
+        // shows the list in console
+        //foreach (var entry in allIngredients)
+        //{
+        //    Debug.Log($"{entry.Key}: {entry.Value}");
+        //}
+        
         // Set title
         if (titleText != null)
         {
