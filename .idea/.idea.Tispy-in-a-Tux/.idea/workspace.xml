@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/achievement/DisplayAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/achievement/DisplayAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/ingredients.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/ingredients.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +29,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/PouringTimer/buttonManaging.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartScreen/FirstLauchDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/buttonManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/techniques/management.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@03407c6d8751/Runtime/TMP/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -49,7 +52,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev-huy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/theory-screens&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -61,7 +64,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -69,7 +72,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -117,6 +120,8 @@
       <workItem from="1742541403424" duration="4667000" />
       <workItem from="1744094496692" duration="15997000" />
       <workItem from="1744181654039" duration="19538000" />
+      <workItem from="1744823478318" duration="512000" />
+      <workItem from="1745123083325" duration="717000" />
     </task>
     <servers />
   </component>
