@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c3d86ee937c5f4e7cbd61dab9b944c3c
+guid: f3529b86073394842b990ca1feb52593
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 163573321294641178
-    second: Orange Flower Water_0
+      213: -1333439504715762810
+    second: pixil-frame-0 (9)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orange Flower Water_0
+      name: pixil-frame-0 (9)_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 5
         y: 2
-        width: 20
-        height: 39
+        width: 23
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a187f7ea111254200800000000000000
-      internalID: 163573321294641178
+      spriteID: 683b1f7d5dbae7de0800000000000000
+      internalID: -1333439504715762810
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Orange Flower Water_0: 163573321294641178
+      pixil-frame-0 (9)_0: -1333439504715762810
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
