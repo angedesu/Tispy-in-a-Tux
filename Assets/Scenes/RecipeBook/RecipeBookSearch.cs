@@ -117,8 +117,8 @@ namespace RecipeBook
             //Need tool list
             private List<string> toolList;
         }
-        private List<Recipe> marshalRecipeList; //Contains all items, so only one fetch necessary to the database
-        private List<Recipe> sergentRecipeList; //Contains the sorted/displayed list
+        private Dictionary<String, Recipe> marshalRecipeList; //Contains all items retrieved, so only one fetch necessary to the database for each recipe
+        private Dictionary<String, Recipe> sergentRecipeList; //Contains the sorted/displayed list
         private List<GameObject> recipeGameObjectList; //List of all objects for destruction
         //Components for assembling individual recipe entries
         public GameObject recipeTemplate;
@@ -128,7 +128,7 @@ namespace RecipeBook
         public GameObject advancedFilter;//Set this to the advanced filter canvas
         public string nameFilter;
         public bool nameWhitelist; //For possible future filtering, easier to code in now, than refactor later
-        public bool virginFilter;
+        public bool virginFilter = false;
         public string ingredientFilter;
         public bool ingredientWhitelist;
         public string toolFilter;
@@ -139,13 +139,14 @@ namespace RecipeBook
             //Run code on scene loading
             //Set up the leaderboard
             this.Fetch();
-            this.SortMarshal();
+            //this.SortMarshal();
             //Create objects for each item in the list
             recipeGameObjectList = new List<GameObject>();
             //Populate each objects text with the getLeaderboardEntry function
             Vector3 position = recipeRowStart.position;
-            foreach (Recipe recipeEntry in marshalRecipeList)
+            foreach (var DictEntry in marshalRecipeList)
             {
+                Recipe recipeEntry = DictEntry.Value;
                 Debug.Log("In Loop. Recipe is " + recipeEntry.name);
                 //Instatiate object
                 recipeText.text = recipeEntry.name;
@@ -158,7 +159,7 @@ namespace RecipeBook
         }
         private RecipeBook()
         {
-            marshalRecipeList = new List<Recipe>();
+            marshalRecipeList = new Dictionary<string, Recipe>();
         }
         private static async Task<RecipeBook> GetRecipes()
         {
@@ -166,7 +167,7 @@ namespace RecipeBook
             RecipeBook newBook = new RecipeBook();
             //Setup the leaderboard
             newBook.Fetch();
-            newBook.SortMarshal();
+            //newBook.SortMarshal();
             /*This is my best attempt at a async constructor
             *Hopefully it doesn't have a memory leak or anything
             *I don't like garbage collecting languages
@@ -185,7 +186,7 @@ namespace RecipeBook
                 Recipe entry = new Recipe("Recipe " + i, i%2 == 0);
                 //This is going to need some type of scanning to construct each recipe...
                 //I need more info on the API I'm connecting to
-                marshalRecipeList.Add(entry);
+                marshalRecipeList.Add(entry.name, entry);
                 Debug.Log("Creating Recipe: " + entry.name);
             }
             //*/
@@ -194,6 +195,8 @@ namespace RecipeBook
             //Get necessary tags per recipe
         }
         //The Marshal should only ever need to be sorted when it's fetched
+        /*
+        * Changed from list to dictionary
         private void SortMarshal()
         {
             Debug.Log("Marshal Sort Called");
@@ -202,19 +205,25 @@ namespace RecipeBook
             {
                 return r1.name.CompareTo(r2.name);
             });
-        }
+        }*/
         //The Sergent list is always made from a copy of the sorted marshal,
         //it should always be sorted, therefore this should be unnecessary
+        /*
+         * Changed from list to dictionary
         private void SortSergent()
         {
             Debug.Log("Sergent Sort Called");
             //Sort the Sergent list
             sergentRecipeList.Sort(delegate (Recipe r1, Recipe r2)
             {
-                return r1.name.CompareTo(r2.name);
+                    return r1.name.CompareTo(r2.name);
             });
-        }
+        }*/
         //This is the important list for sorting
+        public void ToggleVirgin()
+        {
+            virginFilter = !virginFilter;
+        }
         public void FilterSergent()
         {
             Debug.Log("Filtering the list");
@@ -232,12 +241,13 @@ namespace RecipeBook
             {
                 sergentRecipeList.Clear();
             }
-            sergentRecipeList = new List<Recipe>(marshalRecipeList);
+            sergentRecipeList = new Dictionary<string, Recipe>(marshalRecipeList);
             //Drop whitespace from filters if necessary. Requires testing if necessary
             //Iterate through the new sergent list and make sure the recipe matches our filters
             List<Recipe> DropList = new List<Recipe>();
-            foreach (Recipe r in sergentRecipeList)
+            foreach (var kvPair in sergentRecipeList)
             {
+                Recipe r = kvPair.Value;
                 if (r.nameCheck(nameFilter))
                 {
                     //This recipe contains a name filter term
@@ -347,13 +357,14 @@ namespace RecipeBook
             //Either way... more SLOP I mean SLOC!
             foreach (Recipe r in DropList)
             {
-                sergentRecipeList.Remove(r);
+                sergentRecipeList.Remove(r.name);
             }
             //Create the new gameObjects for the filtered recipes
             Vector3 position = recipeRowStart.position;
             recipeGameObjectList = new List<GameObject>();
-            foreach (Recipe r in sergentRecipeList)
+            foreach (var kvPair in sergentRecipeList)
             {
+                Recipe r = kvPair.Value;
                 Debug.Log("In Loop, Filtered Recipes. Recipe is " + r.name);
                 //Instatiate object
                 recipeText.text = r.name;
@@ -366,4 +377,4 @@ namespace RecipeBook
         }
     }
 }
-    
+
