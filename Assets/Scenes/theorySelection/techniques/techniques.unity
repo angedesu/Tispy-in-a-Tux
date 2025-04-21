@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 75133331}
   - component: {fileID: 75133330}
   m_Layer: 5
-  m_Name: 4.2common
+  m_Name: 4.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,9 +151,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -9785}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75133330
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.2 - Common Mixers"
+  m_text: "\t4.2 - How to Measure Precisely"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chapter 3 - Flavor Profiles
+  m_text: Chapter 3 - Ice Theory & Control
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -534,7 +534,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 75}
+  m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106253345
 MonoBehaviour:
@@ -580,12 +580,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1829219128}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -662,10 +662,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 150}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -8570}
+  m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106893768
 MonoBehaviour:
@@ -687,7 +687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4. Mixers & Non-Alcoholic Ingredients
+  m_text: 4. Measuring & Accuracy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 109560536}
   - component: {fileID: 109560535}
   m_Layer: 5
-  m_Name: 3.1basicText
+  m_Name: 3.1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,10 +798,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1150}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -7085}
+  m_SizeDelta: {x: 850, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &109560535
 MonoBehaviour:
@@ -823,14 +823,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "There are five primary tastes that show up in cocktails:\r\n\t\u2022 Sweet
-    \u2013 From syrups, liqueurs, fruit juices. Adds body and softness.\r\n\t\u2022
-    Sour \u2013 From citrus (like lime or lemon juice). Adds brightness and freshness.\r\n\t\u2022
-    Bitter \u2013 From ingredients like bitters, amaros, or some herbs. Adds complexity
-    and depth.\r\n\t\u2022 Salty \u2013 Sometimes from salted rims or saline solutions.
-    Enhances other flavors subtly.\r\n\t\u2022 Umami \u2013 Rare in cocktails, but
-    can come from ingredients like tomato juice (e.g., Bloody Mary).\r\nBalancing
-    these tastes creates harmony in the final drink.\r"
+  m_text: "Different ice shapes serve various purposes:\r\n\t\u2022 Large Cubes:
+    Melt slowly, ideal for spirit-\t\tforward drinks.\r\n\t\u2022 Crushed Ice: Dilutes
+    quickly, suitable for \t\ttiki or julep-style cocktails.\r\n\t\u2022 Clear Ice:
+    Aesthetically pleasing and \t\t\tmelts uniformly. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -966,7 +962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.1 - What is a Spirit?"
+  m_text: "\t1.1 - Anatomy of a Cocktail"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -1238,7 +1234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.2 - How Ingredients Interact"
+  m_text: "\t3.2 - Dilution: How Ice Impacts \t\t\t\tFlavor"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -1400,12 +1396,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1735162397}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1552,7 +1548,7 @@ GameObject:
   - component: {fileID: 221531927}
   - component: {fileID: 221531926}
   m_Layer: 5
-  m_Name: 5.1theory
+  m_Name: 5.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1572,9 +1568,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -12160}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221531926
@@ -1597,7 +1593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t5.1 Garnish Theory"
+  m_text: "\t5.1  - When & How to Taste"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -1688,7 +1684,7 @@ GameObject:
   - component: {fileID: 254073836}
   - component: {fileID: 254073835}
   m_Layer: 5
-  m_Name: 5.2stylesText
+  m_Name: 5.2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1708,10 +1704,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 600}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -13700}
+  m_SizeDelta: {x: 850, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254073835
 MonoBehaviour:
@@ -1733,10 +1729,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Citrus: Lime wedges, lemon twists, orange peels \u2014 brighten
-    and balance\n\t\u2022 Herbs: Mint, rosemary, basil \u2014 add freshness and aroma\n\t\u2022
-    Edible Additions: Berries, cucumber slices, jalapenos, cherries\n\t\u2022 Rims
-    & Sprinkles: Salt, sugar, Tajin, cocoa powder"
+  m_text: "If a cocktail doesn't taste as intended, consider the following adjustments:\r\n\t\u2022
+    Too Sour: Add a small amount of \t\t\t\t\tsweetener, such as simple syrup.\r\n\t\u2022
+    Too Sweet: Introduce more acid, like \t\t\tlemon or lime juice, to balance the
+    \t\t\t\t\tsweetness.\r\n\t\u2022 Lacking Depth: A dash of bitters can add \tcomplexity
+    and balance.\r\n\t\u2022 Flat Flavor: A pinch of salt can enhance \t\tflavors
+    and reduce bitterness. \r\nAlways adjust incrementally, tasting after each change
+    to avoid overcorrecting.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -1906,7 +1905,7 @@ GameObject:
   - component: {fileID: 268699568}
   - component: {fileID: 268699567}
   m_Layer: 5
-  m_Name: 1.3categoriesText
+  m_Name: 1.3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1926,10 +1925,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1850}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -3015}
+  m_SizeDelta: {x: 850, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268699567
 MonoBehaviour:
@@ -1951,20 +1950,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Vodka \u2013 A neutral spirit typically distilled from grains
-    or potatoes. Known for its clean taste, vodka is a versatile base for cocktails
-    like the Moscow Mule, Cosmopolitan, and Bloody Mary.\n\t\u2022 Gin \u2013 Made
-    from distilled grains and flavored primarily with juniper berries, along with
-    other botanicals. Popular in drinks like the Gin & Tonic and Negroni.\n\t\u2022
-    Rum \u2013 Distilled from sugarcane byproducts like molasses or sugarcane juice.
-    Ranges from light (used in daiquiris) to dark (used in tiki drinks and hot buttered
-    rum).\n\t\u2022 Tequila \u2013 Made from the blue agave plant, primarily in Mexico.
-    Comes in several varieties (blanco, reposado, anejo) and is key in cocktails
-    like the Margarita and Paloma.\n\t\u2022 Whiskey (or Whisky) \u2013 Distilled
-    from fermented grain mash and aged in barrels. Types include bourbon, Scotch,
-    rye, and Irish whiskey. Used in drinks like the Old Fashioned and Whiskey Sour.\n\t\u2022
-    Brandy \u2013 Distilled from wine or fermented fruit juice. Often served neat
-    or in classic cocktails like the Sidecar.\r"
+  m_text: "Understanding standard ratios helps in crafting balanced cocktails:\r\n\t\u2022
+    Sours: 2 parts spirit, 1 part sweetener, 1 \tpart citrus.\r\n\t\u2022 Old Fashioned:
+    2 parts spirit, minimal \t\t\tsweetener, and bitters.\r\n\t\u2022 Manhattan:
+    2 parts whiskey, 1 part \t\t\tsweet vermouth, and bitters.\r\nThese ratios serve
+    as foundational templates, allowing for creativity while maintaining balance.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2080,7 +2070,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 75}
+  m_SizeDelta: {x: 800, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269576503
 MonoBehaviour:
@@ -2126,12 +2116,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 661355811}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2220,6 +2210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf951e71923294fd4a933da8a147dbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrollRect: {fileID: 345825041}
+  content: {fileID: 1000364618}
 --- !u!1 &345825039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2332,7 @@ GameObject:
   - component: {fileID: 351504349}
   - component: {fileID: 351504348}
   m_Layer: 5
-  m_Name: 2.4beerText
+  m_Name: 2.4Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2360,10 +2352,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 3250}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -5835}
+  m_SizeDelta: {x: 850, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351504348
 MonoBehaviour:
@@ -2385,24 +2377,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Appetizer (Aperitif) Wine: A drink served before a meal. These are often
-    sweet and are used to whet the appetite. \r\n\tExamples: \r\n\t\t1. Vermouth
-    (Dry/Sweet)\r\n\t\t2. Campari\r\n\t\t3. Red Dubonnet\r\nAfter Dinner Wines: High
-    sugar content and fortified with alcohol. \r\n\tExamples: \r\n\t\t1. Port\r\n\t\t2.
-    Madeira\r\n\t\t3. Sweet Cherry\r\nWhite Wines: Made from white grapes (green).
-    Typically, light to medium bodied and fruity in flavor; usually served with white
-    meat (pork, chicken, and fish). \r\n\tExamples: \r\n\t\t1. Pinot Grigio\r\n\t\t2.
-    Chardonnay\r\n\t\t3. Sauvignon Blanc \u2013 Blanc in French means white!\r\n\t\t4.
-    Fume Blanc\r\n\t\t5. Chablis\r\n\t\t6. Riesling \u2013 Recommended to non-wine
-    drinkers\r\n\t\t7. Muscat \u2013 Sweeter, excellent dessert wine, and also recommended
-    to non-wine drinkers\r\nRed Wines: Made from red grapes. Typically takes on berry
-    characteristics such as: cherry, blackberry, raspberry, currant, etc. Red wine
-    will pick up oak flavors more than white wines. Usually served with red meat
-    or pasta.\r\n\tExamples: \r\n\t\t1. Burgundy \r\n\t\t2. Cabernet Sauvignon -
-    Most important red grape, with highly distinctive flavors\n\t\t3. Merlot\r\n\t\t4.
-    Pinot Noir\r\n\t\t5. Zinfandel \u2013 Yes, it is red!\r\nChampagne/Sparkling
-    Wine: In order for champagne to be legally 'Champagne', the grapes must be harvested
-    from the Champagne region of France (everything else is Sparkling Wine)."
+  m_text: "\u2022 Blending: Used for frozen cocktails, combining ingredients with
+    ice in a blender to achieve a smooth, slushy consistency.\r\n\u2022 Flash Blending:
+    A quick blend to mix ingredients without over-diluting, often used for tiki drinks.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2493,7 +2470,7 @@ GameObject:
   - component: {fileID: 352549418}
   - component: {fileID: 352549417}
   m_Layer: 5
-  m_Name: 3.1basic
+  m_Name: 3.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2513,9 +2490,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -6780}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352549417
@@ -2538,7 +2515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.1 - Basic Tastes in Cocktails"
+  m_text: "\t3.1 - Types of Ice"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2649,9 +2626,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -25}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388889661
@@ -2753,6 +2730,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388889659}
   m_CullTransparentMesh: 1
+--- !u!1 &423311466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423311467}
+  - component: {fileID: 423311469}
+  - component: {fileID: 423311468}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &423311467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423311466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 954717780}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &423311468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423311466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Chapter 6 - Hospitality & Guest Experience '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &423311469
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423311466}
+  m_CullTransparentMesh: 1
 --- !u!1 &430373268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,12 +2949,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 352549416}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2903,7 +3016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &450182319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3018,7 +3131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chapter 5 - Garnishes '
+  m_text: 'Chapter 5 - Tasting & Adjusting '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -3288,12 +3401,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1182880653}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3395,7 +3508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.4 - Types of Wine"
+  m_text: "\t2.4 - Bending & Flesh Bending"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -3511,7 +3624,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 75}
+  m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502098981
 MonoBehaviour:
@@ -3557,12 +3670,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1745712533}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3664,7 +3777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.3 - Fresh & Non-Alcoholic \n\t\t Additions"
+  m_text: "\t4.3 - Batching for Speed and \t\t\t\tConsistency"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -3756,7 +3869,7 @@ GameObject:
   - component: {fileID: 559207637}
   - component: {fileID: 559207636}
   m_Layer: 5
-  m_Name: 1.4Button
+  m_Name: 3.4Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3826,12 +3939,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1723568749}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3888,7 +4001,7 @@ GameObject:
   - component: {fileID: 564431623}
   - component: {fileID: 564431622}
   m_Layer: 5
-  m_Name: 2.3wines
+  m_Name: 2.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3908,9 +4021,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -5045}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564431622
@@ -3933,7 +4046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.3 - What is Wine?"
+  m_text: "\t2.3 - Rolling & Throwing"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4026,7 +4139,7 @@ GameObject:
   - component: {fileID: 565459427}
   - component: {fileID: 565459426}
   m_Layer: 5
-  m_Name: content
+  m_Name: contentTOC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4049,30 +4162,33 @@ RectTransform:
   - {fileID: 745257637}
   - {fileID: 1385292737}
   - {fileID: 1295847052}
-  - {fileID: 559207635}
-  - {fileID: 584663146}
   - {fileID: 215597077}
   - {fileID: 459529067}
   - {fileID: 976839362}
   - {fileID: 904977934}
   - {fileID: 847104788}
+  - {fileID: 584663146}
   - {fileID: 502098980}
   - {fileID: 430373269}
   - {fileID: 269576502}
   - {fileID: 1866964341}
+  - {fileID: 559207635}
   - {fileID: 2102170336}
   - {fileID: 1869120246}
   - {fileID: 1864751232}
   - {fileID: 2064431231}
-  - {fileID: 683853110}
   - {fileID: 1802895554}
   - {fileID: 1097062562}
   - {fileID: 790355918}
+  - {fileID: 954717780}
+  - {fileID: 683853110}
+  - {fileID: 828775158}
+  - {fileID: 1944799895}
   m_Father: {fileID: 221101182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.000122, y: 350}
+  m_AnchoredPosition: {x: 5.000122, y: 349.99976}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &565459426
@@ -4165,7 +4281,7 @@ GameObject:
   - component: {fileID: 579267352}
   - component: {fileID: 579267351}
   m_Layer: 5
-  m_Name: 2.3winesText
+  m_Name: 2.3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4185,10 +4301,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -5325}
+  m_SizeDelta: {x: 850, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579267351
 MonoBehaviour:
@@ -4210,9 +4326,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Wine is made by fermenting crushed grapes or other fruits. The type of
-    grape and fermentation process determines the wine''s color, flavor, and style.
-    Most wines fall into one of three main categories: red, white, or rose.'
+  m_text: "\u2022 Rolling: A gentle technique where the cocktail is poured back and
+    forth between two vessels, suitable for delicate ingredients.\r\n\u2022 Throwing:
+    Involves pouring the cocktail from one container to another from a height, incorporating
+    air and achieving a unique texture. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4304,7 +4421,7 @@ GameObject:
   - component: {fileID: 584663148}
   - component: {fileID: 584663147}
   m_Layer: 5
-  m_Name: 1.5Button
+  m_Name: 2.5Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4374,12 +4491,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 777159632}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4456,9 +4573,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -12105}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610674378
@@ -4481,7 +4598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5 - Garnishes
+  m_text: 5 - Tasting & Adjusting
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4617,7 +4734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.3 - Categories of Spirits"
+  m_text: "\t1.3 - Classic Ratios"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4708,7 +4825,7 @@ GameObject:
   - component: {fileID: 628616296}
   - component: {fileID: 628616295}
   m_Layer: 5
-  m_Name: 4.4mockText
+  m_Name: 6.3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4728,10 +4845,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -31910}
+  m_SizeDelta: {x: 850, y: 2250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &628616295
 MonoBehaviour:
@@ -4753,10 +4870,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Seedlip / Non-Alcoholic Spirits \u2013 Alcohol-free alternatives
-    to gin, whiskey, etc.\n\t\u2022 Coconut Water, Tea, or Coffee \u2013 Creative
-    base liquids for non-alcoholic drinks\n\t\u2022 Fresh Fruit & Purees \u2013 Great
-    for both texture and flavor in spirit-free drinks\r"
+  m_text: "State laws require every man and woman who attempts to buy alcohol to
+    be of legal drinking age. They must have a proper identification to prove this.
+    If you are unsure of someone's age then ASK FOR PROOF! If they don't have it,
+    then you cannot serve them any alcoholic beverage nor allow anyone else to purchase
+    alcoholic beverages for them. Various states have different regulations on what
+    can be accepted as proof, but generally, you should demand al pieces of identification
+    that have a birth date (this includes s Driver's License, or state issued I.D.
+    card) as well as a photo, They should also be able to produce back-up identification,
+    such as a work I.D.'s, credit cards and social security cards. If you think for
+    any reason, that their identification is not valid, then call the manager and
+    ask his or her opinion. If there is no one else, you can ask then politely refuse
+    to serve them. Be extra careful in doing so. The person who serves the alcoholic
+    beverage (that means YOU, the bartender) is the person who will be fined and
+    possibly go to jail if a minor is served.\r\n\tF \u2013 FEEL IT\r\n\tL \u2013
+    LOOK AT IT\r\n\tA \u2013 ASK QUESTIONS\r\n\tG \u2013 GIVE IT BACK\r\nA.B.C =
+    Alcoholic Beverage Control\r\nB.A.C. = Blood Alcohol Content\r\nLegal Intoxication
+    Point: \tOver 21 = .08\r\n\t\t\t\t\t\t\t\tUnder 21 = .01"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4847,7 +4977,7 @@ GameObject:
   - component: {fileID: 661355813}
   - component: {fileID: 661355812}
   m_Layer: 5
-  m_Name: 3.2how
+  m_Name: 3.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4867,9 +4997,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -7390}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661355812
@@ -4892,7 +5022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.2 - How Ingredients Interact"
+  m_text: "\t3.2 - Dilution: How Ice Impacts Flavor"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5028,7 +5158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.5 - Flavor Profiles"
+  m_text: "\t2.5 - Muddling"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5120,7 +5250,7 @@ GameObject:
   - component: {fileID: 683853112}
   - component: {fileID: 683853111}
   m_Layer: 5
-  m_Name: 4.4Button
+  m_Name: 6.1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5190,12 +5320,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 851829982}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5297,7 +5427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.1 - What is Beer?"
+  m_text: "\t2.1 - Stirring"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5388,7 +5518,7 @@ GameObject:
   - component: {fileID: 694228416}
   - component: {fileID: 694228415}
   m_Layer: 5
-  m_Name: 2.2typesText
+  m_Name: 2.2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5408,10 +5538,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -4640}
+  m_SizeDelta: {x: 850, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694228415
 MonoBehaviour:
@@ -5433,14 +5563,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Ale \u2013 Fermented at warmer temperatures with top-fermenting
-    yeast. Often fuller-bodied and fruitier. These include: Pale Ale, IPA (India
-    Pale Ale), Stout, Porter\r\n\t\u2022 Lager \u2013 Fermented at cooler temperatures
-    with bottom-fermenting yeast. Usually lighter, crisp, and clean in flavor. These
-    include: Pilsner, Helles, American Lager\r\n\t\u2022 Wheat Beer \u2013 Brewed
-    with a large proportion of wheat, giving it a light, cloudy appearance and smooth
-    texture.\r\n\t\u2022 Sour Beer \u2013 Made using wild yeast or bacteria to give
-    a tart, sour taste. Often includes fruit additions.\r"
+  m_text: "Shaking is ideal for cocktails containing citrus, dairy, or egg whites,
+    aiming to mix, chill, dilute, and aerate.\r\n\tTechnique:\r\n\t\t1. Add ingredients
+    to a shaker with ice.\r\n\t\t2. Secure the shaker and shake \t\t\t\t\t\tvigorously
+    for 10-15 seconds.\r\n\t\t3. Strain into the serving glass. \r\nThis method ensures
+    proper integration of ingredients and a frothy texture when applicable. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5531,7 +5658,7 @@ GameObject:
   - component: {fileID: 720548508}
   - component: {fileID: 720548507}
   m_Layer: 5
-  m_Name: 1.3categories
+  m_Name: 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5551,9 +5678,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -2610}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720548507
@@ -5576,7 +5703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.3 - Categories of Spirits"
+  m_text: "\t1.3 - Classic Ratios"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5703,7 +5830,7 @@ GameObject:
   - component: {fileID: 744124158}
   - component: {fileID: 744124157}
   m_Layer: 5
-  m_Name: 2.4Types
+  m_Name: 2.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5723,9 +5850,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -5605}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &744124157
@@ -5748,7 +5875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.4 - Types of Wine"
+  m_text: "\t2.4 - Bending & Flesh Bending"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -5910,12 +6037,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1611236611}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5972,7 +6099,7 @@ GameObject:
   - component: {fileID: 768303177}
   - component: {fileID: 768303176}
   m_Layer: 5
-  m_Name: 1.5flavorText
+  m_Name: 2.5Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5992,10 +6119,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 3400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -6395}
+  m_SizeDelta: {x: 850, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768303176
 MonoBehaviour:
@@ -6017,26 +6144,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Each type of spirit has its own unique flavor profile based on ingredients,
-    production methods, and aging processes. Here's a general guide:\n\t\u2022 Vodka\r\n\t\tFlavor:
-    Clean, neutral, sometimes with subtle grain or citrus notes\r\n\t\tTexture: Smooth
-    and light\r\n\t\tUse: Often used as a base spirit in cocktails due to its versatility\r\n\t\u2022
-    Gin\r\n\t\tFlavor: Juniper-forward with herbal, floral, and citrus botanicals\r\n\t\tTexture:
-    Dry and crisp\r\n\t\tUse: Key ingredient in martinis, gin and tonics, and other
-    botanical cocktails\r\n\t\u2022 Rum\r\n\t\tFlavor: Sweet, with notes of molasses,
-    caramel, vanilla, and tropical fruits\r\n\t\tTexture: Smooth, can be light or
-    rich depending on type\r\n\t\tUse: Great in tropical cocktails like mojitos and
-    pina coladas\r\n\t\u2022 Tequila\r\n\t\tFlavor: Earthy and vegetal, with notes
-    of pepper, citrus, and sometimes oak (in aged varieties)\n\t\tTexture: Crisp
-    to smooth, depending on aging\n\t\tUse: Essential in margaritas and other agave-based
-    drinks\r\n\t\u2022 Whiskey (or Whisky)\r\n\t\tFlavor: Complex, with notes of
-    vanilla, caramel, spice, oak, and smoke\r\n\t\tTexture: Rich and warming\r\n\t\tUse:
-    Enjoyed neat, on the rocks, or in classic cocktails like the Old Fashioned\r\n\t\u2022
-    Brandy\r\n\t\tFlavor: Fruity and sweet with notes of dried fruit, spice, and
-    oak\r\n\t\tTexture: Velvety and warming\r\n\t\tUse: Often sipped neat or used
-    in warming cocktails\r\n\t\u2022 Liqueurs\r\n\t\tFlavor: Sweet, often flavored
-    with fruits, herbs, spices, cream, or nuts\r\n\t\tTexture: Syrupy or creamy\r\n\t\tUse:
-    Used to add flavor and sweetness in cocktails or served as after-dinner drinks\r\n"
+  m_text: "Muddling extracts flavors from fresh ingredients like herbs and fruits.\r\n\tTechnique:\n\t\t1.
+    Place ingredients in the bottom of a \t\t\t mixing glass.\n\t\t2. Gently press
+    with a muddler to \t\t\t\trelease flavors without pulverizing.\nOver-muddling
+    can release bitter compounds, especially from herbs. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -6127,7 +6238,7 @@ GameObject:
   - component: {fileID: 777159634}
   - component: {fileID: 777159633}
   m_Layer: 5
-  m_Name: 1.5flavor
+  m_Name: 2.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6147,9 +6258,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -6065}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777159633
@@ -6172,7 +6283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.5 - Flavor Profiles"
+  m_text: "\t2.5 - Muddling"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -6288,7 +6399,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 75}
+  m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790355919
 MonoBehaviour:
@@ -6334,12 +6445,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1017624304}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6383,6 +6494,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790355917}
+  m_CullTransparentMesh: 1
+--- !u!1 &828775157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828775158}
+  - component: {fileID: 828775161}
+  - component: {fileID: 828775160}
+  - component: {fileID: 828775159}
+  m_Layer: 5
+  m_Name: 6.2Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &828775158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828775157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1446303289}
+  m_Father: {fileID: 565459425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &828775159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828775157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 828775160}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
+        m_MethodName: ScrollTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 865614399}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &828775160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828775157}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &828775161
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828775157}
   m_CullTransparentMesh: 1
 --- !u!1 &829882599
 GameObject:
@@ -6466,8 +6710,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1199941348}
   m_HandleRect: {fileID: 1199941347}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.34313726
+  m_Value: 1.0000001
+  m_Size: 0.25878003
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6729,12 +6973,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 744124156}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6778,6 +7022,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847104787}
+  m_CullTransparentMesh: 1
+--- !u!1 &851829981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 851829982}
+  - component: {fileID: 851829984}
+  - component: {fileID: 851829983}
+  m_Layer: 5
+  m_Name: 6.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &851829982
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851829981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000364618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -14335}
+  m_SizeDelta: {x: 850, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &851829983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851829981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\t6.1  - Responsible Serving Practices"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &851829984
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851829981}
   m_CullTransparentMesh: 1
 --- !u!1 &862322630
 GameObject:
@@ -6911,6 +7291,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862322630}
   m_CullTransparentMesh: 1
+--- !u!1 &865614398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865614399}
+  - component: {fileID: 865614401}
+  - component: {fileID: 865614400}
+  m_Layer: 5
+  m_Name: 6.2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &865614399
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865614398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000364618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -29595}
+  m_SizeDelta: {x: 850, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &865614400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865614398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\t6.2  - Know & Obey the Law"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &865614401
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865614398}
+  m_CullTransparentMesh: 1
 --- !u!1 &904977933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6994,12 +7510,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 564431621}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7044,6 +7560,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904977933}
   m_CullTransparentMesh: 1
+--- !u!1 &922256730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922256731}
+  - component: {fileID: 922256733}
+  - component: {fileID: 922256732}
+  m_Layer: 5
+  m_Name: ch6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &922256731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922256730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000364618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -14230}
+  m_SizeDelta: {x: 850, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &922256732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922256730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 6 - Hospitality & Guest Experience
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &922256733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922256730}
+  m_CullTransparentMesh: 1
 --- !u!1 &954275666
 GameObject:
   m_ObjectHideFlags: 0
@@ -7056,7 +7708,7 @@ GameObject:
   - component: {fileID: 954275669}
   - component: {fileID: 954275668}
   m_Layer: 5
-  m_Name: 4.1what
+  m_Name: 4.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7076,9 +7728,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -8625}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954275668
@@ -7101,7 +7753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.1 - What Are Mixers?"
+  m_text: "\t4.1 - Jigger Types"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -7179,6 +7831,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954275666}
+  m_CullTransparentMesh: 1
+--- !u!1 &954717779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954717780}
+  - component: {fileID: 954717783}
+  - component: {fileID: 954717782}
+  - component: {fileID: 954717781}
+  m_Layer: 5
+  m_Name: ch6Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &954717780
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954717779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 423311467}
+  m_Father: {fileID: 565459425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &954717781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954717779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 954717782}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
+        m_MethodName: ScrollTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 922256731}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &954717782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954717779}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &954717783
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954717779}
   m_CullTransparentMesh: 1
 --- !u!1 &976839361
 GameObject:
@@ -7263,12 +8048,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1446218717}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7327,7 +8112,7 @@ GameObject:
   - component: {fileID: 1000364620}
   - component: {fileID: 1000364619}
   m_Layer: 5
-  m_Name: content
+  m_Name: contentTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7354,10 +8139,6 @@ RectTransform:
   - {fileID: 1439373574}
   - {fileID: 720548506}
   - {fileID: 268699566}
-  - {fileID: 1723568749}
-  - {fileID: 1652795579}
-  - {fileID: 777159632}
-  - {fileID: 768303175}
   - {fileID: 1735162397}
   - {fileID: 1182880653}
   - {fileID: 1131945037}
@@ -7367,6 +8148,8 @@ RectTransform:
   - {fileID: 579267350}
   - {fileID: 744124156}
   - {fileID: 351504347}
+  - {fileID: 777159632}
+  - {fileID: 768303175}
   - {fileID: 1745712533}
   - {fileID: 352549416}
   - {fileID: 109560534}
@@ -7374,6 +8157,8 @@ RectTransform:
   - {fileID: 1497667310}
   - {fileID: 1773094670}
   - {fileID: 1367217773}
+  - {fileID: 1723568749}
+  - {fileID: 1652795579}
   - {fileID: 106893767}
   - {fileID: 954275667}
   - {fileID: 1786397293}
@@ -7381,18 +8166,23 @@ RectTransform:
   - {fileID: 1489820058}
   - {fileID: 1120014689}
   - {fileID: 1460088111}
-  - {fileID: 2028245450}
-  - {fileID: 628616294}
   - {fileID: 610674377}
   - {fileID: 221531925}
   - {fileID: 1102286758}
   - {fileID: 1017624304}
   - {fileID: 254073834}
+  - {fileID: 922256731}
+  - {fileID: 851829982}
+  - {fileID: 1480274235}
+  - {fileID: 865614399}
+  - {fileID: 1107095969}
+  - {fileID: 2028245450}
+  - {fileID: 628616294}
   m_Father: {fileID: 1798180890}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.000122, y: 350}
+  m_AnchoredPosition: {x: 5.000122, y: 349.99805}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1000364619
@@ -7530,7 +8320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chapter 4 - Mixers & Non-Alcoholic Ingredients
+  m_text: Chapter 4 - Measuring & Accuracy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -7621,7 +8411,7 @@ GameObject:
   - component: {fileID: 1017624306}
   - component: {fileID: 1017624305}
   m_Layer: 5
-  m_Name: 5.2styles
+  m_Name: 5.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7641,9 +8431,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -13220}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017624305
@@ -7666,7 +8456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t5.2 - Garnish Styles"
+  m_text: "\t5.2 - How to Adjust a Drink That's \"Off\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -7828,12 +8618,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 221531925}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -7890,7 +8680,7 @@ GameObject:
   - component: {fileID: 1102286760}
   - component: {fileID: 1102286759}
   m_Layer: 5
-  m_Name: 5.1theoryText
+  m_Name: 5.1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7910,10 +8700,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1350}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -12690}
+  m_SizeDelta: {x: 850, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102286759
 MonoBehaviour:
@@ -7935,16 +8725,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Garnishes do way more than just make a drink look pretty \u2014 they enhance
-    aroma, flavor, and the overall drinking experience. A well-chosen garnish can
-    tie all the elements of a cocktail together.\n\t\u2022 Aromatic Impact: Fresh
-    herbs, citrus peels, or spices release scent as you sip \u2014 aroma is a big
-    part of taste! Example: A twist of lemon on a Martini releases essential oils
-    that brighten the drink.\n\t\u2022 Flavor Boost: Some garnishes can be eaten
-    or stir into the drink, adding flavor as they infuse. Example: Mint in a Mojito,
-    olives in a Dirty Martini, or jalapeno slices in a spicy margarita.\n\t\u2022Functional
-    Garnishes: These affect the texture or interaction of the drink. Example: Salt/sugar
-    rims, fruit wheels that chill and flavor, or skewers that hold garnish in place."
+  m_text: "Tasting is a critical step to ensure the cocktail meets the desired flavor
+    profile. Here's how to do it effectively:\r\n\t\u2022 Use a Straw: Dip a straw
+    into the \t\t\t\t\tcocktail, cover the top with your finger, \t\t\tand bring
+    it to your mouth to taste.\r\n\t\u2022 Taste Before Serving: Always taste the
+    \t\tcocktail before adding garnishes or \t\t\tserving to the customer.\r\n\t\u2022
+    Clean Tools: Ensure that any tools used \t\tfor tasting are clean to avoid \t\t\t\t\t\tcontamination.\r\nRegular
+    tasting helps in identifying any imbalances and making necessary adjustments.
+    \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8023,6 +8811,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102286757}
   m_CullTransparentMesh: 1
+--- !u!1 &1107095968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107095969}
+  - component: {fileID: 1107095971}
+  - component: {fileID: 1107095970}
+  m_Layer: 5
+  m_Name: 6.2Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1107095969
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107095968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000364618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -30175}
+  m_SizeDelta: {x: 850, y: 1100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1107095970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107095968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u201CDRAM SHOP LAWS\u201D are the State and Federal laws which relate
+    to alcohols and the establishment that sell and serve them. It is extremely important
+    to know these laws and to abide by them as major penalties. Including fines and
+    jail time, may result if you don't.\r\n\t\u2022 It is illegal to transfer liquor
+    from one \t\t\tbottle to another, even if it is the same \t\t\tbrand.\r\n\t\u2022
+    It is illegal to serve liquor to a person \t\t\twho is under the legal drinking
+    age\r\n\t\u2022 It is illegal to gamble or to hold bets for \t\tcustomers.\r\n\t\u2022
+    It is illegal to serve someone who is \t\t\talready obviously drunk.\r"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1107095971
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107095968}
+  m_CullTransparentMesh: 1
 --- !u!1 &1120014688
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,7 +8966,7 @@ GameObject:
   - component: {fileID: 1120014691}
   - component: {fileID: 1120014690}
   m_Layer: 5
-  m_Name: 4.3fresh
+  m_Name: 4.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8055,10 +8986,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -10895}
+  m_SizeDelta: {x: 850, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120014690
 MonoBehaviour:
@@ -8080,7 +9011,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.3 - Fresh & Non-Alcoholic Additions"
+  m_text: "\t4.3 - Batching for Speed & \t\t\tConsistency"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8242,12 +9173,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 388889660}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8304,7 +9235,7 @@ GameObject:
   - component: {fileID: 1131945039}
   - component: {fileID: 1131945038}
   m_Layer: 5
-  m_Name: 2.1beerText
+  m_Name: 2.1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8324,10 +9255,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 550}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -3855}
+  m_SizeDelta: {x: 850, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131945038
 MonoBehaviour:
@@ -8349,10 +9280,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Beer is an alcoholic beverage made by fermenting cereal grains\u2014usually
-    barley\u2014that have been malted and flavored with hops. It\u2019s typically
-    lower in alcohol (4\u20137% ABV) and carbonated. The two main types of beer are
-    ales and lagers, distinguished by the type of yeast and fermentation method used"
+  m_text: "Stirring is used for cocktails composed entirely of spirits, aiming for
+    clarity and a silky texture.\r\n\tTechnique:\r\n\t\t1. Fill a mixing glass with
+    ice.\r\n\t\t2. Add ingredients.\r\n\t\t3. Insert a bar spoon and stir \t\t\t\t\t\tsmoothly
+    for about 20-30 seconds.\r\n\t\t4. Strain into the serving glass.\r\nThe key
+    is to chill and dilute without aerating. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8488,7 +9420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.3 - What is Wine?"
+  m_text: "\t2.3 - Rolling & Throwing"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8624,7 +9556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.3 - Achieving Balance"
+  m_text: "\t3.3 - Controlling Dilution"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8760,7 +9692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t5.2 - Garnish Styles"
+  m_text: "\t5.2 - How to Adjust a Drink That's \t\t\t\"Off\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8851,7 +9783,7 @@ GameObject:
   - component: {fileID: 1182880655}
   - component: {fileID: 1182880654}
   m_Layer: 5
-  m_Name: 2.1beer
+  m_Name: 2.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8871,9 +9803,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -3475}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182880654
@@ -8896,7 +9828,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.1 - What is Beer?"
+  m_text: "\t2.1 - Stirring"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9107,7 +10039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t5.1 - Garnish Theory"
+  m_text: "\t5.1 - When & How to Taste"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9243,7 +10175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.1 - Basic Tastes in Cocktails"
+  m_text: "\t3.1 - Types of Ice"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9354,9 +10286,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -155}
   m_SizeDelta: {x: 850, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278639982
@@ -9379,8 +10311,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\tThe following chapters will focus on what goes into a drink. The topics
-    will range from base spirits to garnishes."
+  m_text: "\tThe following chapters will focus on how drinks are made. Delving deeper
+    into the craft side to perfecting guest experience. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9542,12 +10474,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 720548506}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -9811,7 +10743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.2 - Common Mixers"
+  m_text: "\t4.2 - How to Measure Precisely"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9902,7 +10834,7 @@ GameObject:
   - component: {fileID: 1367217775}
   - component: {fileID: 1367217774}
   m_Layer: 5
-  m_Name: 3.3balText
+  m_Name: 3.3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9922,10 +10854,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1300}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -8030}
+  m_SizeDelta: {x: 850, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1367217774
 MonoBehaviour:
@@ -9947,16 +10879,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A well-balanced cocktail doesn't overwhelm any one taste \u2014 it feels
-    \"just right.\" Here's how to approach it:\r\n\t\u2022 Start with a base ratio,
-    like 2:1:1 \u2014 two parts spirit, one part sour, one part sweet.\r\n\t\u2022
-    Taste as you build \u2014 tiny tweaks make a big difference.\r\n\t\u2022 Balance
-    strength, sweetness, and acidity to keep the drink from being too harsh, cloying,
-    or flat.\r\n\t\u2022 Temperature and dilution matter \u2014 shaking or stirring
-    properly ensures a drink is chilled and slightly diluted, which mellows intense
-    flavors.\r\n\t\u2022 Garnishes can tip the balance too \u2014 citrus zest, herbs,
-    or salted rims can affect taste and aroma.\r\nThe goal is a drink that's smooth,
-    flavorful, and leaves you wanting another sip.\r"
+  m_text: "Bartenders control dilution through:\r\n\t\u2022 Choosing appropriate
+    ice types.\r\n\t\u2022 Adjusting stirring or shaking duration.\r\n\t\u2022 Pre-chilling
+    glassware to reduce \t\t\t\t\tmelting.\r\nMastery of dilution ensures consistency
+    and balance in cocktails."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -10118,12 +11044,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1868155171}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -10225,7 +11151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.2 - What is a Liqueur?"
+  m_text: "\t1.2 - Types of Cocktail Builds"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -10316,7 +11242,7 @@ GameObject:
   - component: {fileID: 1439373576}
   - component: {fileID: 1439373575}
   m_Layer: 5
-  m_Name: 1.2liqueurText
+  m_Name: 1.2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10336,10 +11262,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -1980}
+  m_SizeDelta: {x: 850, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439373575
 MonoBehaviour:
@@ -10361,10 +11287,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Liqueurs, or cordials, are a sweetened alcoholic beverage made by infusing
-    a spirit with flavors such as fruits, herbs, spices, or cream, and then adding
-    sugar or other sweeteners. Liqueurs generally have a lower ABV than spirits and
-    are often used in cocktails or served after meals. '
+  m_text: "Cocktails can be constructed using various methods:\r\n\t\u2022 Built:
+    Ingredients are combined directly \t\tin the serving glass.\r\n\t\u2022 Stirred:
+    Ingredients are mixed with ice in \ta mixing glass to chill and dilute, then
+    \t\t\tstrained into the serving glass.\r\n\t\u2022 Shaken: Ingredients are vigorously
+    \t\t\tmixed with ice in a shaker to chill, dilute, \t\t\tand aerate, then strained.\r\n\t\u2022
+    Rolled: A gentle mixing technique where \t\t\tingredients are poured back and
+    forth \t\t\tbetween two vessels.\r\n\t\u2022 Thrown: A theatrical method of mixing
+    \t\t\tby pouring the drink from one container \t\tto another from a height, incorporating
+    \t\tair and achieving a unique texture. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -10526,7 +11457,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 450182319}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.029774562
+  m_Size: 0.021189645
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10538,7 +11469,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439904532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10581,7 +11512,7 @@ GameObject:
   - component: {fileID: 1446218719}
   - component: {fileID: 1446218718}
   m_Layer: 5
-  m_Name: 2.2types
+  m_Name: 2.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10601,9 +11532,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -4235}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446218718
@@ -10626,7 +11557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.2 - Types of Beer"
+  m_text: "\t2.2 - Shaking"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -10705,6 +11636,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446218716}
   m_CullTransparentMesh: 1
+--- !u!1 &1446303288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446303289}
+  - component: {fileID: 1446303291}
+  - component: {fileID: 1446303290}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1446303289
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446303288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 828775158}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1446303290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446303288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\t6.2 - Know & Obey the Law"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1446303291
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446303288}
+  m_CullTransparentMesh: 1
 --- !u!1 &1460088110
 GameObject:
   m_ObjectHideFlags: 0
@@ -10717,7 +11784,7 @@ GameObject:
   - component: {fileID: 1460088113}
   - component: {fileID: 1460088112}
   m_Layer: 5
-  m_Name: 4.3freshText
+  m_Name: 4.3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10737,10 +11804,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 650}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -11525}
+  m_SizeDelta: {x: 850, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460088112
 MonoBehaviour:
@@ -10762,11 +11829,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Herbs \u2013 Mint, basil, rosemary (used for muddling or garnishing)\r\n\t\u2022
-    Spices \u2013 Ground cinnamon, nutmeg, or whole spices for infusions or garnish\r\n\t\u2022
-    Bitters \u2013 Technically alcoholic, but used in drops; add complexity and depth
-    (can be used in mocktails too)\r\n\t\u2022 Shrubs \u2013 Vinegar-based syrups
-    made with fruit and sugar; tangy and sweet\r"
+  m_text: "Batching involves pre-mixing cocktail ingredients in larger quantities,
+    which is especially useful during high-volume service. Benefits include:\r\n\t\u2022
+    Efficiency: Speeds up service by \t\t\t\t\treducing the number of steps per drink.\r\n\t\u2022
+    Consistency: Ensures uniform taste \t\t\tacross servings.\r\n\t\u2022 Preparation:
+    Allows bartenders to \t\t\tfocus more on customer interaction \t\t\tduring service
+    hours.\r\nWhen batching, it's essential to account for dilution and chilling.
+    A common practice is to add approximately 15% water to the total volume to mimic
+    the dilution that would occur during shaking or stirring. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -10845,6 +11915,357 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460088110}
   m_CullTransparentMesh: 1
+--- !u!1 &1480274234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1480274235}
+  - component: {fileID: 1480274237}
+  - component: {fileID: 1480274236}
+  m_Layer: 5
+  m_Name: 6.1Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1480274235
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480274234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000364618}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -21965}
+  m_SizeDelta: {x: 850, y: 15200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1480274236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480274234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'BE FRIENDLY - Customers expect bartenders to be pleasant, friendly, smile
+    and say ''Hello!''.
+
+
+    BE POLITE - Always say "Sir" or "Ma''am" and thank
+    every customer for every purchase, no matter how small.
+
+    
+
+    BE SOCIABLE
+    - A good bartender tries to be friendly to all their customers when they aren''t
+    busy making drinks. This does not mean that the bartender should solve the customer''s
+    problems, but the bartender should be able to make small talk with the customer.
+    This builds business for the establishment and will increase the bartender''s
+    tips. If a bartender has a friendly, sociable attitude, customers will come back
+    again and again to talk to the bartender.
+
+    
+
+    BE NEAT - Your duties
+    as a bartender will include keeping your bar spotless. Keep your bar dry by constantly
+    wiping it down with a sponge. Give the customer a dry napkin with every drink.
+    As soon as a customer leaves, immediately remove the empty glass and wipe down
+    the bar. Keep your bar rail uncluttered. The only things that should be on it
+    are a shot glass and jigger. Al other equipment should be kept on your drain
+    boards.
+
+    
+
+    BE EFFICIENT - Don''t wait for a customer to call you. If
+    you see someone is going to be ready for another drink, then go to the end of
+    the bar and make yourself available.
+
+    
+
+    BE ALERT - Keep looking up
+    and down your bar and try to anticipate when customers will need your services.
+    A big failing of new bartenders is that they must be constantly called for service.
+    Be alert so you won''t have to be called.
+
+
+    COLLECT FOR EACH DRINK AS IT
+    IS SERVED - As soon as you serve a round, collect for it or mark it on a bar
+    tab. Never try to remember drinks in your head, because it is too easy to forget
+    how many drinks were ordered. If you cause the owner to lose money this way,
+    then you will soon be looking for another job.
+
+    
+
+    SERVE LADIES FIRST
+    - When you have a group of customers, serve the ladies first. The difference
+    makes them, and their companion feel special because of your courtesy.
+
+    
+
+    CAREFULLY
+    COUNT CHANGE - When a customer gives you a bill larger than a single dollar,
+    call out the denomination of the bill ("That''s S3 out of $5" or "You want me
+    to take that out of the SS0?"). Sometimes a customer may think they gave you
+    a larger bill than they did. When you make change, leave the bill on the tray
+    of the cash register until you have made change. This way you can see how large
+    of a bill it was. As you give change make sure to count it out loud.
+
+    
+
+    KEEP
+    GOOD POSTURE - When you''re behind the bar, stand erect. Don''t lean on the bar
+    or sit on the sinks. A slouching, leaning bartender will give customers a poor
+    impression.
+
+    
+
+    DON''T BECOME INVOLVED IN ANYTHING CONTROVERSIAL - Politics,
+    religion and social issues should never be discussed by the bartender. Even though
+    you may be discussing a point that you and the customer agree on, many other
+    customers sitting at the bar may overhear you and disagree. You can easily cause
+    hard feelings or make enemies without even knowing it. The world''s best bartenders
+    keep their mouth shut and their opinions to themselves.
+
+    
+
+    NEVER ARGUE
+    - Don''t argue with a customer about anything, even if the customer is wrong.
+    It won''t do any god to win the argument and lose the customer. Don''t argue
+    with fellow employees either. People want to relax when they come to a bar, not
+    listen to family squabbles.
+
+    
+
+    DON''T DRINK ON THE JOB - Never consume
+    alcoholic drinks behind the bar while you are on duty for any reason. You can''t
+    drink and give good service. Drinking on the job will lead to immediate dismissal
+    in any good establishment.
+
+    
+
+    DON''T ALLOW ANYONE TO BUY YOU A DRINK
+    - Accepting drinks from customers is taboo. If someone wants to buy you a drink,
+    politely tell them you''re sorry, but it''s against the house policy for bartenders
+    to drink.
+
+    
+
+    DON''T GIVE AWAY FREE DRINKS - At no time should you give
+    away a free drink without proper authorization from the management. Only the
+    owner has the right to buy drinks for customers. Most of the better establishments
+    have given up this practice because it is unprofitable. If a customer asks when
+    you''re going to buy them a drink, politely say you''re paid to sell it, not
+    give it away and that you''re not the owner and therefore do not have the authority.
+
+    
+
+    DON''T
+    PLAY FAVORITES - Give all customers equal attention. Don''t just get to know
+    a few of them and ignore others who might come in. By being equally friendly
+    to everyone, you increase your chances of making better tips.
+
+    
+
+    DON''T
+    LOAN CUSTOMERS MONEY - Many customers will try to borrow money from a new bartender.
+    If someone asks you for a loan, politely tell them you can''t spare the money.
+    If you do loan the money, even a dollar, you''re likely to never see the customer
+    or the dollar again.
+
+    
+
+    DON''T GOSSIP - Whatever you see or hear while
+    working behind the bar should be kept confidential. At no time should you discuss
+    what goes on with your friends, other employees or customers. Never answer questions
+    people ask about other customers and don''t become involved in their affairs.
+    Your job is to serve drinks and be polite, not to keep everyone up on what''s
+    going on with whom.
+
+    
+
+    DON''T GIVE CUSTOMERS A HARD TIME - If a customer
+    complains about a drink, ask what''s wrong and give them a fresh one. Even if
+    the customer is wrong, never argue.
+
+    
+
+    DON''T BE NOSEY - If customers
+    want you to know their personal business, they will tell you. Don''t be nosey
+    and ask questions about someone''s personal life. Many customers prefer to remain
+    anonymous in places where they drink.
+
+    
+
+    DON''T ALLOW CUSTOMERS TO
+    BECOME ROWDY OR USE PROFANITY - If a customer is becoming loud or rowdy, immediately
+    notify the manager. Don''t close your eyes and hope they will go away, because
+    they probably won''t. If there is no one there but you, politely tell the customer
+    to please keep it down. This should work, but if they persist in being loud,
+    after they finish their drink, do not serve them another one.
+
+    
+
+    DON''T
+    SERVE ANYONE WHO HAS HAD TOO MUCH TO DRINK - It is against the law to serve a
+    drunk. In some states, if you serve a drunk and they leave the establishment
+    and get into an accident, the establishment can be held legally responsible.
+    Many times, it is hard to tell if someone is drunk, but, if it is obvious then
+    you should politely inform the customer that you cannot serve them. If the customer
+    gives you a hard time, don''t argue, ignore them, or bring them a non-alcoholic
+    drink. At no time should you get out from behind the bar to escort them out.
+
+    
+
+    KEEP
+    CIGARETTES AND LIGHTERS ON HAND FOR CUSTOMERS - Although smoking is a touchy
+    subject, it''s a nice touch to keep cigarettes and a lighter on hand for customers
+    who smoke but run out at the end of the night or who have misplaced their lighters.
+
+    
+
+    NEVER
+    EAT BEHIND THE BAR - It is very unprofessional to consume food while you are
+    working behind the bar. Take meals to the place designated by management for
+    eating.
+
+    
+
+    BE CAREFUL WHEN YOU COUGH - If you cough or sneeze, be sure
+    to use a Kleenex or handkerchief. Wash your hands immediately before handling
+    a customer''s drink.
+
+    
+
+    KNOW WHAT''S GOING ON IN THE WORLD - Knowing
+    what''s happening in sports or local news gives you something to discuss with
+    customers. Keep up with current events by reading a daily newspaper.
+
+    
+
+    DON''T
+    SOLVE PEOPLE''S PROBLEMS - Many people lean on a bartender as a person who can
+    solve their problems or at least listen to them. Your best bet is to just listen
+    and not become involved. Very often, if you give a person advice, it can backfire
+    on you.
+
+    
+
+    DON''T MAKE CUSTOMERS WAIT - Your first obligation to the
+    owner and the customer is to serve drinks. If you''re washing glasses and a customer
+    comes in, then serve the customer and wash glasses later. If you''re talking
+    to another customer and a new customer comes in, excuse yourself to serve the
+    new customer. If one customer wants change for the phone and another customer
+    wants a drink and they call you at the same time - serve the drink first. If
+    you are busy
+
+    making a drink and another customer calls you for something,
+    just tell them that you''ll be right there and finish making and serving the
+    drink in front of you.
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1480274237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480274234}
+  m_CullTransparentMesh: 1
 --- !u!1 &1489820057
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,7 +12278,7 @@ GameObject:
   - component: {fileID: 1489820060}
   - component: {fileID: 1489820059}
   m_Layer: 5
-  m_Name: 4.2commonText
+  m_Name: 4.2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10877,10 +12298,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 2450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -10315}
+  m_SizeDelta: {x: 850, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1489820059
 MonoBehaviour:
@@ -10902,22 +12323,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sodas & Carbonated Drinks\r\n\t\u2022 Club Soda \u2013 Adds fizz without
-    flavor; great for highballs and spritzers.\r\n\t\u2022 Tonic Water \u2013 Bitter
-    and citrusy, pairs famously with gin.\r\n\t\u2022 Ginger Ale / Ginger Beer \u2013
-    Adds sweetness and spice; used in drinks like the Moscow Mule or Dark 'n' Stormy.\r\n\t\u2022
-    Cola / Lemon-Lime Soda \u2013 Adds sweetness and acidity; often used in simple
-    mixed drinks.\r\nJuices\r\n\t\u2022 Lime Juice / Lemon Juice \u2013 Key for balancing
-    sweetness with acidity.\r\n\t\u2022 Orange Juice \u2013 Sweet and slightly tangy;
-    used in brunch classics like the Mimosa.\r\n\t\u2022 Cranberry Juice \u2013 Tart
-    and vibrant; often used in vodka drinks.\r\n\t\u2022 Pineapple Juice \u2013 Adds
-    tropical sweetness and body.\r\nSyrups\r\n\t\u2022 Simple Syrup \u2013 1:1 sugar
-    and water, used to sweeten without graininess.\r\n\t\u2022 Flavored Syrups \u2013
-    Vanilla, cinnamon, ginger, honey syrup, etc.\r\n\t\u2022 Grenadine \u2013 A sweet,
-    pomegranate-based syrup used for color and flavor.\r\nCreams & Dairy\r\n\t\u2022
-    Heavy Cream / Milk / Half & Half \u2013 Used in creamy cocktails like White Russians
-    or Grasshoppers.\r\n\t\u2022 Egg White \u2013 Used in shaken drinks like sours
-    for texture and foam (adds silkiness, not flavor).\r"
+  m_text: "Precision in measurement ensures consistency and balance in cocktails.
+    Here are some tips for accurate measuring:\r\n\t\u2022 Use the Right Jigger:
+    Choose a jigger \t\t\tthat suits your comfort and the specific \t\tmeasurements
+    required.\r\n\t\u2022 Level Surface: Place the jigger on a flat \t\tsurface or
+    hold it steady to avoid \t\t\t\t\toverpouring.\r\n\t\u2022 Eye-Level Measurement:
+    Ensure the \t\t\tliquid reaches the desired measurement \t\tline at eye level
+    to avoid parallax errors.\r\n\t\u2022 Practice: Regular practice helps \t\t\t\t\tdevelop
+    muscle memory, leading to more \t\tconsistent pours.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11008,7 +12421,7 @@ GameObject:
   - component: {fileID: 1497667312}
   - component: {fileID: 1497667311}
   m_Layer: 5
-  m_Name: 3.2howText
+  m_Name: 3.2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11028,10 +12441,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 1400}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -7570}
+  m_SizeDelta: {x: 850, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497667311
 MonoBehaviour:
@@ -11053,15 +12466,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ingredients interact in both expected and surprising ways:\r\n\t\u2022
-    Acid (like lemon/lime juice) can cut through sweetness or richness, creating
-    a crisp finish.\r\n\t\u2022 Sweeteners (like simple syrup) can soften harsh alcohol
-    or balance strong citrus.\r\n\t\u2022 Bitters add depth and complexity \u2014
-    even a few drops can change the character of a drink.\r\n\t\u2022 Spirits each
-    have their own personality; pairing them with complementary flavors enhances
-    their profile.\r\n\t\u2022 Fresh herbs, fruits, or spices can either highlight
-    or contrast existing flavors for added dimension.\r\nUnderstanding how ingredients
-    work together is key to layering flavor and creating memorable cocktails.\r"
+  m_text: 'Ice chills and dilutes a cocktail, balancing flavors and achieving the
+    desired strength. The rate of dilution depends on ice size, shape, and temperature. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11197,7 +12603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chapter 1 - Spirits & Liqueurs '
+  m_text: 'Chapter 1 - Cocktail Structure & Balance '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11288,7 +12694,7 @@ GameObject:
   - component: {fileID: 1599111694}
   - component: {fileID: 1599111693}
   m_Layer: 5
-  m_Name: 1.1spiritsText
+  m_Name: 1.1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11308,10 +12714,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 550}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -845}
+  m_SizeDelta: {x: 850, y: 950}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599111693
 MonoBehaviour:
@@ -11333,11 +12739,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spirits, or liquors, are a distilled alcoholic beverage made by fermenting
-    a base ingredient (like grains, fruits, or sugar) and then distilling it to increase
-    its alcohol content. Spirits are usually unsweetened and have a higher alcohol
-    by volume (ABV), typically around 40%. These include vodka, gin, rum, tequila,
-    whiskey, and brandy.
+  m_text: "A well-crafted cocktail typically comprises:\r\n\t\u2022 Base Spirit:
+    The primary alcoholic \t\t\t\t\tcomponent (e.g., gin, whiskey).\r\n\t\u2022 Modifiers:
+    Ingredients that adjust the \t\tflavor, such as vermouth or liqueurs.\r\n\t\u2022
+    Sweeteners: Elements like simple syrup \t\tor honey that add sweetness.\r\n\t\u2022
+    Acid: Citrus juices like lemon or lime that \t\tprovide balance.\r\n\t\u2022
+    Bitters: Concentrated flavor extracts \t\tthat add complexity.\r\nThe goal is
+    to achieve a harmonious balance where no single element overwhelms the others.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11428,7 +12836,7 @@ GameObject:
   - component: {fileID: 1611236613}
   - component: {fileID: 1611236612}
   m_Layer: 5
-  m_Name: 1.1spirits
+  m_Name: 1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11448,9 +12856,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -340}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611236612
@@ -11473,7 +12881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.1 - What is a Spirit?"
+  m_text: "\t1.1 - Anatomy of a Cocktail"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11564,7 +12972,7 @@ GameObject:
   - component: {fileID: 1652795581}
   - component: {fileID: 1652795580}
   m_Layer: 5
-  m_Name: 1.4distText
+  m_Name: 3.4Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11584,10 +12992,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 550}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -8440}
+  m_SizeDelta: {x: 850, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1652795580
 MonoBehaviour:
@@ -11609,11 +13017,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fermentation \u2013 The process where yeast converts sugars (from grains,
-    fruits, or molasses) into alcohol and carbon dioxide.\r\nDistillation \u2013
-    The fermented liquid is heated in a still, separating the alcohol from water
-    and other components. This process concentrates the alcohol and refines the flavor.
-    \r"
+  m_text: Pre-chilled glassware maintains the cocktail's temperature and slows dilution,
+    enhancing the drinking experience.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11749,7 +13154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.4 - How Spirits Are Made"
+  m_text: "\t3.4 - Glassware & Temperature"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11885,7 +13290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t2.2 - Types of Beer"
+  m_text: "\t2.2 - Shaking"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11976,7 +13381,7 @@ GameObject:
   - component: {fileID: 1723568751}
   - component: {fileID: 1723568750}
   m_Layer: 5
-  m_Name: 1.4dist
+  m_Name: 3.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11996,9 +13401,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -8310}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723568750
@@ -12021,7 +13426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.4 - How Spirits are Made"
+  m_text: "\t3.4 - Glassware & Temperature"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12132,9 +13537,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -3420}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735162398
@@ -12157,7 +13562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2. Beers & Wines
+  m_text: 2. Mixing Technqiues
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12268,9 +13673,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -6725}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745712534
@@ -12293,7 +13698,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. Flavor Pairing & Balance
+  m_text: 3. Ice Theory & Control
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12384,7 +13789,7 @@ GameObject:
   - component: {fileID: 1773094672}
   - component: {fileID: 1773094671}
   m_Layer: 5
-  m_Name: 3.3bal
+  m_Name: 3.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12404,9 +13809,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -7750}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773094671
@@ -12429,7 +13834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t3.3 - Achieving Balance"
+  m_text: "\t3.3 - Controlling Dilution"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12520,7 +13925,7 @@ GameObject:
   - component: {fileID: 1786397295}
   - component: {fileID: 1786397294}
   m_Layer: 5
-  m_Name: 4.1whatText
+  m_Name: 4.1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12540,10 +13945,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 850, y: 350}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -9205}
+  m_SizeDelta: {x: 850, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1786397294
 MonoBehaviour:
@@ -12565,9 +13970,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mixers are non-alcoholic liquids used to dilute, complement, or enhance
-    the flavors of spirits in a cocktail. They play a crucial role in balancing drinks
-    and often add bubbles, sweetness, sourness, or complexity.
+  m_text: "A jigger is an essential bartending tool used to measure precise amounts
+    of liquid ingredients. Various types of jiggers cater to different preferences
+    and needs:\r\n\t\u2022 Standard (Double) Jigger: Features two \t\topposing cones,
+    typically measuring 1 oz \t\tand 2 oz. It's widely used for its simplicity \t\tand
+    efficiency. \r\n\t\u2022 Japanese Jigger: Characterized by its \t\ttall, narrow
+    design, allowing for more \t\t\tprecise measurements and easier \t\t\t\t\tpouring.
+    \r\n\t\u2022 OXO Angled Measuring Jigger: Offers a \t\tunique angled surface
+    for easy reading \t\tof measurements from above, reducing \t\tthe chance of spillage.
+    \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12773,7 +14184,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 75}
+  m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802895555
 MonoBehaviour:
@@ -12819,12 +14230,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 610674377}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -12901,9 +14312,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -285}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829219129
@@ -12926,7 +14337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1. Spirits & Liqueurs
+  m_text: 1. Cocktail Structure & Balance
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -13088,12 +14499,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 75133329}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13221,12 +14632,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1773094670}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13283,7 +14694,7 @@ GameObject:
   - component: {fileID: 1868155173}
   - component: {fileID: 1868155172}
   m_Layer: 5
-  m_Name: 1.2liqueur
+  m_Name: 1.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13303,9 +14714,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -1350}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868155172
@@ -13328,7 +14739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t1.2 - What is a Liqueur?"
+  m_text: "\t1.2 - Types of Cocktial Builds"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -13490,12 +14901,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 954275667}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -13633,7 +15044,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.1 - What Are Mixers?"
+  m_text: "\t4.1 - Jigger Types"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -13712,6 +15123,275 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907952628}
   m_CullTransparentMesh: 1
+--- !u!1 &1930166836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1930166837}
+  - component: {fileID: 1930166839}
+  - component: {fileID: 1930166838}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1930166837
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930166836}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944799895}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1930166838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930166836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\t6.3 - Always Check Identification"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 65
+  m_fontSizeBase: 65
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1930166839
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930166836}
+  m_CullTransparentMesh: 1
+--- !u!1 &1944799894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944799895}
+  - component: {fileID: 1944799898}
+  - component: {fileID: 1944799897}
+  - component: {fileID: 1944799896}
+  m_Layer: 5
+  m_Name: 6.3Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1944799895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799894}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1930166837}
+  m_Father: {fileID: 565459425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1944799896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1944799897}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
+        m_MethodName: ScrollTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2028245450}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1944799897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799894}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1944799898
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944799894}
+  m_CullTransparentMesh: 1
 --- !u!1 &2000399779
 GameObject:
   m_ObjectHideFlags: 0
@@ -13769,7 +15449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.4 - Mocktail-Friendly Ingredients"
+  m_text: "\t6.1 - Responsible Serving Practices"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -13860,7 +15540,7 @@ GameObject:
   - component: {fileID: 2028245452}
   - component: {fileID: 2028245451}
   m_Layer: 5
-  m_Name: 4.4mock
+  m_Name: 6.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13880,9 +15560,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1000364618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -30755}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028245451
@@ -13905,7 +15585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t4.4 - Mocktail-Friendly Ingredients"
+  m_text: "\t6.3 - Always Check Identification"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -14204,12 +15884,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1120014689}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14337,12 +16017,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonManagement, Assembly-CSharp
+      - m_Target: {fileID: 331624347}
+        m_TargetAssemblyTypeName: management, Assembly-CSharp
         m_MethodName: ScrollTo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 106893767}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14444,7 +16124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chapter 2 - Beers & Wines '
+  m_text: 'Chapter 2 - Mixing Techniques '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
