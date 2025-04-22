@@ -160,6 +160,7 @@ namespace RecipeBook
         {
             marshalRecipeList = new List<Recipe>();
         }
+        /*
         private static async Task<RecipeBook> GetRecipes()
         {
             //Create a new leaderboard
@@ -171,9 +172,9 @@ namespace RecipeBook
             *Hopefully it doesn't have a memory leak or anything
             *I don't like garbage collecting languages
             *I don't know when stuff does get collected, or if it does
-            */
+          
             return newBook;
-        }
+        }*/
         //Fetch for Leaderboard
         private void Fetch()
         {
