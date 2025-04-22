@@ -6,53 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon Whiskey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon Whiskey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandt.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Drumbuie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Drumbuie.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port Wine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port Wine.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Rye Whisky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Rye Whisky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch Whisky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch Whisky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Red Vermouth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Red Vermouth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Rum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Rum.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Cherries.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Cherries.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Grated Nutmeg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Grated Nutmeg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon Slice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon Slice.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Twist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Twist.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Wheel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Wheel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint Spring.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint Spring.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Slice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Slice.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Twist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Twist.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Sugar Rim.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Sugar Rim.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Fresh Cream.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Fresh Cream.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Heavy Cream.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Heavy Cream.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/PeyChaud's Bitters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/PeyChaud's Bitters.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Simple Syrup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Simple Syrup.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Cube.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/DrinkFetcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/DrinkFetcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +29,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/TimerAndDrinkUpdater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartScreen/FirstLauchDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@03407c6d8751/Runtime/TMP/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
@@ -175,6 +131,8 @@
       <workItem from="1744853055659" duration="1767000" />
       <workItem from="1744860600516" duration="1145000" />
       <workItem from="1744862338775" duration="6027000" />
+      <workItem from="1745121570071" duration="1743000" />
+      <workItem from="1745270885289" duration="7386000" />
     </task>
     <servers />
   </component>
