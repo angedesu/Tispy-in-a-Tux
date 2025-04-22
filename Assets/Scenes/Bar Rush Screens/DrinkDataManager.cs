@@ -41,8 +41,7 @@ public class DrinkDataManager : MonoBehaviour
         
         DrinkRecipeData recipe = new DrinkRecipeData
         {
-            title = drink["strDrink"]!.ToString(),
-            ingredients = new List<string>()
+            title = drink["strDrink"]!.ToString()
         };
 
         for (int i = 1; i <= 15; i++)
@@ -50,7 +49,14 @@ public class DrinkDataManager : MonoBehaviour
             string ingredient = drink[$"strIngredient{i}"]?.ToString()?.Trim();
             if (!string.IsNullOrEmpty(ingredient))
             {
-                recipe.ingredients.Add(ingredient);
+                if (IngredientLibrary.Alcohols.Contains(ingredient))
+                    recipe.alcohols.Add(ingredient);
+                else if (IngredientLibrary.Mixers.Contains(ingredient))
+                    recipe.mixers.Add(ingredient);
+                else if (IngredientLibrary.Garnishes.Contains(ingredient))
+                    recipe.garnishes.Add(ingredient);
+                else
+                    Debug.LogWarning($"Unknown ingredient: {ingredient}");
             }
         }
 
@@ -60,5 +66,18 @@ public class DrinkDataManager : MonoBehaviour
 public class DrinkRecipeData
 {
     public string title;
-    public List<string> ingredients;
+    public List<string> alcohols = new();
+    public List<string> mixers = new();
+    public List<string> garnishes = new();
+    public List<string> ingredients
+    {
+        get
+        {
+            var all = new List<string>();
+            all.AddRange(alcohols);
+            all.AddRange(mixers);
+            all.AddRange(garnishes);
+            return all;
+        }
+    }
 }

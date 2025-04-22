@@ -14,7 +14,7 @@ public class TimerAndDrinkUpdater : MonoBehaviour
         }
         else
         {
-            Debug.LogError("⛔ TimerManager.Instance is null! Is TimerObject in the scene?");
+            Debug.LogError("TimerManager.Instance is null! Is TimerObject in the scene?");
         }
     }
 
@@ -24,6 +24,7 @@ public class TimerAndDrinkUpdater : MonoBehaviour
         if (TimerManager.Instance != null)
         {
             float t = TimerManager.Instance.timeRemaining;
+            // Debug.Log($"Current time: {t}");
             int minutes = Mathf.FloorToInt(t / 60);
             int seconds = Mathf.FloorToInt(t % 60);
             timerText.text = $"Timer: {minutes:00}:{seconds:00}";

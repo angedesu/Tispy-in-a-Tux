@@ -46,14 +46,40 @@ public class RecipeBoardController : MonoBehaviour
             return;
         }
 
+        // drink title
         titleText.text = data.title;
-        ingredientsText.text = "";
-        foreach (string ingredient in data.ingredients)
+
+        // custom instruction display
+        string output = "";
+
+        // start with ice
+        output += "-----------ICE-----------\n";
+
+        // alcohols
+        foreach (string alcohol in data.alcohols)
         {
-            ingredientsText.text += $"- {ingredient}\n";
+            output += $"{alcohol}\n";
         }
+
+        // mixers
+        foreach (string mixer in data.mixers)
+        {
+            output += $"{mixer}\n";
+        }
+
+        // mix step
+        output += "----------SHAKE----------\n";
+
+        // garnishes
+        foreach (string garnish in data.garnishes)
+        {
+            output += $"{garnish}\n";
+        }
+        output += "----------SERVE----------";
+
+        ingredientsText.text = output;
         
-        //RecipeManager.Instance.currentRecipe = data;  // saves actual recipe
-        // RecipeManager.Instance.InitIngredients();  // prepare blank ingredient checklist for player
+        RecipeManager.Instance.currentRecipe = data;  // saves actual recipe
+        RecipeManager.Instance.InitIngredients();  // prepare blank ingredient checklist for player
     }
 }
