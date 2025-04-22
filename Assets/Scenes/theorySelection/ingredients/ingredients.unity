@@ -562,7 +562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -13090}
+  m_AnchoredPosition: {x: 425, y: -13690}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &46514942
@@ -698,7 +698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -13035}
+  m_AnchoredPosition: {x: 425, y: -13635}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49029968
@@ -834,9 +834,9 @@ RectTransform:
   - {fileID: 494994820}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1472.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90233029
@@ -1103,7 +1103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -20195}
+  m_AnchoredPosition: {x: 425, y: -21095}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117081232
@@ -1239,9 +1239,9 @@ RectTransform:
   - {fileID: 7824086}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -437.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121425931
@@ -1372,7 +1372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -14300}
+  m_AnchoredPosition: {x: 425, y: -15000}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125072919
@@ -1919,7 +1919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -9725}
+  m_AnchoredPosition: {x: 425, y: -10225}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &259795576
@@ -2266,8 +2266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -5710}
-  m_SizeDelta: {x: 850, y: 3400}
+  m_AnchoredPosition: {x: 425, y: -6010}
+  m_SizeDelta: {x: 850, y: 3500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300471418
 MonoBehaviour:
@@ -2291,24 +2291,26 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Each type of spirit has its own unique flavor profile based on ingredients,
     production methods, and aging processes. Here's a general guide:\n\t\u2022 Vodka\r\n\t\tFlavor:
-    Clean, neutral, sometimes with subtle grain or citrus notes\r\n\t\tTexture: Smooth
-    and light\r\n\t\tUse: Often used as a base spirit in cocktails due to its versatility\r\n\t\u2022
-    Gin\r\n\t\tFlavor: Juniper-forward with herbal, floral, and citrus botanicals\r\n\t\tTexture:
-    Dry and crisp\r\n\t\tUse: Key ingredient in martinis, gin and tonics, and other
-    botanical cocktails\r\n\t\u2022 Rum\r\n\t\tFlavor: Sweet, with notes of molasses,
-    caramel, vanilla, and tropical fruits\r\n\t\tTexture: Smooth, can be light or
-    rich depending on type\r\n\t\tUse: Great in tropical cocktails like mojitos and
-    pina coladas\r\n\t\u2022 Tequila\r\n\t\tFlavor: Earthy and vegetal, with notes
-    of pepper, citrus, and sometimes oak (in aged varieties)\n\t\tTexture: Crisp
-    to smooth, depending on aging\n\t\tUse: Essential in margaritas and other agave-based
-    drinks\r\n\t\u2022 Whiskey (or Whisky)\r\n\t\tFlavor: Complex, with notes of
-    vanilla, caramel, spice, oak, and smoke\r\n\t\tTexture: Rich and warming\r\n\t\tUse:
-    Enjoyed neat, on the rocks, or in classic cocktails like the Old Fashioned\r\n\t\u2022
-    Brandy\r\n\t\tFlavor: Fruity and sweet with notes of dried fruit, spice, and
-    oak\r\n\t\tTexture: Velvety and warming\r\n\t\tUse: Often sipped neat or used
-    in warming cocktails\r\n\t\u2022 Liqueurs\r\n\t\tFlavor: Sweet, often flavored
-    with fruits, herbs, spices, cream, or nuts\r\n\t\tTexture: Syrupy or creamy\r\n\t\tUse:
-    Used to add flavor and sweetness in cocktails or served as after-dinner drinks\r\n"
+    Clean, neutral, sometimes \t\t\t\twith subtle grain or citrus notes\r\n\t\tTexture:
+    Smooth and light\r\n\t\tUse: Often used as a base spirit in \t\t\t\tcocktails
+    due to its versatility\r\n\t\u2022 Gin\r\n\t\tFlavor: Juniper-forward with herbal,
+    \t\t\tfloral, and citrus botanicals\r\n\t\tTexture: Dry and crisp\r\n\t\tUse:
+    Key ingredient in martinis, gin \t\t\t\tand tonics, and other botanical \t\t\t\t\t\tcocktails\r\n\t\u2022
+    Rum\r\n\t\tFlavor: Sweet, with notes of molasses, \t\tcaramel, vanilla, and tropical
+    fruits\r\n\t\tTexture: Smooth, can be light or rich \t\t\tdepending on type\r\n\t\tUse:
+    Great in tropical cocktails like \t\t\t\tmojitos and pina coladas\r\n\t\u2022
+    Tequila\r\n\t\tFlavor: Earthy and vegetal, with \t\t\t\tnotes of pepper, citrus,
+    and \t\t\t\t\t\tsometimes oak (in aged varieties)\n\t\tTexture: Crisp to smooth,
+    depending \t\t\ton aging\n\t\tUse: Essential in margaritas and \t\t\t\tother
+    agave-based drinks\r\n\t\u2022 Whiskey (or Whisky)\r\n\t\tFlavor: Complex, with
+    notes of vanilla, \t\t\tcaramel, spice, oak, and smoke\r\n\t\tTexture: Rich and
+    warming\r\n\t\tUse: Enjoyed neat, on the rocks, or in \t\t\tclassic cocktails
+    like the Old Fashioned\r\n\t\u2022 Brandy\r\n\t\tFlavor: Fruity and sweet with
+    \t\t\t\t\t\tnotes of dried fruit, spice, and oak\r\n\t\tTexture: Velvety and
+    warming\r\n\t\tUse: Often sipped neat or used in \t\t\t\twarming cocktails\r\n\t\u2022
+    Liqueurs\r\n\t\tFlavor: Sweet, often flavored with \t\t\t\tfruits, herbs, spices,
+    cream, or nuts\r\n\t\tTexture: Syrupy or creamy\r\n\t\tUse: Used to add flavor
+    and \t\t\t\t\t\t\tsweetness in cocktails or served as \t\t\tafter-dinner drinks\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2557,8 +2559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -18940}
-  m_SizeDelta: {x: 850, y: 2450}
+  m_AnchoredPosition: {x: 425, y: -19790}
+  m_SizeDelta: {x: 850, y: 2550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360139065
 MonoBehaviour:
@@ -2581,21 +2583,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Sodas & Carbonated Drinks\r\n\t\u2022 Club Soda \u2013 Adds fizz without
-    flavor; great for highballs and spritzers.\r\n\t\u2022 Tonic Water \u2013 Bitter
-    and citrusy, pairs famously with gin.\r\n\t\u2022 Ginger Ale / Ginger Beer \u2013
-    Adds sweetness and spice; used in drinks like the Moscow Mule or Dark 'n' Stormy.\r\n\t\u2022
-    Cola / Lemon-Lime Soda \u2013 Adds sweetness and acidity; often used in simple
-    mixed drinks.\r\nJuices\r\n\t\u2022 Lime Juice / Lemon Juice \u2013 Key for balancing
-    sweetness with acidity.\r\n\t\u2022 Orange Juice \u2013 Sweet and slightly tangy;
-    used in brunch classics like the Mimosa.\r\n\t\u2022 Cranberry Juice \u2013 Tart
-    and vibrant; often used in vodka drinks.\r\n\t\u2022 Pineapple Juice \u2013 Adds
-    tropical sweetness and body.\r\nSyrups\r\n\t\u2022 Simple Syrup \u2013 1:1 sugar
-    and water, used to sweeten without graininess.\r\n\t\u2022 Flavored Syrups \u2013
-    Vanilla, cinnamon, ginger, honey syrup, etc.\r\n\t\u2022 Grenadine \u2013 A sweet,
-    pomegranate-based syrup used for color and flavor.\r\nCreams & Dairy\r\n\t\u2022
-    Heavy Cream / Milk / Half & Half \u2013 Used in creamy cocktails like White Russians
-    or Grasshoppers.\r\n\t\u2022 Egg White \u2013 Used in shaken drinks like sours
-    for texture and foam (adds silkiness, not flavor).\r"
+    flavor; \t\t\t\tgreat for highballs and spritzers.\r\n\t\u2022 Tonic Water \u2013
+    Bitter and citrusy, pairs \t\t\tfamously with gin.\r\n\t\u2022 Ginger Ale / Ginger
+    Beer \u2013 Adds \t\t\t\t\t\tsweetness and spice; used in drinks \t\t\t\tlike
+    the Moscow Mule or Dark 'n' \t\t\t\t\t\tStormy.\r\n\t\u2022 Cola / Lemon-Lime
+    Soda \u2013 Adds \t\t\t\t\t\tsweetness and acidity; often used in \t\t\tsimple
+    mixed drinks.\r\nJuices\r\n\t\u2022 Lime Juice / Lemon Juice \u2013 Key for \t\t\t\tbalancing
+    sweetness with acidity.\r\n\t\u2022 Orange Juice \u2013 Sweet and slightly \t\t\t\t\t\ttangy;
+    used in brunch classics like the \t\tMimosa.\r\n\t\u2022 Cranberry Juice \u2013
+    Tart and vibrant; \t\t\t\toften used in vodka drinks.\r\n\t\u2022 Pineapple Juice
+    \u2013 Adds tropical \t\t\t\t\t\tsweetness and body.\r\nSyrups\r\n\t\u2022 Simple
+    Syrup \u2013 1:1 sugar and water, used \t\tto sweeten without graininess.\r\n\t\u2022
+    Flavored Syrups \u2013 Vanilla, cinnamon, \t\t\t\tginger, honey syrup, etc.\r\n\t\u2022
+    Grenadine \u2013 A sweet, pomegranate-\t\t\t\tbased syrup used for color and
+    \t\t\t\tflavor.\r\nCreams & Dairy\r\n\t\u2022 Heavy Cream / Milk / Half & Half
+    \u2013 Used \t\t\tin creamy cocktails like White \t\t\t\t\t\tRussians or Grasshoppers.\r\n\t\u2022
+    Egg White \u2013 Used in shaken drinks like \t\t\t\tsours for texture and foam
+    (adds \t\t\t\tsilkiness, not flavor).\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -2708,7 +2712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -8105}
+  m_AnchoredPosition: {x: 425, y: -8455}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381596138
@@ -2980,8 +2984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -13695}
-  m_SizeDelta: {x: 850, y: 1150}
+  m_AnchoredPosition: {x: 425, y: -14345}
+  m_SizeDelta: {x: 850, y: 1250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405857707
 MonoBehaviour:
@@ -3004,12 +3008,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "There are five primary tastes that show up in cocktails:\r\n\t\u2022 Sweet
-    \u2013 From syrups, liqueurs, fruit juices. Adds body and softness.\r\n\t\u2022
-    Sour \u2013 From citrus (like lime or lemon juice). Adds brightness and freshness.\r\n\t\u2022
-    Bitter \u2013 From ingredients like bitters, amaros, or some herbs. Adds complexity
-    and depth.\r\n\t\u2022 Salty \u2013 Sometimes from salted rims or saline solutions.
-    Enhances other flavors subtly.\r\n\t\u2022 Umami \u2013 Rare in cocktails, but
-    can come from ingredients like tomato juice (e.g., Bloody Mary).\r\nBalancing
+    \u2013 From syrups, liqueurs, fruit \t\t\t\tjuices. Adds body and softness.\r\n\t\u2022
+    Sour \u2013 From citrus (like lime or lemon \t\t\t\tjuice). Adds brightness and
+    \t\t\t\t\t\t\tfreshness.\r\n\t\u2022 Bitter \u2013 From ingredients like bitters,
+    \t\t\t\tamaros, or some herbs. Adds \t\t\t\t\t\tcomplexity and depth.\r\n\t\u2022
+    Salty \u2013 Sometimes from salted rims or \t\t\tsaline solutions. Enhances other
+    \t\t\t\tflavors subtly.\r\n\t\u2022 Umami \u2013 Rare in cocktails, but can \t\t\t\tcome
+    from ingredients like tomato \t\t\t\tjuice (e.g., Bloody Mary).\r\nBalancing
     these tastes creates harmony in the final drink.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -3123,7 +3128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -7440}
+  m_AnchoredPosition: {x: 425, y: -7790}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416118439
@@ -3259,8 +3264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -2415}
-  m_SizeDelta: {x: 850, y: 1850}
+  m_AnchoredPosition: {x: 425, y: -2540}
+  m_SizeDelta: {x: 850, y: 2100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419568059
 MonoBehaviour:
@@ -3282,20 +3287,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Vodka \u2013 A neutral spirit typically distilled from grains
-    or potatoes. Known for its clean taste, vodka is a versatile base for cocktails
-    like the Moscow Mule, Cosmopolitan, and Bloody Mary.\n\t\u2022 Gin \u2013 Made
-    from distilled grains and flavored primarily with juniper berries, along with
-    other botanicals. Popular in drinks like the Gin & Tonic and Negroni.\n\t\u2022
-    Rum \u2013 Distilled from sugarcane byproducts like molasses or sugarcane juice.
-    Ranges from light (used in daiquiris) to dark (used in tiki drinks and hot buttered
-    rum).\n\t\u2022 Tequila \u2013 Made from the blue agave plant, primarily in Mexico.
-    Comes in several varieties (blanco, reposado, anejo) and is key in cocktails
-    like the Margarita and Paloma.\n\t\u2022 Whiskey (or Whisky) \u2013 Distilled
-    from fermented grain mash and aged in barrels. Types include bourbon, Scotch,
-    rye, and Irish whiskey. Used in drinks like the Old Fashioned and Whiskey Sour.\n\t\u2022
-    Brandy \u2013 Distilled from wine or fermented fruit juice. Often served neat
-    or in classic cocktails like the Sidecar.\r"
+  m_text: "\t\u2022 Vodka \u2013 A neutral spirit typically \t\t\t\t\t\tdistilled
+    from grains or potatoes. \t\t\t\tKnown for its clean taste, vodka is a \t\t\tversatile
+    base for cocktails like the \t\t\t\tMoscow Mule, Cosmopolitan, and \t\t\t\tBloody
+    Mary.\n\t\u2022 Gin \u2013 Made from distilled grains and \t\t\t\tflavored primarily
+    with juniper \t\t\t\t\t\tberries, along with other botanicals. \t\t\tPopular
+    in drinks like the Gin & Tonic \t\t\t\tand Negroni.\n\t\u2022 Rum \u2013 Distilled
+    from sugarcane \t\t\t\t\t\tbyproducts like molasses or \t\t\t\t\t\tsugarcane
+    juice. Ranges from light \t\t\t\t(used in daiquiris) to dark (used in tiki \t\t\tdrinks
+    and hot buttered rum).\n\t\u2022 Tequila \u2013 Made from the blue agave \t\t\t\tplant,
+    primarily in Mexico. Comes in \t\t\t\tseveral varieties (blanco, reposado, \t\t\tanejo)
+    and is key in cocktails like the \t\t\tMargarita and Paloma.\n\t\u2022 Whiskey
+    (or Whisky) \u2013 Distilled from \t\t\t\tfermented grain mash and aged in \t\t\t\tbarrels.
+    Types include bourbon, \t\t\t\t\t\tScotch, rye, and Irish whiskey. Used in \t\t\tdrinks
+    like the Old Fashioned and \t\t\t\tWhiskey Sour.\n\t\u2022 Brandy \u2013 Distilled
+    from wine or \t\t\t\t\t\tfermented fruit juice. Often served \t\t\tneat or in
+    classic cocktails like the \t\t\t\tSidecar.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -3680,9 +3687,9 @@ RectTransform:
   - {fileID: 1250966177}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1077.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &511163530
@@ -3949,7 +3956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -22880}
+  m_AnchoredPosition: {x: 425, y: -23980}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642129586
@@ -4393,7 +4400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -15030}
+  m_AnchoredPosition: {x: 425, y: -15730}
   m_SizeDelta: {x: 850, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738252641
@@ -4417,14 +4424,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Ingredients interact in both expected and surprising ways:\r\n\t\u2022
-    Acid (like lemon/lime juice) can cut through sweetness or richness, creating
-    a crisp finish.\r\n\t\u2022 Sweeteners (like simple syrup) can soften harsh alcohol
-    or balance strong citrus.\r\n\t\u2022 Bitters add depth and complexity \u2014
-    even a few drops can change the character of a drink.\r\n\t\u2022 Spirits each
-    have their own personality; pairing them with complementary flavors enhances
-    their profile.\r\n\t\u2022 Fresh herbs, fruits, or spices can either highlight
-    or contrast existing flavors for added dimension.\r\nUnderstanding how ingredients
-    work together is key to layering flavor and creating memorable cocktails.\r"
+    Acid (like lemon/lime juice) can cut \t\t\t\t\t\tthrough sweetness or richness,
+    \t\t\t\tcreating a crisp finish.\r\n\t\u2022 Sweeteners (like simple syrup) can
+    \t\t\t\t\t\tsoften harsh alcohol or balance \t\t\t\tstrong citrus.\r\n\t\u2022
+    Bitters add depth and complexity \u2014 \t\t\t\teven a few drops can change the
+    \t\t\t\tcharacter of a drink.\r\n\t\u2022 Spirits each have their own personality;
+    \t\t\tpairing them with complementary \t\t\t\tflavors enhances their profile.\r\n\t\u2022
+    Fresh herbs, fruits, or spices can \t\t\t\teither highlight or contrast existing
+    \t\t\tflavors for added dimension.\r\nUnderstanding how ingredients work together
+    is key to layering flavor and creating memorable cocktails.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -4537,7 +4545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -3675}
+  m_AnchoredPosition: {x: 425, y: -3925}
   m_SizeDelta: {x: 850, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755748741
@@ -4677,7 +4685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -3370}
+  m_AnchoredPosition: {x: 425, y: -3620}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771314112
@@ -4933,7 +4941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.000122, y: 350}
+  m_AnchoredPosition: {x: 5.000122, y: 5349.999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &840369435
@@ -5048,7 +5056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -17275}
+  m_AnchoredPosition: {x: 425, y: -18075}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855384781
@@ -5184,9 +5192,9 @@ RectTransform:
   - {fileID: 436534200}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -917.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &908582821
@@ -5317,7 +5325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -21415}
+  m_AnchoredPosition: {x: 425, y: -22415}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935626247
@@ -5589,9 +5597,9 @@ RectTransform:
   - {fileID: 186226189}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1657.5}
   m_SizeDelta: {x: 800, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980079317
@@ -5722,9 +5730,9 @@ RectTransform:
   - {fileID: 1535342987}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -277.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987645549
@@ -5855,7 +5863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -7495}
+  m_AnchoredPosition: {x: 425, y: -7845}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017403820
@@ -6127,9 +6135,9 @@ RectTransform:
   - {fileID: 724146391}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -197.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054501303
@@ -6386,9 +6394,9 @@ RectTransform:
   - {fileID: 1831774317}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -2002.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095624247
@@ -6519,7 +6527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -17480}
+  m_AnchoredPosition: {x: 425, y: -18280}
   m_SizeDelta: {x: 850, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102692528
@@ -6657,7 +6665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -3980}
+  m_AnchoredPosition: {x: 425, y: -4230}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116657255
@@ -6929,7 +6937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -9495}
+  m_AnchoredPosition: {x: 425, y: -9995}
   m_SizeDelta: {x: 850, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132172699
@@ -7103,9 +7111,9 @@ RectTransform:
   - {fileID: 967484251}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1842.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148186983
@@ -7236,8 +7244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -21160}
-  m_SizeDelta: {x: 850, y: 450}
+  m_AnchoredPosition: {x: 425, y: -22110}
+  m_SizeDelta: {x: 850, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150612943
 MonoBehaviour:
@@ -7259,10 +7267,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Seedlip / Non-Alcoholic Spirits \u2013 Alcohol-free alternatives
-    to gin, whiskey, etc.\n\t\u2022 Coconut Water, Tea, or Coffee \u2013 Creative
-    base liquids for non-alcoholic drinks\n\t\u2022 Fresh Fruit & Purees \u2013 Great
-    for both texture and flavor in spirit-free drinks\r"
+  m_text: "\t\u2022 Seedlip / Non-Alcoholic Spirits \u2013 Alcohol-\t\t\tfree alternatives
+    to gin, whiskey, etc.\n\t\u2022 Coconut Water, Tea, or Coffee \u2013 \t\t\t\t\t\tCreative
+    base liquids for non-\t\t\t\t\t\talcoholic drinks\n\t\u2022 Fresh Fruit & Purees
+    \u2013 Great for both \t\t\ttexture and flavor in spirit-free \t\t\t\tdrinks\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -7516,9 +7524,9 @@ RectTransform:
   - {fileID: 46040603}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -597.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182065040
@@ -7785,8 +7793,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -8685}
-  m_SizeDelta: {x: 850, y: 1100}
+  m_AnchoredPosition: {x: 425, y: -9110}
+  m_SizeDelta: {x: 850, y: 1250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204341541
 MonoBehaviour:
@@ -7808,14 +7816,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Ale \u2013 Fermented at warmer temperatures with top-fermenting
-    yeast. Often fuller-bodied and fruitier. These include: Pale Ale, IPA (India
-    Pale Ale), Stout, Porter\r\n\t\u2022 Lager \u2013 Fermented at cooler temperatures
-    with bottom-fermenting yeast. Usually lighter, crisp, and clean in flavor. These
-    include: Pilsner, Helles, American Lager\r\n\t\u2022 Wheat Beer \u2013 Brewed
-    with a large proportion of wheat, giving it a light, cloudy appearance and smooth
-    texture.\r\n\t\u2022 Sour Beer \u2013 Made using wild yeast or bacteria to give
-    a tart, sour taste. Often includes fruit additions.\r"
+  m_text: "\t\u2022 Ale \u2013 Fermented at warmer \t\t\t\t\t\t\ttemperatures with
+    top-fermenting \t\t\tyeast. Often fuller-bodied and \t\t\t\t\t\tfruitier. These
+    include: Pale Ale, IPA \t\t\t\t(India Pale Ale), Stout, Porter\r\n\t\u2022 Lager
+    \u2013 Fermented at cooler \t\t\t\t\t\t\ttemperatures with bottom-\t\t\t\t\t\tfermenting
+    yeast. Usually lighter, \t\t\t\tcrisp, and clean in flavor. These \t\t\t\tinclude:
+    Pilsner, Helles, American \t\t\t\tLager\r\n\t\u2022 Wheat Beer \u2013 Brewed
+    with a large \t\t\t\t\t\tproportion of wheat, giving it a light, \t\t\tcloudy
+    appearance and smooth \t\t\t\ttexture.\r\n\t\u2022 Sour Beer \u2013 Made using
+    wild yeast or \t\t\t\tbacteria to give a tart, sour taste. \t\t\tOften includes
+    fruit additions.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -7928,8 +7938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -11380}
-  m_SizeDelta: {x: 850, y: 3250}
+  m_AnchoredPosition: {x: 425, y: -11930}
+  m_SizeDelta: {x: 850, y: 3350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228734922
 MonoBehaviour:
@@ -7958,16 +7968,17 @@ MonoBehaviour:
     Madeira\r\n\t\t3. Sweet Cherry\r\nWhite Wines: Made from white grapes (green).
     Typically, light to medium bodied and fruity in flavor; usually served with white
     meat (pork, chicken, and fish). \r\n\tExamples: \r\n\t\t1. Pinot Grigio\r\n\t\t2.
-    Chardonnay\r\n\t\t3. Sauvignon Blanc \u2013 Blanc in French means white!\r\n\t\t4.
-    Fume Blanc\r\n\t\t5. Chablis\r\n\t\t6. Riesling \u2013 Recommended to non-wine
-    drinkers\r\n\t\t7. Muscat \u2013 Sweeter, excellent dessert wine, and also recommended
-    to non-wine drinkers\r\nRed Wines: Made from red grapes. Typically takes on berry
-    characteristics such as: cherry, blackberry, raspberry, currant, etc. Red wine
-    will pick up oak flavors more than white wines. Usually served with red meat
-    or pasta.\r\n\tExamples: \r\n\t\t1. Burgundy \r\n\t\t2. Cabernet Sauvignon -
-    Most important red grape, with highly distinctive flavors\n\t\t3. Merlot\r\n\t\t4.
-    Pinot Noir\r\n\t\t5. Zinfandel \u2013 Yes, it is red!\r\nChampagne/Sparkling
-    Wine: In order for champagne to be legally 'Champagne', the grapes must be harvested
+    Chardonnay\r\n\t\t3. Sauvignon Blanc \u2013 Blanc in French \t\t\t\tmeans white!\r\n\t\t4.
+    Fume Blanc\r\n\t\t5. Chablis\r\n\t\t6. Riesling \u2013 Recommended to non-\t\t\t\t\twine
+    drinkers\r\n\t\t7. Muscat \u2013 Sweeter, excellent \t\t\t\t\t\t\tdessert wine,
+    and also \t\t\t\t\t\t\t\trecommended to non-wine \t\t\t\t\t\t\tdrinkers\r\nRed
+    Wines: Made from red grapes. Typically takes on berry characteristics such as:
+    cherry, blackberry, raspberry, currant, etc. Red wine will pick up oak flavors
+    more than white wines. Usually served with red meat or pasta.\r\n\tExamples:
+    \r\n\t\t1. Burgundy \r\n\t\t2. Cabernet Sauvignon - Most \t\t\t\t\t\t\timportant
+    red grape, with highly \t\t\t\tdistinctive flavors\n\t\t3. Merlot\r\n\t\t4. Pinot
+    Noir\r\n\t\t5. Zinfandel \u2013 Yes, it is red!\r\nChampagne/Sparkling Wine:
+    In order for champagne to be legally 'Champagne', the grapes must be harvested
     from the Champagne region of France (everything else is Sparkling Wine)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -8217,9 +8228,9 @@ RectTransform:
   - {fileID: 1535183815}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -677.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270451902
@@ -8398,8 +8409,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1925831755}
   m_HandleRect: {fileID: 1925831754}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.029774562
+  m_Value: 0.7913189
+  m_Size: 0.028386047
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8612,9 +8623,9 @@ RectTransform:
   - {fileID: 385651173}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1922.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337974717
@@ -8745,7 +8756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -21470}
+  m_AnchoredPosition: {x: 425, y: -22470}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387406073
@@ -8881,9 +8892,9 @@ RectTransform:
   - {fileID: 1045132653}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -997.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395729619
@@ -9014,9 +9025,9 @@ RectTransform:
   - {fileID: 1123376608}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -517.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400605769
@@ -9423,8 +9434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -22175}
-  m_SizeDelta: {x: 850, y: 1350}
+  m_AnchoredPosition: {x: 425, y: -23225}
+  m_SizeDelta: {x: 850, y: 1450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463550736
 MonoBehaviour:
@@ -9449,13 +9460,15 @@ MonoBehaviour:
   m_text: "Garnishes do way more than just make a drink look pretty \u2014 they enhance
     aroma, flavor, and the overall drinking experience. A well-chosen garnish can
     tie all the elements of a cocktail together.\n\t\u2022 Aromatic Impact: Fresh
-    herbs, citrus peels, or spices release scent as you sip \u2014 aroma is a big
-    part of taste! Example: A twist of lemon on a Martini releases essential oils
-    that brighten the drink.\n\t\u2022 Flavor Boost: Some garnishes can be eaten
-    or stir into the drink, adding flavor as they infuse. Example: Mint in a Mojito,
-    olives in a Dirty Martini, or jalapeno slices in a spicy margarita.\n\t\u2022Functional
-    Garnishes: These affect the texture or interaction of the drink. Example: Salt/sugar
-    rims, fruit wheels that chill and flavor, or skewers that hold garnish in place."
+    herbs, citrus \t\t\t\tpeels, or spices release scent as you \t\t\tsip \u2014
+    aroma is a big part of taste! \t\t\tExample: A twist of lemon on a Martini \t\t\treleases
+    essential oils that brighten \t\t\tthe drink.\n\t\u2022 Flavor Boost: Some garnishes
+    can be \t\t\t\teaten or stir into the drink, adding \t\t\t\tflavor as they infuse.
+    Example: Mint in \t\ta Mojito, olives in a Dirty Martini, or \t\t\t\tjalapeno
+    slices in a spicy margarita.\n\t\u2022 Functional Garnishes: These affect the
+    \t\t\ttexture or interaction of the drink. \t\t\t\tExample: Salt/sugar rims,
+    fruit \t\t\t\twheels that chill and flavor, or \t\t\t\t\t\tskewers that hold
+    garnish in place."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -9704,9 +9717,9 @@ RectTransform:
   - {fileID: 271072972}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1355}
   m_SizeDelta: {x: 800, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497606588
@@ -10109,9 +10122,9 @@ RectTransform:
   - {fileID: 2108274430}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -837.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578751550
@@ -10329,9 +10342,9 @@ RectTransform:
   - {fileID: 1867476629}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -357.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1624886928
@@ -10871,8 +10884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -16440}
-  m_SizeDelta: {x: 850, y: 1300}
+  m_AnchoredPosition: {x: 425, y: -17190}
+  m_SizeDelta: {x: 850, y: 1400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1788685924
 MonoBehaviour:
@@ -10896,14 +10909,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "A well-balanced cocktail doesn't overwhelm any one taste \u2014 it feels
     \"just right.\" Here's how to approach it:\r\n\t\u2022 Start with a base ratio,
-    like 2:1:1 \u2014 two parts spirit, one part sour, one part sweet.\r\n\t\u2022
-    Taste as you build \u2014 tiny tweaks make a big difference.\r\n\t\u2022 Balance
-    strength, sweetness, and acidity to keep the drink from being too harsh, cloying,
-    or flat.\r\n\t\u2022 Temperature and dilution matter \u2014 shaking or stirring
-    properly ensures a drink is chilled and slightly diluted, which mellows intense
-    flavors.\r\n\t\u2022 Garnishes can tip the balance too \u2014 citrus zest, herbs,
-    or salted rims can affect taste and aroma.\r\nThe goal is a drink that's smooth,
-    flavorful, and leaves you wanting another sip.\r"
+    like 2:1:1 \u2014 two \t\t\tparts spirit, one part sour, one part \t\t\tsweet.\r\n\t\u2022
+    Taste as you build \u2014 tiny tweaks make \t\t\ta big difference.\r\n\t\u2022
+    Balance strength, sweetness, and \t\t\t\tacidity to keep the drink from being
+    \t\t\t\ttoo harsh, cloying, or flat.\r\n\t\u2022 Temperature and dilution matter
+    \u2014 \t\t\t\tshaking or stirring properly ensures \t\t\ta drink is chilled
+    and slightly diluted, \t\t\t\twhich mellows intense flavors.\r\n\t\u2022 Garnishes
+    can tip the balance too \u2014 \t\t\t\tcitrus zest, herbs, or salted rims \t\t\t\tcan
+    affect taste and aroma.\r\nThe goal is a drink that's smooth, flavorful, and
+    leaves you wanting another sip.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -11016,9 +11030,9 @@ RectTransform:
   - {fileID: 1677543180}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -757.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806652946
@@ -11527,9 +11541,9 @@ RectTransform:
   - {fileID: 1835873107}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1157.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858619646
@@ -11660,9 +11674,9 @@ RectTransform:
   - {fileID: 256144450}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -37.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860017336
@@ -11793,7 +11807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -20905}
+  m_AnchoredPosition: {x: 425, y: -21805}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865316072
@@ -12065,7 +12079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -15760}
+  m_AnchoredPosition: {x: 425, y: -16460}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888747115
@@ -12201,7 +12215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -20550}
+  m_AnchoredPosition: {x: 425, y: -21450}
   m_SizeDelta: {x: 850, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895954243
@@ -12224,11 +12238,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Herbs \u2013 Mint, basil, rosemary (used for muddling or garnishing)\r\n\t\u2022
-    Spices \u2013 Ground cinnamon, nutmeg, or whole spices for infusions or garnish\r\n\t\u2022
-    Bitters \u2013 Technically alcoholic, but used in drops; add complexity and depth
-    (can be used in mocktails too)\r\n\t\u2022 Shrubs \u2013 Vinegar-based syrups
-    made with fruit and sugar; tangy and sweet\r"
+  m_text: "\t\u2022 Herbs \u2013 Mint, basil, rosemary (used for \t\t\tmuddling or
+    garnishing)\r\n\t\u2022 Spices \u2013 Ground cinnamon, nutmeg, or \t\t\twhole
+    spices for infusions or garnish\r\n\t\u2022 Bitters \u2013 Technically alcoholic,
+    but used \t\t\tin drops; add complexity and depth \t\t\t\t(can be used in mocktails
+    too)\r\n\t\u2022 Shrubs \u2013 Vinegar-based syrups made \t\t\twith fruit and
+    sugar; tangy and sweet\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -12341,7 +12356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -17170}
+  m_AnchoredPosition: {x: 425, y: -17970}
   m_SizeDelta: {x: 850, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902677305
@@ -12809,9 +12824,9 @@ RectTransform:
   - {fileID: 98837271}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1237.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018872520
@@ -12942,9 +12957,9 @@ RectTransform:
   - {fileID: 1464493033}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1762.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031639420
@@ -13075,7 +13090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -7800}
+  m_AnchoredPosition: {x: 425, y: -8150}
   m_SizeDelta: {x: 850, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2032742093
@@ -13214,9 +13229,9 @@ RectTransform:
   - {fileID: 603003962}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -117.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042405692
@@ -13483,7 +13498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -9265}
+  m_AnchoredPosition: {x: 425, y: -9765}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064553218
@@ -13619,7 +13634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -17685}
+  m_AnchoredPosition: {x: 425, y: -18485}
   m_SizeDelta: {x: 850, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067701114
@@ -13755,8 +13770,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -23210}
-  m_SizeDelta: {x: 850, y: 600}
+  m_AnchoredPosition: {x: 425, y: -24335}
+  m_SizeDelta: {x: 850, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074917334
 MonoBehaviour:
@@ -13778,10 +13793,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u2022 Citrus: Lime wedges, lemon twists, orange peels \u2014 brighten
-    and balance\n\t\u2022 Herbs: Mint, rosemary, basil \u2014 add freshness and aroma\n\t\u2022
-    Edible Additions: Berries, cucumber slices, jalapenos, cherries\n\t\u2022 Rims
-    & Sprinkles: Salt, sugar, Tajin, cocoa powder"
+  m_text: "\t\u2022 Citrus: Lime wedges, lemon twists, \t\t\t\t\t\torange peels \u2014
+    brighten and \t\t\t\t\t\tbalance\n\t\u2022 Herbs: Mint, rosemary, basil \u2014
+    add \t\t\t\tfreshness and aroma\n\t\u2022 Edible Additions: Berries, cucumber
+    \t\t\t\tslices, jalapenos, cherries\n\t\u2022 Rims & Sprinkles: Salt, sugar,
+    Tajin, \t\t\t\tcocoa powder"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
@@ -14002,9 +14018,9 @@ RectTransform:
   - {fileID: 1182322567}
   m_Father: {fileID: 1164330369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -1552.5}
   m_SizeDelta: {x: 800, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098203553

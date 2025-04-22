@@ -8182,7 +8182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.000122, y: 349.99805}
+  m_AnchoredPosition: {x: 5.000122, y: 20349.998}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1000364619
@@ -11456,8 +11456,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 450182320}
   m_HandleRect: {fileID: 450182319}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.021189645
+  m_Value: 0.38147524
+  m_Size: 0.021189647
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11979,215 +11979,185 @@ MonoBehaviour:
     BE POLITE - Always say "Sir" or "Ma''am" and thank
     every customer for every purchase, no matter how small.
 
-    
 
-    BE SOCIABLE
-    - A good bartender tries to be friendly to all their customers when they aren''t
+    BE SOCIABLE - A
+    good bartender tries to be friendly to all their customers when they aren''t
     busy making drinks. This does not mean that the bartender should solve the customer''s
     problems, but the bartender should be able to make small talk with the customer.
     This builds business for the establishment and will increase the bartender''s
     tips. If a bartender has a friendly, sociable attitude, customers will come back
     again and again to talk to the bartender.
 
-    
 
-    BE NEAT - Your duties
-    as a bartender will include keeping your bar spotless. Keep your bar dry by constantly
-    wiping it down with a sponge. Give the customer a dry napkin with every drink.
-    As soon as a customer leaves, immediately remove the empty glass and wipe down
-    the bar. Keep your bar rail uncluttered. The only things that should be on it
-    are a shot glass and jigger. Al other equipment should be kept on your drain
-    boards.
-
-    
-
-    BE EFFICIENT - Don''t wait for a customer to call you. If
-    you see someone is going to be ready for another drink, then go to the end of
-    the bar and make yourself available.
-
-    
-
-    BE ALERT - Keep looking up
-    and down your bar and try to anticipate when customers will need your services.
-    A big failing of new bartenders is that they must be constantly called for service.
-    Be alert so you won''t have to be called.
+    BE NEAT - Your duties as a bartender
+    will include keeping your bar spotless. Keep your bar dry by constantly wiping
+    it down with a sponge. Give the customer a dry napkin with every drink. As soon
+    as a customer leaves, immediately remove the empty glass and wipe down the bar.
+    Keep your bar rail uncluttered. The only things that should be on it are a shot
+    glass and jigger. Al other equipment should be kept on your drain boards.
 
 
-    COLLECT FOR EACH DRINK AS IT
-    IS SERVED - As soon as you serve a round, collect for it or mark it on a bar
-    tab. Never try to remember drinks in your head, because it is too easy to forget
-    how many drinks were ordered. If you cause the owner to lose money this way,
-    then you will soon be looking for another job.
+    BE
+    EFFICIENT - Don''t wait for a customer to call you. If you see someone is going
+    to be ready for another drink, then go to the end of the bar and make yourself
+    available.
 
-    
 
-    SERVE LADIES FIRST
-    - When you have a group of customers, serve the ladies first. The difference
-    makes them, and their companion feel special because of your courtesy.
+    BE ALERT - Keep looking up and down your bar and try to anticipate
+    when customers will need your services. A big failing of new bartenders is that
+    they must be constantly called for service. Be alert so you won''t have to be
+    called.
 
-    
 
-    CAREFULLY
-    COUNT CHANGE - When a customer gives you a bill larger than a single dollar,
-    call out the denomination of the bill ("That''s S3 out of $5" or "You want me
-    to take that out of the SS0?"). Sometimes a customer may think they gave you
-    a larger bill than they did. When you make change, leave the bill on the tray
-    of the cash register until you have made change. This way you can see how large
-    of a bill it was. As you give change make sure to count it out loud.
+    COLLECT FOR EACH DRINK AS IT IS SERVED - As soon as you serve a
+    round, collect for it or mark it on a bar tab. Never try to remember drinks in
+    your head, because it is too easy to forget how many drinks were ordered. If
+    you cause the owner to lose money this way, then you will soon be looking for
+    another job.
 
-    
 
-    KEEP
-    GOOD POSTURE - When you''re behind the bar, stand erect. Don''t lean on the bar
-    or sit on the sinks. A slouching, leaning bartender will give customers a poor
-    impression.
+    SERVE LADIES FIRST - When you have a group of customers, serve
+    the ladies first. The difference makes them, and their companion feel special
+    because of your courtesy.
 
-    
 
-    DON''T BECOME INVOLVED IN ANYTHING CONTROVERSIAL - Politics,
-    religion and social issues should never be discussed by the bartender. Even though
-    you may be discussing a point that you and the customer agree on, many other
-    customers sitting at the bar may overhear you and disagree. You can easily cause
-    hard feelings or make enemies without even knowing it. The world''s best bartenders
-    keep their mouth shut and their opinions to themselves.
+    CAREFULLY COUNT CHANGE - When a customer gives
+    you a bill larger than a single dollar, call out the denomination of the bill
+    ("That''s S3 out of $5" or "You want me to take that out of the SS0?"). Sometimes
+    a customer may think they gave you a larger bill than they did. When you make
+    change, leave the bill on the tray of the cash register until you have made change.
+    This way you can see how large of a bill it was. As you give change make sure
+    to count it out loud.
 
-    
 
-    NEVER ARGUE
-    - Don''t argue with a customer about anything, even if the customer is wrong.
-    It won''t do any god to win the argument and lose the customer. Don''t argue
-    with fellow employees either. People want to relax when they come to a bar, not
-    listen to family squabbles.
+    KEEP GOOD POSTURE - When you''re behind the bar,
+    stand erect. Don''t lean on the bar or sit on the sinks. A slouching, leaning
+    bartender will give customers a poor impression.
 
-    
 
-    DON''T DRINK ON THE JOB - Never consume
-    alcoholic drinks behind the bar while you are on duty for any reason. You can''t
-    drink and give good service. Drinking on the job will lead to immediate dismissal
-    in any good establishment.
+    DON''T BECOME INVOLVED
+    IN ANYTHING CONTROVERSIAL - Politics, religion and social issues should never
+    be discussed by the bartender. Even though you may be discussing a point that
+    you and the customer agree on, many other customers sitting at the bar may overhear
+    you and disagree. You can easily cause hard feelings or make enemies without
+    even knowing it. The world''s best bartenders keep their mouth shut and their
+    opinions to themselves.
 
-    
 
-    DON''T ALLOW ANYONE TO BUY YOU A DRINK
-    - Accepting drinks from customers is taboo. If someone wants to buy you a drink,
-    politely tell them you''re sorry, but it''s against the house policy for bartenders
-    to drink.
+    NEVER ARGUE - Don''t argue with a customer about
+    anything, even if the customer is wrong. It won''t do any god to win the argument
+    and lose the customer. Don''t argue with fellow employees either. People want
+    to relax when they come to a bar, not listen to family squabbles.
 
-    
-
-    DON''T GIVE AWAY FREE DRINKS - At no time should you give
-    away a free drink without proper authorization from the management. Only the
-    owner has the right to buy drinks for customers. Most of the better establishments
-    have given up this practice because it is unprofitable. If a customer asks when
-    you''re going to buy them a drink, politely say you''re paid to sell it, not
-    give it away and that you''re not the owner and therefore do not have the authority.
-
-    
 
     DON''T
-    PLAY FAVORITES - Give all customers equal attention. Don''t just get to know
-    a few of them and ignore others who might come in. By being equally friendly
-    to everyone, you increase your chances of making better tips.
+    DRINK ON THE JOB - Never consume alcoholic drinks behind the bar while you are
+    on duty for any reason. You can''t drink and give good service. Drinking on the
+    job will lead to immediate dismissal in any good establishment.
 
-    
 
     DON''T
-    LOAN CUSTOMERS MONEY - Many customers will try to borrow money from a new bartender.
-    If someone asks you for a loan, politely tell them you can''t spare the money.
-    If you do loan the money, even a dollar, you''re likely to never see the customer
-    or the dollar again.
+    ALLOW ANYONE TO BUY YOU A DRINK - Accepting drinks from customers is taboo. If
+    someone wants to buy you a drink, politely tell them you''re sorry, but it''s
+    against the house policy for bartenders to drink.
 
-    
 
-    DON''T GOSSIP - Whatever you see or hear while
-    working behind the bar should be kept confidential. At no time should you discuss
-    what goes on with your friends, other employees or customers. Never answer questions
-    people ask about other customers and don''t become involved in their affairs.
-    Your job is to serve drinks and be polite, not to keep everyone up on what''s
-    going on with whom.
+    DON''T GIVE AWAY FREE
+    DRINKS - At no time should you give away a free drink without proper authorization
+    from the management. Only the owner has the right to buy drinks for customers.
+    Most of the better establishments have given up this practice because it is unprofitable.
+    If a customer asks when you''re going to buy them a drink, politely say you''re
+    paid to sell it, not give it away and that you''re not the owner and therefore
+    do not have the authority.
 
-    
 
-    DON''T GIVE CUSTOMERS A HARD TIME - If a customer
-    complains about a drink, ask what''s wrong and give them a fresh one. Even if
-    the customer is wrong, never argue.
+    DON''T PLAY FAVORITES - Give all customers equal
+    attention. Don''t just get to know a few of them and ignore others who might
+    come in. By being equally friendly to everyone, you increase your chances of
+    making better tips.
 
-    
 
-    DON''T BE NOSEY - If customers
-    want you to know their personal business, they will tell you. Don''t be nosey
-    and ask questions about someone''s personal life. Many customers prefer to remain
-    anonymous in places where they drink.
+    DON''T LOAN CUSTOMERS MONEY - Many customers will try
+    to borrow money from a new bartender. If someone asks you for a loan, politely
+    tell them you can''t spare the money. If you do loan the money, even a dollar,
+    you''re likely to never see the customer or the dollar again.
 
-    
 
-    DON''T ALLOW CUSTOMERS TO
-    BECOME ROWDY OR USE PROFANITY - If a customer is becoming loud or rowdy, immediately
+    DON''T GOSSIP
+    - Whatever you see or hear while working behind the bar should be kept confidential.
+    At no time should you discuss what goes on with your friends, other employees
+    or customers. Never answer questions people ask about other customers and don''t
+    become involved in their affairs. Your job is to serve drinks and be polite,
+    not to keep everyone up on what''s going on with whom.
+
+
+    DON''T GIVE CUSTOMERS
+    A HARD TIME - If a customer complains about a drink, ask what''s wrong and give
+    them a fresh one. Even if the customer is wrong, never argue.
+
+
+    DON''T BE
+    NOSEY - If customers want you to know their personal business, they will tell
+    you. Don''t be nosey and ask questions about someone''s personal life. Many customers
+    prefer to remain anonymous in places where they drink.
+
+
+    DON''T ALLOW CUSTOMERS
+    TO BECOME ROWDY OR USE PROFANITY - If a customer is becoming loud or rowdy, immediately
     notify the manager. Don''t close your eyes and hope they will go away, because
     they probably won''t. If there is no one there but you, politely tell the customer
     to please keep it down. This should work, but if they persist in being loud,
     after they finish their drink, do not serve them another one.
 
-    
 
-    DON''T
-    SERVE ANYONE WHO HAS HAD TOO MUCH TO DRINK - It is against the law to serve a
-    drunk. In some states, if you serve a drunk and they leave the establishment
-    and get into an accident, the establishment can be held legally responsible.
-    Many times, it is hard to tell if someone is drunk, but, if it is obvious then
-    you should politely inform the customer that you cannot serve them. If the customer
-    gives you a hard time, don''t argue, ignore them, or bring them a non-alcoholic
-    drink. At no time should you get out from behind the bar to escort them out.
+    DON''T SERVE
+    ANYONE WHO HAS HAD TOO MUCH TO DRINK - It is against the law to serve a drunk.
+    In some states, if you serve a drunk and they leave the establishment and get
+    into an accident, the establishment can be held legally responsible. Many times,
+    it is hard to tell if someone is drunk, but, if it is obvious then you should
+    politely inform the customer that you cannot serve them. If the customer gives
+    you a hard time, don''t argue, ignore them, or bring them a non-alcoholic drink.
+    At no time should you get out from behind the bar to escort them out.
 
-    
 
     KEEP
     CIGARETTES AND LIGHTERS ON HAND FOR CUSTOMERS - Although smoking is a touchy
     subject, it''s a nice touch to keep cigarettes and a lighter on hand for customers
     who smoke but run out at the end of the night or who have misplaced their lighters.
 
-    
 
     NEVER
     EAT BEHIND THE BAR - It is very unprofessional to consume food while you are
     working behind the bar. Take meals to the place designated by management for
     eating.
 
-    
 
-    BE CAREFUL WHEN YOU COUGH - If you cough or sneeze, be sure
-    to use a Kleenex or handkerchief. Wash your hands immediately before handling
-    a customer''s drink.
+    BE CAREFUL WHEN YOU COUGH - If you cough or sneeze, be sure to
+    use a Kleenex or handkerchief. Wash your hands immediately before handling a
+    customer''s drink.
 
-    
 
-    KNOW WHAT''S GOING ON IN THE WORLD - Knowing
-    what''s happening in sports or local news gives you something to discuss with
-    customers. Keep up with current events by reading a daily newspaper.
+    KNOW WHAT''S GOING ON IN THE WORLD - Knowing what''s
+    happening in sports or local news gives you something to discuss with customers.
+    Keep up with current events by reading a daily newspaper.
 
-    
 
-    DON''T
-    SOLVE PEOPLE''S PROBLEMS - Many people lean on a bartender as a person who can
-    solve their problems or at least listen to them. Your best bet is to just listen
-    and not become involved. Very often, if you give a person advice, it can backfire
+    DON''T SOLVE
+    PEOPLE''S PROBLEMS - Many people lean on a bartender as a person who can solve
+    their problems or at least listen to them. Your best bet is to just listen and
+    not become involved. Very often, if you give a person advice, it can backfire
     on you.
 
-    
 
-    DON''T MAKE CUSTOMERS WAIT - Your first obligation to the
-    owner and the customer is to serve drinks. If you''re washing glasses and a customer
+    DON''T MAKE CUSTOMERS WAIT - Your first obligation to the owner
+    and the customer is to serve drinks. If you''re washing glasses and a customer
     comes in, then serve the customer and wash glasses later. If you''re talking
     to another customer and a new customer comes in, excuse yourself to serve the
     new customer. If one customer wants change for the phone and another customer
     wants a drink and they call you at the same time - serve the drink first. If
-    you are busy
-
-    making a drink and another customer calls you for something,
-    just tell them that you''ll be right there and finish making and serving the
-    drink in front of you.
-
-'
+    you are busy making a drink and another customer calls you for something, just
+    tell them that you''ll be right there and finish making and serving the drink
+    in front of you.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
   m_sharedMaterial: {fileID: 2549501651691193609, guid: f5dd8120818124c14bb750f02e5bf1e0, type: 2}
