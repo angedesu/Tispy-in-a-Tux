@@ -729,7 +729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 299.99982, y: 0}
+  m_AnchoredPosition: {x: 299.99988, y: 0}
   m_SizeDelta: {x: 640.86, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123870505
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Drinks: 10
+  m_text: 'Drinks: 0
 
 '
   m_isRightToLeft: 0
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Timer : 5
+  m_text: 'Timer : 00:00
 
 '
   m_isRightToLeft: 0
@@ -1500,6 +1500,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516152531}
   m_CullTransparentMesh: 1
+--- !u!1 &545741070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545741072}
+  - component: {fileID: 545741071}
+  m_Layer: 0
+  m_Name: DataDrinkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &545741071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545741070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ca66de444d54c429eeb45640d924be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &545741072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545741070}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5118737, y: 0.10062799, z: 0.018700399}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576195075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,7 +1937,7 @@ GameObject:
   - component: {fileID: 1029988440}
   - component: {fileID: 1029988439}
   m_Layer: 0
-  m_Name: Drink Fetcher
+  m_Name: (old) (test)Drink Fetcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2307,6 +2351,7 @@ GameObject:
   - component: {fileID: 1609486380}
   - component: {fileID: 1609486382}
   - component: {fileID: 1609486381}
+  - component: {fileID: 1609486383}
   m_Layer: 5
   m_Name: Recipe Board
   m_TagString: Untagged
@@ -2373,6 +2418,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609486379}
   m_CullTransparentMesh: 1
+--- !u!114 &1609486383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609486379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1efb366c1da1c441a7aef39abcb6070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleText: {fileID: 78816403}
+  ingredientsText: {fileID: 1717084749}
+  dataManager: {fileID: 545741071}
 --- !u!1 &1617772617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,6 +2778,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658001202}
   m_CullTransparentMesh: 1
+--- !u!1 &1659173677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1659173679}
+  - component: {fileID: 1659173678}
+  m_Layer: 0
+  m_Name: timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1659173678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659173677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7f90d0021477c45811af480df0bdf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 402922917}
+  drinkCountText: {fileID: 385122216}
+--- !u!4 &1659173679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659173677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5118737, y: 0.10062799, z: 0.018700399}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667661837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,3 +3413,5 @@ SceneRoots:
   - {fileID: 962697420}
   - {fileID: 1914803344}
   - {fileID: 1029988440}
+  - {fileID: 545741072}
+  - {fileID: 1659173679}
