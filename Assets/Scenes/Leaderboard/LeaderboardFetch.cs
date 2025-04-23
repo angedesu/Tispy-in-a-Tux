@@ -59,7 +59,7 @@ namespace Leaderboard
         {
             ranking = new List<LeaderboardEntry>();
         }
-        static async Task<Leaderboard> GetLeaderboard()
+        /*static async Task<Leaderboard> GetLeaderboard()
         {
             //Create a new leaderboard
             Leaderboard newBoard = new Leaderboard();
@@ -70,9 +70,9 @@ namespace Leaderboard
             *Hopefully it doesn't have a memory leak or anything
             *I don't like garbage collecting languages
             *I don't know when stuff does get collected, or if it does
-            */
+          
             return newBoard;
-        }
+        } */
         //Fetch for Leaderboard
         private void Fetch()
         {

@@ -25,7 +25,7 @@ public class SelectedManager : MonoBehaviour
 
     public void recipeSelected()
     {
-        // replace with corrent scene
+        // replace with current scene
         SceneManager.LoadScene("Scenes/RecipeBook/RecipeBookSearch");
     }
 
