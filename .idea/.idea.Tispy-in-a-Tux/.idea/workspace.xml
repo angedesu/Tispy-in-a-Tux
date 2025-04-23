@@ -6,53 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon Whiskey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon Whiskey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandt.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Drumbuie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Drumbuie.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port Wine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port Wine.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Rye Whisky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Rye Whisky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch Whisky.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch Whisky.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Red Vermouth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Red Vermouth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Rum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Rum.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Cherries.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Cherries.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Grated Nutmeg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Grated Nutmeg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon Slice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon Slice.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Twist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Twist.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Wheel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime Wheel.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint Spring.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint Spring.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Slice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Slice.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Twist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Orange Twist.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Sugar Rim.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Sugar Rim.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Fresh Cream.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Fresh Cream.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Heavy Cream.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Heavy Cream.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/PeyChaud's Bitters.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/PeyChaud's Bitters.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Simple Syrup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Simple Syrup.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Cube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Cube.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/DrinkFetcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/DrinkFetcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Apple brandy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Apple brandy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Apricot Brandy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Apricot Brandy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Benedictine.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Benedictine.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Blended Whiskey.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Blended Whiskey.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Bourbon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Brandy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Campari.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Campari.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Cognac.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Cognac.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Cointreau.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Cointreau.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Creme de Cacao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Creme de Cacao.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Dark Rum.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Dark Rum.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Dry Vermouth.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Dry Vermouth.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Gin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Gin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino Liqueur.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Marashino Liqueur.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Port.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Ricard.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Ricard.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Scotch.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Vermouth.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Sweet Vermouth.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Tequila.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Tequila.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Triple Sec.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/Triple Sec.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Creme de Menthe.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/White Creme de Menthe.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/ginn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Alcohol/ginn.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Anis.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Anis.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lemon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime peel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Lime peel.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Maraschino Cherry.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Maraschino Cherry.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Mint.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Nutmeg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Nutmeg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Olive.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Olive.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Salt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/Salt.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/lime.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/lime.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/powdered sugar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Garnishes/powdered sugar.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Angostura Bitters.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Angostura Bitters.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Carbonated Water or soda water.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Carbonated Water or soda water.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Egg White.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Egg White.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Light Creme.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Light Creme.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Lime Juice.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Lime Juice.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Orange Bitters.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Orange Bitters.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Peach bitters.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Peach bitters.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Pineapple Juice.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Pineapple Juice.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Syrup.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar Syrup.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Sugar.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Vanilla Extract.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/Vanilla Extract.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/peychaud bitters.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Mixers/peychaud bitters.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/shelf_tab_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/backgrounds/shelf_tab_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +76,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartScreen/FirstLauchDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@03407c6d8751/Runtime/TMP/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@03407c6d8751/Runtime/UGUI/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -112,9 +118,6 @@
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -123,9 +126,6 @@
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -139,7 +139,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -153,7 +152,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -175,6 +173,11 @@
       <workItem from="1744853055659" duration="1767000" />
       <workItem from="1744860600516" duration="1145000" />
       <workItem from="1744862338775" duration="6027000" />
+      <workItem from="1745199738059" duration="2136000" />
+      <workItem from="1745301610990" duration="5013000" />
+      <workItem from="1745390140046" duration="521000" />
+      <workItem from="1745398175405" duration="4265000" />
+      <workItem from="1745403430066" duration="668000" />
     </task>
     <servers />
   </component>
@@ -190,23 +193,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
