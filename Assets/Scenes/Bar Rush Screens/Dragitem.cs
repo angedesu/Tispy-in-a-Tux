@@ -5,8 +5,6 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 {
     private Transform originalParent;
     
-    
-    
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("OnBeginDrag");
@@ -19,6 +17,7 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         Debug.Log("OnDrag");
         transform.position = Input.mousePosition;
+        
     }
 
     public void OnEndDrag(PointerEventData eventData)
