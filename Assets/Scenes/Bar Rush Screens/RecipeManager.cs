@@ -146,4 +146,11 @@ public class RecipeManager : MonoBehaviour
             }
         }
     }
+
+    public void Ice()
+    {
+        
+    }
+    
+    
 }

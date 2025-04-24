@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/MixingScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +121,7 @@
       <workItem from="1745123083325" duration="2583000" />
       <workItem from="1745300518776" duration="642000" />
       <workItem from="1745365633837" duration="807000" />
-      <workItem from="1745368123887" duration="2760000" />
+      <workItem from="1745368123887" duration="3211000" />
     </task>
     <servers />
   </component>
