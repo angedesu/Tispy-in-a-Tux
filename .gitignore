@@ -75,3 +75,6 @@ crashlytics-build.properties
 
 Backend/.env
 Backend/firebase-adminsdk.json
+
+# JetBrains Rider cache
+.idea/
