@@ -23,7 +23,7 @@ public class DropItem : MonoBehaviour, IDropHandler
             {
                 string itemName = itemImage.sprite.name;    // Get ingredient name from the image
                 
-                Debug.Log($"Item dropped: {itemName}, ingredient name from image: {itemImage.sprite.name}");
+                Debug.Log($"ingredient name from image: {itemImage.sprite.name}");
                 
                 // Animation function goes here (WIP)
                 
