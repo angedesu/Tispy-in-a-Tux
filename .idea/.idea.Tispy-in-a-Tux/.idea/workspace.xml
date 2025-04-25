@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="" />
+    <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/Dragitem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/Dragitem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/Shelf Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bar Rush Screens/Shelf Slot.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +53,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev-eric",
+    "git-widget-placeholder": "huy",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,7 +65,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -69,7 +73,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -121,6 +125,7 @@
       <workItem from="1745123083325" duration="2583000" />
       <workItem from="1745300518776" duration="642000" />
       <workItem from="1745365633837" duration="807000" />
+      <workItem from="1745535443972" duration="3062000" />
     </task>
     <servers />
   </component>
