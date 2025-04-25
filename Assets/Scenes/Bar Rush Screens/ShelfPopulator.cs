@@ -43,6 +43,12 @@ public class ShelfPopulator : MonoBehaviour
             {   
                 // Create the sprite from the image
                 Sprite sprite = Sprite.Create(itemTextures[i], new Rect(0, 0, itemTextures[i].width, itemTextures[i].height), Vector2.one * 0.5f);
+                // Assign sprite name from texture name
+                sprite.name = itemTextures[i].name;
+                
+                Debug.Log($"texture name {itemTextures[i].name}");
+                Debug.Log($"sprite name {sprite.name}");
+                
                 // Assign sprite to image component
                 shelfSlotImage.sprite = sprite;
             }
