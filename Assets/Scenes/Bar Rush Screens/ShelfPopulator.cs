@@ -5,7 +5,7 @@ public class ShelfPopulator : MonoBehaviour
 {
     public GameObject shelfSlotPrefab;
     // Path to image folder
-    public string alcoholImagePath;
+    public string itemImagePath;
     
     void Start()
     {
@@ -21,15 +21,15 @@ public class ShelfPopulator : MonoBehaviour
         }
         
         // Get all images from the folder
-        Texture2D[] alcoholTextures = Resources.LoadAll<Texture2D>(alcoholImagePath);
+        Texture2D[] itemTextures = Resources.LoadAll<Texture2D>(itemImagePath);
 
-        if (alcoholTextures.Length == 0)
+        if (itemTextures.Length == 0)
         {
             Debug.LogWarning("No alcohol image found in specified path");
             return;
         }
         
-        int numberOfImages = alcoholTextures.Length;
+        int numberOfImages = itemTextures.Length;
         
         // Instantate shelf slots prefabs based on the number of images
         for (int i = 0; i < numberOfImages; i++)
@@ -42,7 +42,7 @@ public class ShelfPopulator : MonoBehaviour
             if (shelfSlotImage != null)
             {   
                 // Create the sprite from the image
-                Sprite sprite = Sprite.Create(alcoholTextures[i], new Rect(0, 0, alcoholTextures[i].width, alcoholTextures[i].height), Vector2.one * 0.5f);
+                Sprite sprite = Sprite.Create(itemTextures[i], new Rect(0, 0, itemTextures[i].width, itemTextures[i].height), Vector2.one * 0.5f);
                 // Assign sprite to image component
                 shelfSlotImage.sprite = sprite;
             }
