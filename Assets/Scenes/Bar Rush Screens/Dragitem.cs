@@ -39,6 +39,9 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         Color tempColor = originalColor;
         tempColor.a = dragAlpha;
         itemImage.color = tempColor;
+        
+        // 
+        itemImage.raycastTarget = false;
 
     }
 
@@ -59,5 +62,8 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         
         // Restore item original alpha
         itemImage.color = originalColor;
+        
+        //
+        itemImage.raycastTarget = true;
     }
 }
