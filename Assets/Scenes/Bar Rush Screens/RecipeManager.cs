@@ -124,23 +124,11 @@ public class RecipeManager : MonoBehaviour
     {
         alcohols.Clear();
         mixers.Clear();
-
-        foreach (var key in playerIngredients.Keys.ToList())
-        {
-            if (IngredientLibrary.Alcohols.Contains(key) || IngredientLibrary.Mixers.Contains(key))
-            {
-                playerIngredients[key] = false;
-            }
-        }
-    }
-    // this resets the garnishes
-    public void ResetGarnishes()
-    {
         garnishes.Clear();
 
         foreach (var key in playerIngredients.Keys.ToList())
         {
-            if (IngredientLibrary.Garnishes.Contains(key))
+            if (IngredientLibrary.Alcohols.Contains(key) || IngredientLibrary.Mixers.Contains(key) || IngredientLibrary.Garnishes.Contains(key))
             {
                 playerIngredients[key] = false;
             }
