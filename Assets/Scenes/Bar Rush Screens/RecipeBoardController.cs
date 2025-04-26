@@ -25,7 +25,7 @@ public class RecipeBoardController : MonoBehaviour
         "Old Fashioned", "Dry Martini", "Manhattan", "Whiskey Sour", "Daiquiri"
     };
 
-    private void ShowRandomDrink()
+    public void ShowRandomDrink()
     {
         int index = Random.Range(0, drinkNames.Count);
         string randomDrink = drinkNames[index];

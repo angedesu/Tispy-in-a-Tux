@@ -41,7 +41,9 @@ public class DrinkDataManager : MonoBehaviour
         
         DrinkRecipeData recipe = new DrinkRecipeData
         {
-            title = drink["strDrink"]!.ToString()
+            title = drink["strDrink"]!.ToString(),
+            glassName = drink["strGlass"]?.ToString()?.Trim()
+            
         };
 
         for (int i = 1; i <= 15; i++)
@@ -66,6 +68,7 @@ public class DrinkDataManager : MonoBehaviour
 public class DrinkRecipeData
 {
     public string title;
+    public string glassName;
     public List<string> alcohols = new();
     public List<string> mixers = new();
     public List<string> garnishes = new();

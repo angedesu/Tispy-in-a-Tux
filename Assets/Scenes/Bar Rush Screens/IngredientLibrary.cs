@@ -6,7 +6,7 @@ public static class IngredientLibrary
     {
         "Tequila", "Triple sec", "Campari", "Sweet Vermouth", "Scotch", "Drambuie", "Brandy", "White Creme de Menthe",
         "Gin", "gin", "Bourbon", "Dry Vermouth", "Blended whiskey", "Light rum", "Cognac", "Cointreau", "Apricot brandy", "Apple brandy",
-        "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port", "Maraschino liqueur"
+        "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port", "Maraschino liqueur", "Vodka"
     };
 
     public static readonly HashSet<string> Mixers = new()

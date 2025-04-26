@@ -4,15 +4,29 @@ using System.Collections.Generic;
 
 public class MixingController : MonoBehaviour
 {
+    [Header("Glass Prefabs")]
+    public GameObject highballGlass;
+    public GameObject cocktailGlass;
+    public GameObject oldFashionedGlass;
+    public GameObject collinsGlass;
+    
     public Animator shakerAnimator;
     public GameObject correctGlass;
     public GameObject mixerContainer;
     public GameObject incorrectPopup;
 
+    private Dictionary<string, GameObject> glassMap;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        glassMap = new Dictionary<string, GameObject>
+        {
+            { "Highball glass", highballGlass },
+            { "Cocktail glass", cocktailGlass },
+            { "Old-fashioned glass", oldFashionedGlass }
+        };
     }
 
     // Update is called once per frame
@@ -35,6 +49,44 @@ public class MixingController : MonoBehaviour
             RecipeManager.Instance.ResetMixer();
         }
     }
+    
+    public void Serve()
+    {
+        if (!RecipeManager.Instance.CheckFullIngredients())
+        {
+            Debug.LogWarning("Garnishes incorrect. Please fix garnish ingredients!");
+
+            // (Optional) Show a visual popup or feedback to user
+            if (incorrectPopup != null)
+            {
+                incorrectPopup.SetActive(true);
+                Invoke(nameof(HideIncorrectFeedback), 2f);
+            }
+        
+            return;
+        }
+
+        // Drink is correct ✅
+        Debug.Log("Drink served successfully!");
+
+        // Increment drink counter (assuming you have something like GameStats.DrinksServed)
+        GameStats.DrinkServed--;
+
+        // Show the mixer container again (for next drink)
+        if (mixerContainer != null)
+            mixerContainer.SetActive(true);
+
+        // Hide any glasses that were shown
+        foreach (var glass in glassMap.Values)
+            glass.SetActive(false);
+
+        // Load a new random recipe
+        RecipeBoardController recipeBoard = FindObjectOfType<RecipeBoardController>();
+        if (recipeBoard != null)
+        {
+            recipeBoard.ShowRandomDrink();
+        }
+    }
 
     private IEnumerator PerformMixing()
     {
@@ -43,10 +95,25 @@ public class MixingController : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
 
-        if (mixerContainer != null) mixerContainer.SetActive(false);
-        if (correctGlass != null) correctGlass.SetActive(true);
+        if (mixerContainer != null)
+            mixerContainer.SetActive(false);
 
-        Debug.Log("Drink is ready!");
+        string glassType = RecipeManager.Instance.currentRecipe.glassName;
+
+        // Hide all glasses first
+        foreach (var glass in glassMap.Values)
+            glass.SetActive(false);
+
+        // Activate the correct one
+        if (glassMap.ContainsKey(glassType))
+        {
+            glassMap[glassType].SetActive(true);
+            Debug.Log("Activated glass: " + glassType);
+        }
+        else
+        {
+            Debug.LogWarning($"No glass found for: {glassType}");
+        }
     }
 
     private void ShowIncorrectFeedback()
