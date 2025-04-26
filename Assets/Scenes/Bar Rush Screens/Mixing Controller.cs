@@ -11,7 +11,6 @@ public class MixingController : MonoBehaviour
     public GameObject collinsGlass;
     
     public Animator shakerAnimator;
-    public GameObject correctGlass;
     public GameObject mixerContainer;
     public GameObject incorrectPopup;
 
@@ -25,7 +24,8 @@ public class MixingController : MonoBehaviour
         {
             { "Highball glass", highballGlass },
             { "Cocktail glass", cocktailGlass },
-            { "Old-fashioned glass", oldFashionedGlass }
+            { "Old-fashioned glass", oldFashionedGlass },
+            { "Collins glass", collinsGlass }
         };
     }
 
@@ -81,7 +81,7 @@ public class MixingController : MonoBehaviour
             glass.SetActive(false);
 
         // Load a new random recipe
-        RecipeBoardController recipeBoard = FindObjectOfType<RecipeBoardController>();
+        RecipeBoardController recipeBoard = FindAnyObjectByType<RecipeBoardController>();
         if (recipeBoard != null)
         {
             recipeBoard.ShowRandomDrink();

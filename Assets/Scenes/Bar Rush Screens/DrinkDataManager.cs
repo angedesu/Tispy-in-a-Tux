@@ -45,7 +45,8 @@ public class DrinkDataManager : MonoBehaviour
             glassName = drink["strGlass"]?.ToString()?.Trim()
             
         };
-
+        
+        recipe.alcohols.Add("Ice cubes_0");
         for (int i = 1; i <= 15; i++)
         {
             string ingredient = drink[$"strIngredient{i}"]?.ToString()?.Trim();

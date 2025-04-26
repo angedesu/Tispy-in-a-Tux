@@ -52,9 +52,6 @@ public class RecipeBoardController : MonoBehaviour
         // custom instruction display
         string output = "";
 
-        // start with ice
-        output += "-----------ICE-----------\n";
-
         // alcohols
         foreach (string alcohol in data.alcohols)
         {
@@ -68,14 +65,14 @@ public class RecipeBoardController : MonoBehaviour
         }
 
         // mix step
-        output += "----------SHAKE----------\n";
+        output += "<b>MIX</b>\n";
 
         // garnishes
         foreach (string garnish in data.garnishes)
         {
             output += $"{garnish}\n";
         }
-        output += "----------SERVE----------";
+        output += "<b>SERVE</b>";
 
         ingredientsText.text = output;
         
