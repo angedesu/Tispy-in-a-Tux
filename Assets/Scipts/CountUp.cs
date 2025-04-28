@@ -71,10 +71,7 @@ public class CountUp : MonoBehaviour
     // Stop Count
     private void StopCount()
     {
-        if (countActive)
-        {
-            countActive = !countActive;
-        }
+        countActive = false;
 
         if (currentTime > 0) //faded grey color to show that it is paused
             countText.color = Color.grey;

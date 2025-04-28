@@ -33,4 +33,15 @@ public class switchActivation : MonoBehaviour
         gameObject1.SetActive(false);
         gameObject2.SetActive(false);
     }
+
+    public void SwitchToGameObject1() {
+        gameObject2.SetActive(false); //deactivate gameObject2
+        gameObject1.SetActive(true); //activate the other game object (gameObject1)
+    }
+
+    public void SwitchToGameObject2()
+    {
+        gameObject1.SetActive(false); //deactivate gameObject1
+        gameObject2.SetActive(true); //activate the other game object (gameObject2)
+    }
 }
