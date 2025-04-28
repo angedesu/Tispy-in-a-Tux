@@ -8,6 +8,7 @@ using UnityEngine.Networking;
 using System.Linq;
 using System.Collections;
 using Newtonsoft.Json.Linq;
+using Unity.VisualScripting;
 
 namespace RecipeBook
 {
@@ -21,7 +22,7 @@ namespace RecipeBook
         }
         public class Recipe
         {
-            public Recipe(string n, bool a, List<string> ingredients, List<string> tools)
+            public Recipe(string n, bool a, List<string> ingredients, List<string> tools, int i)
             {
                 name = n;
                 Alcoholic = a;
@@ -29,6 +30,7 @@ namespace RecipeBook
                 //I need to connect to the database and find out how I assemble this information though
                 ingredientList = new List<string>(ingredients);
                 toolList = new List<string>(tools);
+                id = i;
             }
             public bool ingredientCheck(string ingredientString)
             {
@@ -125,9 +127,11 @@ namespace RecipeBook
             private List<string> ingredientList;
             //Need tool list
             private List<string> toolList;
+            //Surrogate ID from database
+            public int id { get; }
         }
         //Web URL
-        string url = $"https://www.thecocktaildb.com/api/json/v1/1/";
+        private string url = $"https://www.thecocktaildb.com/api/json/v1/1/";
         //Lists
         private SortedDictionary<String, Recipe> marshalRecipeList; //Contains all items retrieved, so only one fetch necessary to the database for each recipe
         private SortedDictionary<String, Recipe> sergentRecipeList; //Contains the sorted/displayed list
@@ -150,7 +154,7 @@ namespace RecipeBook
             Debug.Log("Recipe List Script loaded");
             //Run code on scene loading
             //Set up the leaderboard
-            StartCoroutine(this.Fetch());
+            StartCoroutine(this.Fetch("search.php?f=a"));
             //this.SortMarshal();
             //Create objects for each item in the list
             recipeGameObjectList = new List<GameObject>();
@@ -173,12 +177,18 @@ namespace RecipeBook
         {
             marshalRecipeList = new SortedDictionary<string, Recipe>();
         }
+        public int GetRecipeID(string name)
+        {
+            //Grab the ID off the list
+            Recipe recipe = marshalRecipeList.GetValueOrDefault(name);
+            return recipe.id;
+        }
         private static async Task<RecipeBook> GetRecipes()
         {
             //Create a new leaderboard
             RecipeBook newBook = new RecipeBook();
             //Setup the leaderboard
-            IEnumerator enumerator = newBook.Fetch();
+            IEnumerator enumerator = newBook.Fetch("search.php?f=a");
             //newBook.SortMarshal();
             /*This is my best attempt at a async constructor
             *Hopefully it doesn't have a memory leak or anything
@@ -188,7 +198,7 @@ namespace RecipeBook
             return newBook;
         }
         //Fetch for Leaderboard
-        private IEnumerator Fetch()
+        private IEnumerator Fetch(string searchType)
         {
             Debug.Log("Recipe Book Fetch called");
             //Dummy debug code
@@ -203,7 +213,7 @@ namespace RecipeBook
             }
             */
             //Connect to the database
-            string target = url+"search.php?f=a";
+            string target = url+searchType;
             UnityWebRequest request = UnityWebRequest.Get(target);
             yield return request.SendWebRequest();
             //Fetch the recipe names
@@ -231,18 +241,32 @@ namespace RecipeBook
                 string alcoholic = drink["strAlcoholic"]!.ToString();
                 bool alcohol = (alcoholic == "Alcoholic");
                 List<string> ingredients = new List<string>();
+                int i = 1;
                 do
                 {
-                    ingredients.Add(drink["strIngredient1"]!.ToString());
-                } while (false);//Make a fake loop for early out abuse
+                    string ingredient;
+                    ingredient = drink["strIngredient"+i]!.ToString();
+                    i++;
+                    if (ingredient != "")
+                    {
+                        ingredients.Add(ingredient);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                } while (i < 16);
                 List<string> tools = new List<string>();
+                //Get the glass type
+                tools.Add(drink["strGlass"]!.ToString());
                 //Query the instructions to find individual tools used
                 string instructions = drink["strInstructions"]!.ToString();
                 if (instructions.Contains("shake"))
                 {
                     tools.Add("Cocktail Shaker");
                 }
-                Recipe entry = new Recipe(name, alcohol, ingredients, tools);
+                int id = ((int)drink["idDrink"]!);
+                Recipe entry = new Recipe(name, alcohol, ingredients, tools, id);
                 marshalRecipeList.Add(name, entry);
                 Debug.Log("Creating Recipe: " + entry.name);
             }
@@ -281,6 +305,38 @@ namespace RecipeBook
         public void ToggleVirgin()
         {
             virginFilter = !virginFilter;
+            /*string Alcoholic;
+            if (virginFilter)
+            {
+                Alcoholic = "Non-Alcoholic";
+            }
+            else
+            {
+                Alcoholic = "Alcoholic";
+            }
+            StartCoroutine(Fetch("filter.php?a="+Alcoholic));
+            */
+            //Taken out as it returns a different format of responses, that lacks much of the information we use
+            FilterSergent();
+        }
+        public void UpdateSearch()
+        {
+            //Update the search
+            if (nameFilter.text != "")
+            {
+                //Use nameFilter for the search
+                StartCoroutine(Fetch("search.php?s="+nameFilter.text));
+            }
+            //Use the ingredients or tools to search
+            //NOTE: These are unimplemented ATM as the filtered search returns less information than a normal search
+            if(ingredientFilter.text != "")
+            {
+                //Use IngredientFilter for the search
+            }
+            if (toolFilter.text != "")
+            {
+                //Use toolFilter for the search
+            }
         }
         public void FilterSergent()
         {
@@ -329,6 +385,7 @@ namespace RecipeBook
                     {
                         //Drop it
                         DropList.Add(r);
+                        continue;
                     }
                     else
                     {
@@ -340,9 +397,10 @@ namespace RecipeBook
                     //Advanced search is off
                     continue;
                 }
-                if (r.Alcoholic == virginFilter)
+                if (r.Alcoholic != virginFilter)
                 {
                     //This recipe matches the virgin filter
+                    //The virgin filter is inverted from the alcoholic setting
                     //Do nothing
                 }
                 else
@@ -350,6 +408,7 @@ namespace RecipeBook
                     //This recipe does not match the virgin filter
                     //Drop it
                     DropList.Add(r);
+                    continue;
                 }
                 if (r.ingredientCheck(ingredientFilter.text))
                 {
@@ -374,6 +433,7 @@ namespace RecipeBook
                     {
                         //Drop it
                         DropList.Add(r);
+                        continue;
                     }
                     else
                     {
@@ -403,6 +463,7 @@ namespace RecipeBook
                     {
                         //Drop it
                         DropList.Add(r);
+                        continue;
                     }
                     else
                     {
