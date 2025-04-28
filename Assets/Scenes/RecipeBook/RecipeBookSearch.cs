@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
 using TMPro;
+using UnityEngine.Networking;
+using System.Linq;
+using System.Collections;
+using Newtonsoft.Json.Linq;
 
 namespace RecipeBook
 {
@@ -17,14 +21,14 @@ namespace RecipeBook
         }
         public class Recipe
         {
-            public Recipe(string n = "", bool a = true)
+            public Recipe(string n, bool a, List<string> ingredients, List<string> tools)
             {
                 name = n;
                 Alcoholic = a;
                 //These need a better method of propogating themselves
                 //I need to connect to the database and find out how I assemble this information though
-                ingredientList = new List<string>();
-                toolList = new List<string>();
+                ingredientList = new List<string>(ingredients);
+                toolList = new List<string>(tools);
             }
             public bool ingredientCheck(string ingredientString)
             {
@@ -66,9 +70,13 @@ namespace RecipeBook
                         filterList = new List<string>(toolList);
                         break;
                 }
+                StringComparison comp = StringComparison.OrdinalIgnoreCase;
                 foreach (string item in filterList)
                 {
-                    if (item.Contains(filterString))
+                    bool flag;
+                    filterString.Trim();
+                    flag = item.Contains(filterString);
+                    if (item.Contains(filterString, comp))
                     {
                         return true;
                     }
@@ -118,6 +126,9 @@ namespace RecipeBook
             //Need tool list
             private List<string> toolList;
         }
+        //Web URL
+        string url = $"https://www.thecocktaildb.com/api/json/v1/1/";
+        //Lists
         private SortedDictionary<String, Recipe> marshalRecipeList; //Contains all items retrieved, so only one fetch necessary to the database for each recipe
         private SortedDictionary<String, Recipe> sergentRecipeList; //Contains the sorted/displayed list
         private List<GameObject> recipeGameObjectList; //List of all objects for destruction
@@ -127,19 +138,19 @@ namespace RecipeBook
         public Transform recipeRowStart;
         //Components for sorting items
         public GameObject advancedFilter;//Set this to the advanced filter canvas
-        public TextMeshProUGUI nameFilter;
+        public TMP_InputField nameFilter;
         public bool nameWhitelist = true; //For possible future filtering, easier to code in now, than refactor later
         public bool virginFilter = false;
-        public TextMeshProUGUI ingredientFilter;
+        public TMP_InputField ingredientFilter;
         public bool ingredientWhitelist = true;
-        public TextMeshProUGUI toolFilter;
+        public TMP_InputField toolFilter;
         public bool toolWhitelist = true;
         public void Start()
         {
             Debug.Log("Recipe List Script loaded");
             //Run code on scene loading
             //Set up the leaderboard
-            this.Fetch();
+            StartCoroutine(this.Fetch());
             //this.SortMarshal();
             //Create objects for each item in the list
             recipeGameObjectList = new List<GameObject>();
@@ -167,7 +178,7 @@ namespace RecipeBook
             //Create a new leaderboard
             RecipeBook newBook = new RecipeBook();
             //Setup the leaderboard
-            newBook.Fetch();
+            IEnumerator enumerator = newBook.Fetch();
             //newBook.SortMarshal();
             /*This is my best attempt at a async constructor
             *Hopefully it doesn't have a memory leak or anything
@@ -177,11 +188,11 @@ namespace RecipeBook
             return newBook;
         }
         //Fetch for Leaderboard
-        private void Fetch()
+        private IEnumerator Fetch()
         {
             Debug.Log("Recipe Book Fetch called");
             //Dummy debug code
-            //*
+            /*
             for (int i = 0; i < 5; i++)
             {
                 Recipe entry = new Recipe("Recipe " + i, i%2 == 0);
@@ -190,10 +201,56 @@ namespace RecipeBook
                 marshalRecipeList.Add(entry.name, entry);
                 Debug.Log("Creating Recipe: " + entry.name);
             }
-            //*/
+            */
             //Connect to the database
+            string target = url+"search.php?f=a";
+            UnityWebRequest request = UnityWebRequest.Get(target);
+            yield return request.SendWebRequest();
             //Fetch the recipe names
-            //Get necessary tags per recipe
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                //Request failed
+                Debug.LogError(request.error);
+                yield break;
+            }
+            JObject drinks = JObject.Parse(request.downloadHandler.text);
+            foreach(JToken drink in drinks["drinks"])
+            {
+                if (drink == null)
+                {
+                    break;
+                }
+                //Get necessary tags per recipe
+                string name = drink["strDrink"]!.ToString();
+                //Check to see if this is a duplicate
+                if (marshalRecipeList.ContainsKey(name))
+                {
+                    continue;
+                }
+                //It's new, add it
+                string alcoholic = drink["strAlcoholic"]!.ToString();
+                bool alcohol = (alcoholic == "Alcoholic");
+                List<string> ingredients = new List<string>();
+                do
+                {
+                    ingredients.Add(drink["strIngredient1"]!.ToString());
+                } while (false);//Make a fake loop for early out abuse
+                List<string> tools = new List<string>();
+                //Query the instructions to find individual tools used
+                string instructions = drink["strInstructions"]!.ToString();
+                if (instructions.Contains("shake"))
+                {
+                    tools.Add("Cocktail Shaker");
+                }
+                Recipe entry = new Recipe(name, alcohol, ingredients, tools);
+                marshalRecipeList.Add(name, entry);
+                Debug.Log("Creating Recipe: " + entry.name);
+            }
+            //Call the filter function
+            string temp = nameFilter.text;
+            nameFilter.text = "";
+            FilterSergent();
+            nameFilter.text = temp;
         }
         //The Marshal should only ever need to be sorted when it's fetched
         /*

@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 707062245}
   - component: {fileID: 707062244}
   m_Layer: 5
-  m_Name: Filter 1
+  m_Name: Ingredient Filter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1287,7 +1287,7 @@ GameObject:
   - component: {fileID: 974161377}
   - component: {fileID: 974161376}
   m_Layer: 5
-  m_Name: Filter 2
+  m_Name: Tool Filter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2418,12 +2418,12 @@ MonoBehaviour:
   recipeText: {fileID: 1912653453}
   recipeRowStart: {fileID: 1537507652}
   advancedFilter: {fileID: 797208660}
-  nameFilter: {fileID: 120414027}
+  nameFilter: {fileID: 1101300058}
   nameWhitelist: 1
   virginFilter: 0
-  ingredientFilter: {fileID: 377279159}
+  ingredientFilter: {fileID: 707062244}
   ingredientWhitelist: 1
-  toolFilter: {fileID: 101013691}
+  toolFilter: {fileID: 974161376}
   toolWhitelist: 1
 --- !u!1 &1537507651
 GameObject:
