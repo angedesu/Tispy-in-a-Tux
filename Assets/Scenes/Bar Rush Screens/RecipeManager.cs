@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,12 @@ public class RecipeManager : MonoBehaviour
 {
     public static RecipeManager Instance;
     public DrinkRecipeData currentRecipe;
+    public GameObject served;
+    public Animator servedAnim;
+    public GameObject yuck;
+    public Animator yuckAnim;
+    public GameObject mixer;
+    public Animator mixerAnim;
     
     // For showing ingredient progress in UI
     public Dictionary<string, bool> playerIngredients = new();
@@ -17,8 +24,8 @@ public class RecipeManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
-        else Destroy(gameObject);
+        //if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
+        // else Destroy(gameObject);
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,6 +62,10 @@ public class RecipeManager : MonoBehaviour
     // this function will be called to check if users will be able to "mix"
     public bool CheckBaseIngredients()
     {
+        if (currentRecipe == null || currentRecipe.alcohols == null || currentRecipe.mixers == null)
+        {
+            return false;
+        }
         // All required alcohols must be added
         foreach (string a in currentRecipe.alcohols)
         {
@@ -135,10 +146,43 @@ public class RecipeManager : MonoBehaviour
         }
     }
 
-    public void Ice()
+    // mix function used to mix the drinks 
+    // if it's a good mix, "served" displays => move to next drink
+    // if it's a bad mix, "yuck" displays => prompt to reset 
+    public void Mix()
     {
+        bool done = CheckBaseIngredients();
+
+        if (!done)
+        {
+            StartCoroutine(MixerTriggered());
+            // StartCoroutine(ServedTriggered());
+            // change the glass 
+        }
+        else
+        {
+            // StartCoroutine(YuckTriggered());
+        }
+    }
+    
+    private IEnumerator MixerTriggered()
+    {
+        yield return null; // wait 1 frame
+        mixerAnim.SetTrigger("mixer");
         
     }
     
-    
+    private IEnumerator YuckTriggered()
+    {
+        yield return null; // wait 1 frame
+        yuck.SetActive(true);
+        yuckAnim.SetTrigger("fadeIn");
+    }
+
+    private IEnumerator ServedTriggered()
+    {
+        yield return null; // wait 1 frame
+        served.SetActive(true);
+        servedAnim.SetTrigger("served");
+    }
 }
