@@ -58,53 +58,54 @@ public class LoadRecipe : MonoBehaviour
             //Invalid Drink
             yield break;
         }
-        JToken drink = drinkData.GetValue("drinks");
-        //Create the information page
-        nameTitle.text = name.text;
-        string ingredients = "";
-        //Ingredients
-        int i = 1;
-        do
-        {
-            string ingredient;
-            ingredient = drink["strIngredient" + i]!.ToString();
-            if (ingredient != "" && i == 1)
+        foreach (JToken drink in drinkData["drinks"]) {
+            //Create the information page
+            nameTitle.text = name.text;
+            string ingredients = "";
+            //Ingredients
+            int i = 1;
+            do
             {
-                ingredients = ingredient;
-            }
-            i++;
-            if (ingredient != "")
+                string ingredient = "";
+                ingredient = drink["strIngredient" + i]!.ToString();
+                if (ingredient != "" && i == 1)
+                {
+                    ingredients = ingredient;
+                }
+                i++;
+                if (ingredient != "")
+                {
+                    ingredients = ingredients + ", " + ingredient;
+                }
+                else
+                {
+                    break;
+                }
+            } while (i < 16);
+            drinkIngredients.text = ingredients;
+            //Instructions
+            string instructions = "";
+            instructions = drink["strInstructions"]!.ToString();
+            drinkInstructions.text = instructions;
+            //Glass
+            string glass = "";
+            glass = drink["strGlass"]!.ToString();
+            drinkGlass.text = glass;
+            //Get the image and load it
+            string drinkURL = "";
+            drinkURL = drink["strDrinkThumb"]!.ToString();
+            drinkURL = drinkURL + "/large";
+            UnityWebRequest requestTexture = UnityWebRequestTexture.GetTexture(drinkURL);
+            yield return requestTexture.SendWebRequest();
+            if (requestTexture.result != UnityWebRequest.Result.Success)
             {
-                ingredients = ingredients + "," + ingredient;
+                //Request failed
+                Debug.Log("Image failed to load");
+                Debug.LogError(requestTexture.error);
             }
-            else
-            {
-                break;
-            }
-        } while (i < 16);
-        drinkIngredients.text = ingredients;
-        //Instructions
-        string instructions;
-        instructions = drink["strInstructions"]!.ToString();
-        drinkInstructions.text = instructions;
-        //Glass
-        string glass;
-        glass = drink["strGlass"]!.ToString();
-        drinkGlass.text = glass;
-        //Get the image and load it
-        string drinkURL;
-        drinkURL = drink["strDrinkThumb"]!.ToString();
-        drinkURL = drinkURL + "/large";
-        UnityWebRequest requestTexture = UnityWebRequestTexture.GetTexture(drinkURL);
-        yield return requestTexture.SendWebRequest();
-        if (requestTexture.result != UnityWebRequest.Result.Success)
-        {
-            //Request failed
-            Debug.Log("Image failed to load");
-            Debug.LogError(requestTexture.error);
+            Texture drinkTexture = DownloadHandlerTexture.GetContent(requestTexture);
+            drinkImage.texture = drinkTexture;
+            HideSearchUI();
         }
-        Texture drinkTexture = DownloadHandlerTexture.GetContent(requestTexture);
-        drinkImage.texture = drinkTexture;
-        HideSearchUI();
     }
 }
