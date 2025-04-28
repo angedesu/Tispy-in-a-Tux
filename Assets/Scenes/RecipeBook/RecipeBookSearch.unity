@@ -2418,12 +2418,12 @@ MonoBehaviour:
   recipeText: {fileID: 1912653453}
   recipeRowStart: {fileID: 1537507652}
   advancedFilter: {fileID: 797208660}
-  nameFilter: 
+  nameFilter: {fileID: 120414027}
   nameWhitelist: 1
   virginFilter: 0
-  ingredientFilter: 
+  ingredientFilter: {fileID: 377279159}
   ingredientWhitelist: 1
-  toolFilter: 
+  toolFilter: {fileID: 101013691}
   toolWhitelist: 1
 --- !u!1 &1537507651
 GameObject:

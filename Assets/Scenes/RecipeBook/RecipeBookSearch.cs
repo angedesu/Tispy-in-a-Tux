@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using TMPro;
 
 namespace RecipeBook
 {
@@ -117,8 +118,8 @@ namespace RecipeBook
             //Need tool list
             private List<string> toolList;
         }
-        private Dictionary<String, Recipe> marshalRecipeList; //Contains all items retrieved, so only one fetch necessary to the database for each recipe
-        private Dictionary<String, Recipe> sergentRecipeList; //Contains the sorted/displayed list
+        private SortedDictionary<String, Recipe> marshalRecipeList; //Contains all items retrieved, so only one fetch necessary to the database for each recipe
+        private SortedDictionary<String, Recipe> sergentRecipeList; //Contains the sorted/displayed list
         private List<GameObject> recipeGameObjectList; //List of all objects for destruction
         //Components for assembling individual recipe entries
         public GameObject recipeTemplate;
@@ -126,13 +127,13 @@ namespace RecipeBook
         public Transform recipeRowStart;
         //Components for sorting items
         public GameObject advancedFilter;//Set this to the advanced filter canvas
-        public string nameFilter;
-        public bool nameWhitelist; //For possible future filtering, easier to code in now, than refactor later
+        public TextMeshProUGUI nameFilter;
+        public bool nameWhitelist = true; //For possible future filtering, easier to code in now, than refactor later
         public bool virginFilter = false;
-        public string ingredientFilter;
-        public bool ingredientWhitelist;
-        public string toolFilter;
-        public bool toolWhitelist;
+        public TextMeshProUGUI ingredientFilter;
+        public bool ingredientWhitelist = true;
+        public TextMeshProUGUI toolFilter;
+        public bool toolWhitelist = true;
         public void Start()
         {
             Debug.Log("Recipe List Script loaded");
@@ -159,7 +160,7 @@ namespace RecipeBook
         }
         private RecipeBook()
         {
-            marshalRecipeList = new Dictionary<string, Recipe>();
+            marshalRecipeList = new SortedDictionary<string, Recipe>();
         }
         private static async Task<RecipeBook> GetRecipes()
         {
@@ -241,14 +242,14 @@ namespace RecipeBook
             {
                 sergentRecipeList.Clear();
             }
-            sergentRecipeList = new Dictionary<string, Recipe>(marshalRecipeList);
+            sergentRecipeList = new SortedDictionary<string, Recipe>(marshalRecipeList);
             //Drop whitespace from filters if necessary. Requires testing if necessary
             //Iterate through the new sergent list and make sure the recipe matches our filters
             List<Recipe> DropList = new List<Recipe>();
             foreach (var kvPair in sergentRecipeList)
             {
                 Recipe r = kvPair.Value;
-                if (r.nameCheck(nameFilter))
+                if (r.nameCheck(nameFilter.text))
                 {
                     //This recipe contains a name filter term
                     //If whitelist mode is on, keep it in
@@ -293,7 +294,7 @@ namespace RecipeBook
                     //Drop it
                     DropList.Add(r);
                 }
-                if (r.ingredientCheck(ingredientFilter))
+                if (r.ingredientCheck(ingredientFilter.text))
                 {
                     //Recipe matches the ingredient Filter
                     //If whitelist mode is on, keep it in
@@ -322,7 +323,7 @@ namespace RecipeBook
                         //Do nothing
                     }
                 }
-                if (r.toolCheck(toolFilter))
+                if (r.toolCheck(toolFilter.text))
                 {
                     //Recipe matches the tool Filter
                     //If whitelist mode is on, keep it in
