@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a01df21a22d014e4badf9071d6f9a487
+guid: fdc670a40dae23f4994d5eb7160227fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7469344883234010621
-    second: counter_closeup2_0
+      213: 9034964394672461738
+    second: redo_oneArrow_white_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,12 +139,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: counter_closeup2_0
+      name: redo_oneArrow_white_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
+        x: 11
+        y: 12
+        width: 42
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df57b06d89178a760800000000000000
-      internalID: 7469344883234010621
+      spriteID: aa711c66f34a26d70800000000000000
+      internalID: 9034964394672461738
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      counter_closeup2_0: 7469344883234010621
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
