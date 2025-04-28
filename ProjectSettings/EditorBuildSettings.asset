@@ -35,18 +35,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leaderboard/Top3Leaderboard.unity
     guid: f8bb1d983227c453b8dabd031c325e35
-  - enabled: 1
-    path: Assets/Scenes/theorySelection/theorySelect.unity
-    guid: 4fcfa3eb985554a34a5fd4f029746705
+enbaled: 1
+    path: Assets/Scenes/PouringTimer/PouringTimer.unity
+    guid: a918642b90720b24f9e3c9592733dc58
   - enabled: 1
     path: Assets/Scenes/learnSelection/learnSelect.unity
     guid: 2f1e98b41f2274906b4dfcc86c72ef45
   - enabled: 1
     path: Assets/Scenes/gameSelection/gameSelect.unity
     guid: bfcaf6d920d1448fcbd85283fd579dbe
-  - enbaled: 1
-    path: Assets/Scenes/PouringTimer/PouringTimer.unity
-    guid: a918642b90720b24f9e3c9592733dc58
+  - enabled: 1
+    path: Assets/Scenes/RecipeBook/RecipeBookSearch.unity
+    guid: 2361fec1f4f8be942a8ad3f1027d0702
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/ingredients/ingredients.unity
+    guid: 81910064bcfdc42d48f8e1a0a2fe7322
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/techniques/techniques.unity
+    guid: 1c23e899f8f264f31b84d18447e6b887
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/tools/tools.unity
+    guid: 3906f0058460447b5966f9eed409a4eb
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/theorySelect.unity
+    guid: 4fcfa3eb985554a34a5fd4f029746705
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9e10fd78c5f524fa79270245230bbfaf, type: 2}
   m_UseUCBPForAssetBundles: 0

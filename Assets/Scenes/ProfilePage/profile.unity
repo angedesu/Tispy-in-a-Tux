@@ -1370,8 +1370,8 @@ GameObject:
   - component: {fileID: 824744998}
   - component: {fileID: 824744997}
   - component: {fileID: 824744996}
-  - component: {fileID: 824744999}
   - component: {fileID: 824745000}
+  - component: {fileID: 824745001}
   m_Layer: 5
   m_Name: loginButton
   m_TagString: Untagged
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 824744999}
+      - m_Target: {fileID: 824745001}
         m_TargetAssemblyTypeName: LoginSceneLoader, Assembly-CSharp
         m_MethodName: LoadOverlayScene
         m_Mode: 1
@@ -1493,20 +1493,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824744994}
   m_CullTransparentMesh: 1
---- !u!114 &824744999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824744994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da11714ee42af4cc9a5b6e92beaa684e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dimBackground: {fileID: 824744994}
-  overlaySceneName: Sign-in
 --- !u!114 &824745000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,6 +1506,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 131962967}
+--- !u!114 &824745001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824744994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da11714ee42af4cc9a5b6e92beaa684e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dimBackground: {fileID: 824744994}
+  overlaySceneName: Sign-in
 --- !u!1 &865397499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2098,8 @@ MonoBehaviour:
   max: 100
   mask: {fileID: 1647447090}
   levelText: {fileID: 1899574389}
+  usernameText: {fileID: 946290713}
+  gameidText: {fileID: 668301953}
 --- !u!1 &1495419130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,6 +2724,7 @@ MonoBehaviour:
   usernameText: {fileID: 946290713}
   levelText: {fileID: 1899574391}
   xpProgressBar: {fileID: 1338285430}
+  gameidText: {fileID: 668301953}
 --- !u!1 &1852197898
 GameObject:
   m_ObjectHideFlags: 0

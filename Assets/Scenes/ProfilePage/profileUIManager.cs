@@ -18,7 +18,7 @@ public class ProfileUIManager : MonoBehaviour
 
         // updates the UI
         usernameText.text = username;
-        levelText.text = "Level: " + level;
+        levelText.text = "" + level;
 
         // updates the xp bar
         PlayerPrefs.SetInt("xpPoints", xp);

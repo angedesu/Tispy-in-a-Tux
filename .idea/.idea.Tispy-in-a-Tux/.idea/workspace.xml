@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a1a708f-a203-4693-b98d-a6537bb833ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tispy-in-a-Tux/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Bar Spoon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Bar Spoon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Martini Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Martini Glass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Stemmed Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Chilled Stemmed Glass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Highball Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Highball Glass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Mixing Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Mixing Glass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Muddler.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Muddler.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Old Fashion Glass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Old Fashion Glass.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Strainer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel_imgs/Tools/Strainer.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/learnSelection/SelectionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/arrowButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/arrowButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/learnSelection/learnSelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/learnSelection/learnSelect.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/arrowButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/arrowButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/buttonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/profileSelection/buttonManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/profileSelection/profileSelection.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/profileSelection/profileSelection.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/SelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/SelectManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/arrowButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/arrowButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/theorySelect.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/theorySelect.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/ingredients.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/ingredients.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/techniques/techniques.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/techniques/techniques.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/tools.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/tools.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +31,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scipts/friendButtonSwitch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/PouringTimer/buttonManaging.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartScreen/FirstLauchDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/achievement/AchievementItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/ingredients/buttonManagement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/techniques/management.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/theorySelection/tools/manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@03407c6d8751/Runtime/TMP/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -64,23 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/flashcards",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/theory-screens&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -88,7 +74,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.40f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vuqua\Huy\UnityProjects\Tispy-in-a-Tux" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -134,6 +120,11 @@
       <workItem from="1741654289335" duration="1596000" />
       <workItem from="1741729032856" duration="43895000" />
       <workItem from="1742541403424" duration="4667000" />
+      <workItem from="1744094496692" duration="15997000" />
+      <workItem from="1744181654039" duration="19538000" />
+      <workItem from="1744823478318" duration="512000" />
+      <workItem from="1745123083325" duration="2583000" />
+      <workItem from="1745300518776" duration="642000" />
     </task>
     <servers />
   </component>

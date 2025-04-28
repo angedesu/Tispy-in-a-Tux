@@ -40,18 +40,18 @@ public class SelectManager : MonoBehaviour
     public void ingredientSelected()
     {
         // change the scene to correct scene
-        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+        SceneManager.LoadScene("Scenes/theorySelection/ingredients/ingredients");
     }
 
     public void techSelected()
     {
-        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+        SceneManager.LoadScene("Scenes/theorySelection/techniques/techniques");
     }
 
     public void toolsSelected()
     {
         // change to correct scene
-        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+        SceneManager.LoadScene("Scenes/theorySelection/tools/tools");
     }
     
     public void Back()
