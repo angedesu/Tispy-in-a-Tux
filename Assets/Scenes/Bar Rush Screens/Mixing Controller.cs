@@ -44,11 +44,13 @@ public class MixingController : MonoBehaviour
         // go to gameover screen
         if (GameStats.DrinksRemaining <= 0)
         {
+            StartCoroutine(FinishTriggered());
             LoadGameOverScreen();
         }
         
         if (TimerManager.Instance != null && TimerManager.Instance.timeRemaining <= 0)
         {
+            StartCoroutine(TimesUpTriggered());
             LoadGameOverScreen();
         }
     }
@@ -58,7 +60,6 @@ public class MixingController : MonoBehaviour
         if (RecipeManager.Instance.CheckBaseIngredients())
         {
             Debug.Log("Correct ingredients! Mixing...");
-            
             StartCoroutine(PerformMixing());
         }
         else
@@ -129,24 +130,14 @@ public class MixingController : MonoBehaviour
         
         yield return null;
     }
-
-    public void finished()
-    {
-        // if time is up, display times up()
-        
-        //StartCoroutine(TimesUpTriggered());
-        // else, display finished()
-        // StartCoroutine(FinishTriggered());
-    }
-
+    
     private IEnumerator MixerTriggered()
     {
         // yield return null;
         // mixerAnim.enabled = true;
+        mixerAnim.SetTrigger("mixer");
         yield return new WaitForSeconds(1.5f);
         // mixerAnim.Play("mixer");
-        mixerAnim.SetTrigger("mixer");
-        // yuckAnim.enabled = false;
     }
 
     private IEnumerator YuckTriggered()
@@ -176,7 +167,7 @@ public class MixingController : MonoBehaviour
         timesUpText.SetActive(false);
         finishedText.SetActive(true);
         finishAnim.SetTrigger("finish");
-        yield return null;
+        yield return new WaitForSeconds(1.5f);
     }
 
     private IEnumerator TimesUpTriggered()
@@ -185,7 +176,7 @@ public class MixingController : MonoBehaviour
         timesUpText.SetActive(true);
         finishedText.SetActive(false);
         finishAnim.SetTrigger("finish");
-        yield return null;
+        yield return new WaitForSeconds(1.5f);
     }
     public Dictionary<string, GameObject> GetGlassMap()
     {
