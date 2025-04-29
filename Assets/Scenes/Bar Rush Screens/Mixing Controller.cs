@@ -5,17 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MixingController : MonoBehaviour
 {
-    [Header("Glass Prefabs")]
-    public GameObject highballGlass;
+    [Header("Glass Prefabs")] public GameObject highballGlass;
     public GameObject cocktailGlass;
     public GameObject oldFashionedGlass;
     public GameObject collinsGlass;
-    
+
     public GameObject served;
     public Animator servedAnim;
-    public GameObject yuck; 
+    public GameObject yuck;
     public Animator yuckAnim;
-    // public GameObject mixer;
     public Animator mixerAnim;
     public GameObject mixerContainer;
     public GameObject finish;
@@ -24,7 +22,7 @@ public class MixingController : MonoBehaviour
     public GameObject finishedText;
     public GameObject start;
     public Animator startAnim;
-    
+
     private Dictionary<string, GameObject> glassMap;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,18 +37,21 @@ public class MixingController : MonoBehaviour
         };
         StartCoroutine(StartTriggered());
     }
+
     void Update()
     {
         // go to gameover screen
         if (GameStats.DrinksRemaining <= 0)
         {
             StartCoroutine(FinishTriggered());
+            Debug.Log("FINISHED TRIGGER");
             LoadGameOverScreen();
         }
-        
+
         if (TimerManager.Instance != null && TimerManager.Instance.timeRemaining <= 0)
         {
             StartCoroutine(TimesUpTriggered());
+            Debug.Log("TIME UP TRIGGER");
             LoadGameOverScreen();
         }
     }
@@ -69,7 +70,7 @@ public class MixingController : MonoBehaviour
             RecipeManager.Instance.ResetMixer();
         }
     }
-    
+
     public void Serve()
     {
         if (!RecipeManager.Instance.CheckFullIngredients())
@@ -81,16 +82,18 @@ public class MixingController : MonoBehaviour
 
         // Drink is correct ✅
         Debug.Log("Drink served successfully!");
-        
+
         // animation 
         StartCoroutine(ServedTriggered());
-        
+
         // Increment drink counter
         GameStats.DrinksRemaining--;
 
         // Show the mixer container again (for next drink)
         if (mixerContainer != null)
+        {
             mixerContainer.SetActive(true);
+        }
 
         // Hide any glasses that were shown
         foreach (var glass in glassMap.Values)
@@ -107,9 +110,10 @@ public class MixingController : MonoBehaviour
     private IEnumerator PerformMixing()
     {
         StartCoroutine(MixerTriggered());
-        
+        yield return new WaitForSeconds(1f);
+
         if (mixerContainer != null)
-            mixerContainer.SetActive(false);
+            StartCoroutine(TurnOffMixer());
 
         string glassType = RecipeManager.Instance.currentRecipe.glassName;
 
@@ -127,17 +131,21 @@ public class MixingController : MonoBehaviour
         {
             Debug.LogWarning($"No glass found for: {glassType}");
         }
-        
-        yield return null;
+        // yield return null;
     }
-    
+
     private IEnumerator MixerTriggered()
     {
-        // yield return null;
-        // mixerAnim.enabled = true;
+        mixerAnim.enabled = true;
+        yield return new WaitForSeconds(1f);
         mixerAnim.SetTrigger("mixer");
+        // yield return null;
         yield return new WaitForSeconds(1.5f);
+        mixerAnim.enabled = false;
+        yield return new WaitForSeconds(1f);
+        // Debug.Log("Mixer triggered!");
         // mixerAnim.Play("mixer");
+        yield return null;
     }
 
     private IEnumerator YuckTriggered()
@@ -161,23 +169,42 @@ public class MixingController : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator FinishTriggered()
+    public IEnumerator FinishTriggered()
     {
         finish.SetActive(true);
+        Debug.Log("You did it!");
         timesUpText.SetActive(false);
         finishedText.SetActive(true);
-        finishAnim.SetTrigger("finish");
-        yield return new WaitForSeconds(1.5f);
+        finishAnim.SetTrigger("finished");
+        // yield return new WaitForSeconds(2f);
+        yield return null;
     }
 
-    private IEnumerator TimesUpTriggered()
+    public IEnumerator TimesUpTriggered()
     {
         finish.SetActive(true);
+        Debug.Log("Times up!");
         timesUpText.SetActive(true);
         finishedText.SetActive(false);
-        finishAnim.SetTrigger("finish");
-        yield return new WaitForSeconds(1.5f);
+        finishAnim.SetTrigger("finished");
+        // yield return new WaitForSeconds(2f);
+        yield return null;
     }
+
+    private IEnumerator TurnOffMixer()
+    {
+        mixerAnim.enabled = false;
+        mixerContainer.SetActive(false);
+        yield return null;
+    }
+
+    private IEnumerator TurnOnMixer()
+    {
+        mixerContainer.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        mixerAnim.enabled = false;
+    }
+
     public Dictionary<string, GameObject> GetGlassMap()
     {
         return glassMap;
