@@ -14,11 +14,13 @@ public class MixingController : MonoBehaviour
     public Animator servedAnim;
     public GameObject yuck; 
     public Animator yuckAnim;
-    public GameObject mixer;
+    // public GameObject mixer;
     public Animator mixerAnim;
     public GameObject mixerContainer;
     public GameObject finish;
     public Animator finishAnim;
+    public GameObject timesUpText;
+    public GameObject finishedText;
     
     private Dictionary<string, GameObject> glassMap;
 
@@ -86,9 +88,6 @@ public class MixingController : MonoBehaviour
     private IEnumerator PerformMixing()
     {
         StartCoroutine(MixerTriggered());
-        yield return new WaitForSeconds(1.5f);
-        Debug.Log("WAIT");
-        StartCoroutine(ServedTriggered());
         
         if (mixerContainer != null)
             mixerContainer.SetActive(false);
@@ -111,6 +110,13 @@ public class MixingController : MonoBehaviour
         }
         
         yield return null;
+    }
+
+    public void finished()
+    {
+        // if time is up, display times up()
+        
+        // else, display finished()
     }
 
     private IEnumerator MixerTriggered()
@@ -142,6 +148,17 @@ public class MixingController : MonoBehaviour
     {
         // yield return new WaitForSeconds(1.5f);
         finish.SetActive(true);
+        timesUpText.SetActive(false);
+        finishedText.SetActive(true);
+        finishAnim.SetTrigger("finish");
+        yield return null;
+    }
+
+    private IEnumerator TimesUpTriggered()
+    {
+        finish.SetActive(true);
+        timesUpText.SetActive(true);
+        finishedText.SetActive(false);
         finishAnim.SetTrigger("finish");
         yield return null;
     }
