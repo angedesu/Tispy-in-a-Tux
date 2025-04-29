@@ -58,7 +58,7 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("OnEndDrag");
-        transform.SetParent(originalParent);
+        //transform.SetParent(originalParent);
         
         // Restore item original alpha
         itemImage.color = originalColor;
