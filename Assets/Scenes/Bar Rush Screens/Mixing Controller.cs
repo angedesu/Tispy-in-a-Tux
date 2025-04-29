@@ -22,6 +22,8 @@ public class MixingController : MonoBehaviour
     public Animator finishAnim;
     public GameObject timesUpText;
     public GameObject finishedText;
+    public GameObject start;
+    public Animator startAnim;
     
     private Dictionary<string, GameObject> glassMap;
 
@@ -35,6 +37,7 @@ public class MixingController : MonoBehaviour
             { "Old-fashioned glass", oldFashionedGlass },
             { "Collins glass", collinsGlass }
         };
+        StartCoroutine(StartTriggered());
     }
     void Update()
     {
@@ -55,6 +58,7 @@ public class MixingController : MonoBehaviour
         if (RecipeManager.Instance.CheckBaseIngredients())
         {
             Debug.Log("Correct ingredients! Mixing...");
+            
             StartCoroutine(PerformMixing());
         }
         else
@@ -130,21 +134,23 @@ public class MixingController : MonoBehaviour
     {
         // if time is up, display times up()
         
+        //StartCoroutine(TimesUpTriggered());
         // else, display finished()
+        // StartCoroutine(FinishTriggered());
     }
 
     private IEnumerator MixerTriggered()
     {
-        // yield return new WaitForSeconds(1.5f);
-        yuckAnim.enabled = true;
-        yield return null;
+        // yield return null;
+        // mixerAnim.enabled = true;
+        yield return new WaitForSeconds(1.5f);
+        // mixerAnim.Play("mixer");
         mixerAnim.SetTrigger("mixer");
-        yuckAnim.enabled = false;
+        // yuckAnim.enabled = false;
     }
 
     private IEnumerator YuckTriggered()
     {
-        // yield return new WaitForSeconds(1.5f);
         yuck.SetActive(true);
         yuckAnim.SetTrigger("fadeIn");
         yield return null;
@@ -152,15 +158,20 @@ public class MixingController : MonoBehaviour
 
     private IEnumerator ServedTriggered()
     {
-        // yield return new WaitForSeconds(1.5f);
         served.SetActive(true);
         servedAnim.SetTrigger("served");
         yield return null;
     }
 
+    private IEnumerator StartTriggered()
+    {
+        start.SetActive(true);
+        startAnim.SetTrigger("start");
+        yield return null;
+    }
+
     private IEnumerator FinishTriggered()
     {
-        // yield return new WaitForSeconds(1.5f);
         finish.SetActive(true);
         timesUpText.SetActive(false);
         finishedText.SetActive(true);
