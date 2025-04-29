@@ -5,7 +5,7 @@ public static class IngredientLibrary
     public static readonly HashSet<string> Alcohols = new()
     {
         "Tequila", "Triple sec", "Campari", "Sweet Vermouth", "Scotch", "Drambuie", "Brandy", "White Creme de Menthe",
-        "Gin", "gin", "Bourbon", "Dry Vermouth", "Blended whiskey", "Light rum", "Cognac", "Cointreau", "Apricot brandy", "Apple brandy",
+        "Gin", "gin", "Bourbon", "Dry Vermouth", "Blended whiskey", "Light Rum", "Cognac", "Cointreau", "Apricot brandy", "Apple brandy",
         "Creme de Cacao", "Benedictine", "Dark Rum", "Ricard", "Port", "Maraschino liqueur", "Vodka", "Ice cubes_0"
     };
 
