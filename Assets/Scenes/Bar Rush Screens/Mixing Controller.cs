@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class MixingController : MonoBehaviour
 {
@@ -38,6 +39,19 @@ public class MixingController : MonoBehaviour
         };
         StartCoroutine(StartTriggered());
     }
+    void Update()
+    {
+        // go to gameover screen
+        if (GameStats.DrinksRemaining <= 0)
+        {
+            LoadGameOverScreen();
+        }
+        
+        if (TimerManager.Instance != null && TimerManager.Instance.timeRemaining <= 0)
+        {
+            LoadGameOverScreen();
+        }
+    }
 
     public void Mix()
     {
@@ -70,8 +84,8 @@ public class MixingController : MonoBehaviour
         // animation 
         StartCoroutine(ServedTriggered());
         
-        // Increment drink counter (assuming you have something like GameStats.DrinksServed)
-        GameStats.DrinkServed--;
+        // Increment drink counter
+        GameStats.DrinksRemaining--;
 
         // Show the mixer container again (for next drink)
         if (mixerContainer != null)
@@ -176,6 +190,14 @@ public class MixingController : MonoBehaviour
     public Dictionary<string, GameObject> GetGlassMap()
     {
         return glassMap;
+    }
+    
+    private void LoadGameOverScreen()
+    {
+        if (SceneManager.GetActiveScene().name == "MixingScreen")
+        {
+            SceneManager.LoadScene("GameOver Screen");
+        }
     }
 }
  

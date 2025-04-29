@@ -14,17 +14,29 @@ public class GameStats : MonoBehaviour
         
     }
 
-    public static int DrinkServed = 10;
+    public static int DrinksRemaining = 10;
+    public static int AlcoholCorrect = 0;
+    public static int AlcoholWrong = 0;
+    public static int MixerCorrect = 0;
+    public static int MixerWrong = 0;
+    public static int GarnishCorrect = 0;
+    public static int GarnishWrong = 0;
 
     // use this function when "serving" a drink
     public static void ServedDrink()
     {
-        DrinkServed--;
+        DrinksRemaining--;
     }
 
     // everytime a game starts
     public static void ResetStats()
     {
-        DrinkServed = 10;
+        DrinksRemaining = 10;
+        AlcoholCorrect = 0;
+        AlcoholWrong = 0;
+        MixerCorrect = 0;
+        MixerWrong = 0;
+        GarnishCorrect = 0;
+        GarnishWrong = 0;
     }
 }

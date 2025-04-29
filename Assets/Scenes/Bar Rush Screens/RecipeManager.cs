@@ -75,16 +75,22 @@ public class RecipeManager : MonoBehaviour
         if (IngredientLibrary.Alcohols.Contains(ingredient))
         {
             if (!alcohols.Contains(ingredient)) alcohols.Add(ingredient);
+            GameStats.AlcoholCorrect += currentRecipe.alcohols.Contains(ingredient) ? 1 : 0;
+            GameStats.AlcoholWrong += currentRecipe.alcohols.Contains(ingredient) ? 0 : 1;
             Debug.Log($"Added Alcohol: {ingredient}");
         }
         else if (IngredientLibrary.Mixers.Contains(ingredient))
         {
             if (!mixers.Contains(ingredient)) mixers.Add(ingredient);
+            GameStats.MixerCorrect += currentRecipe.mixers.Contains(ingredient) ? 1 : 0;
+            GameStats.MixerWrong += currentRecipe.mixers.Contains(ingredient) ? 0 : 1;
             Debug.Log($"Added Mixer: {ingredient}");
         }
         else if (IngredientLibrary.Garnishes.Contains(ingredient))
         {
             if (!garnishes.Contains(ingredient)) garnishes.Add(ingredient);
+            GameStats.GarnishCorrect += currentRecipe.garnishes.Contains(ingredient) ? 1 : 0;
+            GameStats.GarnishWrong += currentRecipe.garnishes.Contains(ingredient) ? 0 : 1;
             Debug.Log($"Added Garnish: {ingredient}");
         }
         else
