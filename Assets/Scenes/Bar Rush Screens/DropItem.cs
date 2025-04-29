@@ -10,7 +10,7 @@ public class DropItem : MonoBehaviour, IDropHandler
     public RecipeManager recipeManager;
 
     private const string POUR_ANIM = "pour"; // trigger for pour animation
-    public float pouringDuration = 1.5f;   // Duration of pour animation
+    public float pouringDuration = 5f;   // Duration of pour animation
     public float returnDelay = 0.5f;    // Delay before return to shelf
 
     public void OnDrop(PointerEventData eventData)
@@ -39,11 +39,15 @@ public class DropItem : MonoBehaviour, IDropHandler
                 if (itemAnimator != null)
                 {
                     itemAnimator.SetTrigger(POUR_ANIM);
+                    StartCoroutine(WaitForAnimation());
+                    droppedObject.transform.SetParent(originalParent);
                 }
                 else
                 {
                     Debug.LogWarning($"Can't find animator in dropped object");
                 }
+
+                
                 
                 
                 
@@ -67,19 +71,9 @@ public class DropItem : MonoBehaviour, IDropHandler
         
     }
 
-    /*public void ReturnToShelf(GameObject itemToReturn, Transform returnParent)
+    IEnumerator WaitForAnimation()
     {
-        
+        yield return new WaitForSeconds(pouringDuration);
     }
     
-    IEnumerator ReturnToShelfDelayed(GameObject itemToReturn, Transform returnParent, float delay)
-    {
-        yield return new WaitForSeconds(delay + returnDelay);
-        ReturnToShelf(itemToReturn, returnParent);
-    }
-
-    IEnumerator ReturnToShelf(GameObject itemToReturn, Transform returnParent)
-    {
-        itemToReturn.transform.SetParent(returnParent);
-    }*/
 }
