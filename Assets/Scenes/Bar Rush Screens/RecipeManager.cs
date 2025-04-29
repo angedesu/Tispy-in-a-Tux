@@ -133,11 +133,19 @@ public class RecipeManager : MonoBehaviour
                 playerIngredients[key] = false;
             }
         }
-    }
-
-    public void Ice()
-    {
         
+        MixingController mixing = FindAnyObjectByType<MixingController>();
+        if (mixing != null)
+        {
+            foreach (var glass in mixing.GetGlassMap().Values)
+            {
+                if (glass != null)
+                    glass.SetActive(false);
+            }
+
+            if (mixing.mixerContainer != null)
+                mixing.mixerContainer.SetActive(true);
+        }
     }
     
     
