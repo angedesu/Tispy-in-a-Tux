@@ -10,7 +10,7 @@ public class TimerAndDrinkUpdater : MonoBehaviour
     {
         if (TimerManager.Instance != null)
         {
-            TimerManager.Instance.StartTimer(5 * 60); // Start 5-minute timer
+            TimerManager.Instance.StartTimer(GameSettings.selectedTime); // Start 5-minute timer
         }
         else
         {

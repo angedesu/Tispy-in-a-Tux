@@ -162,5 +162,9 @@ public class MixingController : MonoBehaviour
         finishAnim.SetTrigger("finish");
         yield return null;
     }
+    public Dictionary<string, GameObject> GetGlassMap()
+    {
+        return glassMap;
+    }
 }
  
