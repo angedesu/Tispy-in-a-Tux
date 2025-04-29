@@ -35,6 +35,11 @@ public class GameModeSelector : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("MixingScreen"); // Make sure scene name matches!
+        SceneManager.LoadScene("MixingScreen");
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
 }

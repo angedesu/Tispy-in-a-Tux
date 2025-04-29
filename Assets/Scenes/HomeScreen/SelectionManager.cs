@@ -20,7 +20,7 @@ public class SelectedManager : MonoBehaviour
     public void playSelected()
     {
         // replace with correct scene
-        SceneManager.LoadScene("Scenes/gameSelection/gameSelect");
+        SceneManager.LoadScene("Scenes/Bar Rush Screens/gameMode Screen");
     }
 
     public void recipeSelected()
