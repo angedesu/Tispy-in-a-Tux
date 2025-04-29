@@ -1531,9 +1531,14 @@ MonoBehaviour:
   cocktailGlass: {fileID: 1284590347}
   oldFashionedGlass: {fileID: 980275563}
   collinsGlass: {fileID: 1010125932}
-  shakerAnimator: {fileID: 0}
+  served: {fileID: 1930707180}
+  servedAnim: {fileID: 1930707182}
+  yuck: {fileID: 1203739880}
+  yuckAnim: {fileID: 1203739882}
+  mixer: {fileID: 1617772617}
+  mixerAnim: {fileID: 1617772623}
   mixerContainer: {fileID: 1617772617}
-  incorrectPopup: {fileID: 1203739880}
+  finishAnim: {fileID: 0}
 --- !u!4 &421840213
 Transform:
   m_ObjectHideFlags: 0
@@ -3553,7 +3558,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 69788393ff7844284b7592097899210b, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 1
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -6149,7 +6154,7 @@ GameObject:
   - component: {fileID: 1930707181}
   - component: {fileID: 1930707182}
   m_Layer: 0
-  m_Name: served
+  m_Name: servedParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

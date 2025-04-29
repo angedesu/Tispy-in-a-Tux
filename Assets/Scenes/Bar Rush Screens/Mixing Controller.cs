@@ -10,12 +10,16 @@ public class MixingController : MonoBehaviour
     public GameObject oldFashionedGlass;
     public GameObject collinsGlass;
     
-    public Animator shakerAnimator;
+    public GameObject served;
+    public Animator servedAnim;
+    public GameObject yuck; 
+    public Animator yuckAnim;
+    public GameObject mixer;
+    public Animator mixerAnim;
     public GameObject mixerContainer;
-    public GameObject incorrectPopup;
-
+    public Animator finishAnim;
+    
     private Dictionary<string, GameObject> glassMap;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,12 +33,6 @@ public class MixingController : MonoBehaviour
         };
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void Mix()
     {
         if (RecipeManager.Instance.CheckBaseIngredients())
@@ -45,7 +43,7 @@ public class MixingController : MonoBehaviour
         else
         {
             Debug.Log("Incorrect mix.");
-            ShowIncorrectFeedback();
+            StartCoroutine(YuckTriggered());
             RecipeManager.Instance.ResetMixer();
         }
     }
@@ -55,14 +53,7 @@ public class MixingController : MonoBehaviour
         if (!RecipeManager.Instance.CheckFullIngredients())
         {
             Debug.LogWarning("Garnishes incorrect. Please fix garnish ingredients!");
-
-            // (Optional) Show a visual popup or feedback to user
-            if (incorrectPopup != null)
-            {
-                incorrectPopup.SetActive(true);
-                Invoke(nameof(HideIncorrectFeedback), 2f);
-            }
-        
+            StartCoroutine(YuckTriggered());
             return;
         }
 
@@ -90,11 +81,10 @@ public class MixingController : MonoBehaviour
 
     private IEnumerator PerformMixing()
     {
-        if (shakerAnimator != null)
-            shakerAnimator.SetTrigger("Mixer");
-
+        StartCoroutine(MixerTriggered());
         yield return new WaitForSeconds(1.5f);
-
+        Debug.Log("WAIT");
+        StartCoroutine(ServedTriggered());
         if (mixerContainer != null)
             mixerContainer.SetActive(false);
 
@@ -114,21 +104,36 @@ public class MixingController : MonoBehaviour
         {
             Debug.LogWarning($"No glass found for: {glassType}");
         }
+        
+        yield return null;
     }
 
-    private void ShowIncorrectFeedback()
+    private IEnumerator MixerTriggered()
     {
-        if (incorrectPopup != null)
-        {
-            incorrectPopup.SetActive(true);
-            Invoke(nameof(HideIncorrectFeedback), 2f);
-        }
+        // yield return new WaitForSeconds(1.5f);
+        yield return null;
+        mixerAnim.SetTrigger("mixer");
     }
 
-    private void HideIncorrectFeedback()
+    private IEnumerator YuckTriggered()
     {
-        if (incorrectPopup != null)
-            incorrectPopup.SetActive(false);
+        // yield return new WaitForSeconds(1.5f);
+        yuckAnim.SetTrigger("fadeIn");
+        yield return null;
+    }
+
+    private IEnumerator ServedTriggered()
+    {
+        // yield return new WaitForSeconds(1.5f);
+        servedAnim.SetTrigger("served");
+        yield return null;
+    }
+
+    private IEnumerator FinishTriggered()
+    {
+        // yield return new WaitForSeconds(1.5f);
+        finishAnim.SetTrigger("finish");
+        yield return null;
     }
 }
  
