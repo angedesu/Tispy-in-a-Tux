@@ -13,9 +13,9 @@ public class GameOverScreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        alcoholStatsText.text = $"{GameStats.AlcoholCorrect}   {GameStats.AlcoholWrong}";
-        mixerStatsText.text = $"{GameStats.MixerCorrect}   {GameStats.MixerWrong}";
-        garnishStatsText.text = $"{GameStats.GarnishCorrect}   {GameStats.GarnishWrong}";
+        alcoholStatsText.text = $"{GameStats.AlcoholCorrect}        {GameStats.AlcoholWrong}";
+        mixerStatsText.text = $"{GameStats.MixerCorrect}        {GameStats.MixerWrong}";
+        garnishStatsText.text = $"{GameStats.GarnishCorrect}        {GameStats.GarnishWrong}";
         int drinksMade = 10 - GameStats.DrinksRemaining;
         drinksMadeText.text = $"Drinks Made: {drinksMade}";
 
