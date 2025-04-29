@@ -8,6 +8,10 @@ public class DropItem : MonoBehaviour, IDropHandler
 {
     public RecipeManager recipeManager;
 
+    private const string POUR_ANIM = "pour"; // trigger for pour animation
+    public float pouringDuration = 1.5f;   // Duration of pour animation
+    public float returnDelay = 0.5f;    // Delay before return to shelf
+
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Dropped");
@@ -25,10 +29,20 @@ public class DropItem : MonoBehaviour, IDropHandler
 
                 Transform originalParent = draggedItem.originalParent; // Keep the original parent
                 
+                droppedObject.transform.SetParent(transform, true); // Set parent to mixer
                 
                 Debug.Log($"ingredient name from image: {itemImage.sprite.name}");
                 
                 // Animation function goes here (WIP)
+                Animator itemAnimator = droppedObject.GetComponent<Animator>();
+                if (itemAnimator != null)
+                {
+                    itemAnimator.SetTrigger(POUR_ANIM);
+                }
+                else
+                {
+                    Debug.LogWarning($"Can't find animator in dropped object");
+                }
                 
                 // Call AddIngredient
                 if (recipeManager != null)
@@ -45,6 +59,7 @@ public class DropItem : MonoBehaviour, IDropHandler
                 Debug.LogWarning("Dropped Object missing DragItem or Image/Sprite");
             }
         }
+        
         
         
     }

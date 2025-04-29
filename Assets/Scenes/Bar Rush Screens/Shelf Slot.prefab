@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 3980075781226874857}
   - component: {fileID: 5131057211770803945}
   - component: {fileID: 2544433870709805042}
+  - component: {fileID: 6175535873191799817}
   m_Layer: 5
   m_Name: Shelf Item
   m_TagString: Untagged
@@ -173,3 +174,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &6175535873191799817
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820835159895126540}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: b914f6d404c481d43b55c8d4675825c0, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
