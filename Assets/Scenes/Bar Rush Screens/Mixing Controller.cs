@@ -17,6 +17,7 @@ public class MixingController : MonoBehaviour
     public GameObject mixer;
     public Animator mixerAnim;
     public GameObject mixerContainer;
+    public GameObject finish;
     public Animator finishAnim;
     
     private Dictionary<string, GameObject> glassMap;
@@ -59,7 +60,10 @@ public class MixingController : MonoBehaviour
 
         // Drink is correct ✅
         Debug.Log("Drink served successfully!");
-
+        
+        // animation 
+        StartCoroutine(ServedTriggered());
+        
         // Increment drink counter (assuming you have something like GameStats.DrinksServed)
         GameStats.DrinkServed--;
 
@@ -85,6 +89,7 @@ public class MixingController : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         Debug.Log("WAIT");
         StartCoroutine(ServedTriggered());
+        
         if (mixerContainer != null)
             mixerContainer.SetActive(false);
 
@@ -111,13 +116,16 @@ public class MixingController : MonoBehaviour
     private IEnumerator MixerTriggered()
     {
         // yield return new WaitForSeconds(1.5f);
+        yuckAnim.enabled = true;
         yield return null;
         mixerAnim.SetTrigger("mixer");
+        yuckAnim.enabled = false;
     }
 
     private IEnumerator YuckTriggered()
     {
         // yield return new WaitForSeconds(1.5f);
+        yuck.SetActive(true);
         yuckAnim.SetTrigger("fadeIn");
         yield return null;
     }
@@ -125,6 +133,7 @@ public class MixingController : MonoBehaviour
     private IEnumerator ServedTriggered()
     {
         // yield return new WaitForSeconds(1.5f);
+        served.SetActive(true);
         servedAnim.SetTrigger("served");
         yield return null;
     }
@@ -132,6 +141,7 @@ public class MixingController : MonoBehaviour
     private IEnumerator FinishTriggered()
     {
         // yield return new WaitForSeconds(1.5f);
+        finish.SetActive(true);
         finishAnim.SetTrigger("finish");
         yield return null;
     }

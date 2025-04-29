@@ -1538,6 +1538,7 @@ MonoBehaviour:
   mixer: {fileID: 1617772617}
   mixerAnim: {fileID: 1617772623}
   mixerContainer: {fileID: 1617772617}
+  finish: {fileID: 0}
   finishAnim: {fileID: 0}
 --- !u!4 &421840213
 Transform:
@@ -4777,7 +4778,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617772617}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a86cbe1a5fe8641cf8114bef7bddd1d7, type: 2}
   m_CullingMode: 0
