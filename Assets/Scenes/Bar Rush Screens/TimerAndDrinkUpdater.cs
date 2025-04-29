@@ -30,6 +30,6 @@ public class TimerAndDrinkUpdater : MonoBehaviour
             timerText.text = $"Timer: {minutes:00}:{seconds:00}";
         }
 
-        drinkCountText.text = $"Drinks: {GameStats.DrinkServed}";
+        drinkCountText.text = $"Drinks: {GameStats.DrinksRemaining}";
     }
 }
