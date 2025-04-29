@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private Transform originalParent;
+    public Transform originalParent;
     private RectTransform rectTransform;
     private Canvas canvas;
     private Vector2 dragOffset;

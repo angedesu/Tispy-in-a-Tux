@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 6691697564369452478}
   - component: {fileID: 3980075781226874857}
   - component: {fileID: 5131057211770803945}
+  - component: {fileID: 2544433870709805042}
   m_Layer: 5
   m_Name: Shelf Item
   m_TagString: Untagged
@@ -149,3 +150,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d92d4382b0db54bbe6426f2995e412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalParent: {fileID: 0}
+--- !u!95 &2544433870709805042
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6820835159895126540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa961da7ac9aa7143a9e50caa6ad9c29, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

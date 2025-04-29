@@ -22,6 +22,9 @@ public class DropItem : MonoBehaviour, IDropHandler
             if (draggedItem != null && itemImage != null && itemImage.sprite != null)
             {
                 string itemName = itemImage.sprite.name;    // Get ingredient name from the image
+
+                Transform originalParent = draggedItem.originalParent; // Keep the original parent
+                
                 
                 Debug.Log($"ingredient name from image: {itemImage.sprite.name}");
                 
