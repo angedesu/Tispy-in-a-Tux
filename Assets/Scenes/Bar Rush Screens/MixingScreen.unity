@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2583691263
+    rgba: 2449473535
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1673,8 +1673,10 @@ MonoBehaviour:
   yuckAnim: {fileID: 1203739882}
   mixerAnim: {fileID: 1617772623}
   mixerContainer: {fileID: 1617772617}
-  finish: {fileID: 0}
-  finishAnim: {fileID: 0}
+  finish: {fileID: 2093662625}
+  finishAnim: {fileID: 2093662627}
+  timesUpText: {fileID: 473980769}
+  finishedText: {fileID: 357242563}
 --- !u!4 &421840213
 Transform:
   m_ObjectHideFlags: 0
@@ -1843,7 +1845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &473980770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1892,7 +1894,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1879048191
+    rgba: 1744830463
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6858,7 +6860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2093662626
 RectTransform:
   m_ObjectHideFlags: 0
