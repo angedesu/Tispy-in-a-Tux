@@ -10,6 +10,7 @@ public class DropItem : MonoBehaviour, IDropHandler
     public RecipeManager recipeManager;
 
     private const string POUR_ANIM = "pour"; // trigger for pour animation
+    private const string ICE_ANIM = "dropIce"; // trigger for ice animation
     
     public void OnDrop(PointerEventData eventData)
     {
@@ -36,8 +37,16 @@ public class DropItem : MonoBehaviour, IDropHandler
                 Animator itemAnimator = droppedObject.GetComponent<Animator>();
                 if (itemAnimator != null)
                 {
-                    itemAnimator.SetTrigger(POUR_ANIM);
-                    StartCoroutine(WaitForAnimation(droppedObject, originalParent));
+                    if (itemName == "Ice cubes_0")
+                    {
+                        itemAnimator.SetTrigger(ICE_ANIM);
+                    }
+                    else
+                    {
+                        itemAnimator.SetTrigger(POUR_ANIM);
+                    }
+                    
+                    StartCoroutine(WaitForAnimation(droppedObject, originalParent)); // Wait for animation to finish before going back to shelf
                     
                 }
                 else
