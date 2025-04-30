@@ -42,4 +42,5 @@ public class GameModeSelector : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
     }
+    
 }

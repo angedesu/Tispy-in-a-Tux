@@ -153,6 +153,4 @@ public class RecipeManager : MonoBehaviour
                 mixing.mixerContainer.SetActive(true);
         }
     }
-    
-    
 }

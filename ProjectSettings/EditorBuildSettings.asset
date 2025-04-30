@@ -44,5 +44,29 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bar Rush Screens/MixingScreen.unity
     guid: 66eb2faf38bd347a8bfd7438941eade8
+  - enabled: 1
+    path: Assets/Scenes/RecipeBook/RecipeBookSearch.unity
+    guid: 2361fec1f4f8be942a8ad3f1027d0702
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/ingredients/ingredients.unity
+    guid: 81910064bcfdc42d48f8e1a0a2fe7322
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/techniques/techniques.unity
+    guid: 1c23e899f8f264f31b84d18447e6b887
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/tools/tools.unity
+    guid: 3906f0058460447b5966f9eed409a4eb
+  - enabled: 1
+    path: Assets/Scenes/PouringTimer/PouringTimer.unity
+    guid: a918642b90720b24f9e3c9592733dc58
+  - enabled: 1
+    path: Assets/Scenes/Flashcards/Flashcards.unity
+    guid: 1a8a9c3f43ff45d42a4a013ff89cdfaf
+  - enabled: 1
+    path: Assets/Scenes/learnSelection/learnSelect.unity
+    guid: 2f1e98b41f2274906b4dfcc86c72ef45
+  - enabled: 1
+    path: Assets/Scenes/theorySelection/theorySelect.unity
+    guid: 4fcfa3eb985554a34a5fd4f029746705
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

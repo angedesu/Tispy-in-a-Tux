@@ -4,6 +4,6 @@ public class buttonManaging : MonoBehaviour
 {
     public void PreviousScreen()
     {
-        SceneManager.LoadScene("Scenes/theorySelection/theorySelect");
+        SceneManager.LoadScene("Scenes/learnSelection/learnSelect");
     }
 }

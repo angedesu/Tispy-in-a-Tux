@@ -23,6 +23,8 @@ public class MixingController : MonoBehaviour
     public GameObject start;
     public Animator startAnim;
 
+    public GameObject settingsParent;
+
     private Dictionary<string, GameObject> glassMap;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -92,7 +94,8 @@ public class MixingController : MonoBehaviour
         // Show the mixer container again (for next drink)
         if (mixerContainer != null)
         {
-            StartCoroutine(TurnOnMixer());
+            // StartCoroutine(TurnOnMixer());
+            mixerContainer.SetActive(true);
         }
 
         // Hide any glasses that were shown
@@ -109,11 +112,12 @@ public class MixingController : MonoBehaviour
 
     private IEnumerator PerformMixing()
     {
-        StartCoroutine(MixerTriggered());
-        yield return new WaitForSeconds(1f);
+        // StartCoroutine(MixerTriggered());
+        // yield return new WaitForSeconds(1f);
 
         if (mixerContainer != null)
-            StartCoroutine(TurnOffMixer());
+            mixerContainer.SetActive(false);
+            // StartCoroutine(TurnOffMixer());
 
         string glassType = RecipeManager.Instance.currentRecipe.glassName;
 
@@ -131,7 +135,7 @@ public class MixingController : MonoBehaviour
         {
             Debug.LogWarning($"No glass found for: {glassType}");
         }
-        // yield return null;
+        yield return null;
     }
 
     private IEnumerator MixerTriggered()
@@ -196,11 +200,11 @@ public class MixingController : MonoBehaviour
 
     private IEnumerator TurnOnMixer()
     {
+        mixerAnim.enabled = false;
         mixerContainer.SetActive(true);
-        StartCoroutine(MixerTriggered());
         // mixerAnim.Play("Idle", -1, 0f);
         //yield return new WaitForSeconds(2f);
-        yield return null;
+        yield return new WaitForSeconds(0.5f);
         // mixerAnim.enabled = false;
     }
 
@@ -215,6 +219,27 @@ public class MixingController : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver Screen");
         }
+    }
+
+    private IEnumerator QuitGameOver()
+    {
+        settingsParent.SetActive(false);
+        finish.SetActive(true);
+        timesUpText.SetActive(false);
+        finishedText.SetActive(false);
+        finishAnim.SetTrigger("finished");
+        yield return new WaitForSeconds(1f);
+        LoadGameOverScreen();
+    }
+
+    public void QuitGame()
+    {
+        StartCoroutine(QuitGameOver());
+    }
+
+    public void MenuButton()
+    {
+        settingsParent.SetActive(true);
     }
 }
  
