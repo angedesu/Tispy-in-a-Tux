@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leaderboard/Top3Leaderboard.unity
     guid: f8bb1d983227c453b8dabd031c325e35
-  - enabled: 1
+enbaled: 1
     path: Assets/Scenes/PouringTimer/PouringTimer.unity
     guid: a918642b90720b24f9e3c9592733dc58
   - enabled: 1
