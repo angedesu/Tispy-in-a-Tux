@@ -10,9 +10,7 @@ public class DropItem : MonoBehaviour, IDropHandler
     public RecipeManager recipeManager;
 
     private const string POUR_ANIM = "pour"; // trigger for pour animation
-    public float pouringDuration = 5f;   // Duration of pour animation
-    public float returnDelay = 0.5f;    // Delay before return to shelf
-
+    
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Dropped");
@@ -30,7 +28,7 @@ public class DropItem : MonoBehaviour, IDropHandler
 
                 Transform originalParent = draggedItem.originalParent; // Keep the original parent
                 
-                droppedObject.transform.SetParent(transform, true); // Set parent to mixer
+                //droppedObject.transform.SetParent(transform, true); // Set parent to mixer
                 
                 Debug.Log($"ingredient name from image: {itemImage.sprite.name}");
                 
@@ -39,17 +37,14 @@ public class DropItem : MonoBehaviour, IDropHandler
                 if (itemAnimator != null)
                 {
                     itemAnimator.SetTrigger(POUR_ANIM);
-                    StartCoroutine(WaitForAnimation());
-                    droppedObject.transform.SetParent(originalParent);
+                    StartCoroutine(WaitForAnimation(droppedObject, originalParent));
+                    
                 }
                 else
                 {
                     Debug.LogWarning($"Can't find animator in dropped object");
                 }
 
-                
-                
-                
                 
                 // Call AddIngredient
                 if (recipeManager != null)
@@ -67,13 +62,12 @@ public class DropItem : MonoBehaviour, IDropHandler
             }
         }
         
-        
-        
     }
 
-    IEnumerator WaitForAnimation()
+    IEnumerator WaitForAnimation(GameObject itemToReturn, Transform returnParent)
     {
-        yield return new WaitForSeconds(pouringDuration);
+        yield return new WaitForSeconds(0.6f);
+        itemToReturn.transform.SetParent(returnParent);
     }
     
 }
