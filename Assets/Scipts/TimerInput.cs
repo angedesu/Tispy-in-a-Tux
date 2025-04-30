@@ -31,6 +31,7 @@ public class TimerInput : MonoBehaviour
         countdownText.color = Color.black;
         countdownTime = 0;
         timeInputField.text = "";
+        countdownText.fontSize = 250;
         countdownText.text = "00:00";
     }
 
@@ -71,6 +72,7 @@ public class TimerInput : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(countdownTime / 60);
         int seconds = Mathf.FloorToInt(countdownTime % 60);
+        countdownText.fontSize = 250;
         countdownText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
@@ -112,6 +114,7 @@ public class TimerInput : MonoBehaviour
                 countdownTime = 0;
                 countdownActive = false;
                 countdownText.color = Color.red;
+                countdownText.fontSize = 150;
                 countdownText.text = "Time's Up!";
             }
             else
