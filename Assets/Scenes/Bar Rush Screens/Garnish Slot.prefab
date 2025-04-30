@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9063557854785268076}
   - component: {fileID: 2091649909197511600}
   m_Layer: 5
-  m_Name: Shelf Slot
+  m_Name: Garnish Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,11 +210,10 @@ GameObject:
   - component: {fileID: 6691697564369452478}
   - component: {fileID: 3980075781226874857}
   - component: {fileID: 5131057211770803945}
-  - component: {fileID: 2544433870709805042}
-  - component: {fileID: 6175535873191799817}
-  - component: {fileID: 294039354034095989}
+  - component: {fileID: 5164497379682763801}
+  - component: {fileID: 8008159756604098734}
   m_Layer: 5
-  m_Name: Shelf Item
+  m_Name: Garnish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,7 +266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4033355307889638888, guid: a5168cdaaea98f64f8ef0cd56c9ac66d, type: 3}
+  m_Sprite: {fileID: -827571804193687132, guid: 80f40dad18fc38044af349e3121134eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -290,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalParent: {fileID: 0}
---- !u!95 &2544433870709805042
+--- !u!95 &5164497379682763801
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -300,7 +299,7 @@ Animator:
   m_GameObject: {fileID: 6820835159895126540}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa961da7ac9aa7143a9e50caa6ad9c29, type: 2}
+  m_Controller: {fileID: 9100000, guid: d84e32fbecea6e649920a8f94046fed4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -312,7 +311,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &6175535873191799817
+--- !u!111 &8008159756604098734
 Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,22 +320,10 @@ Animation:
   m_GameObject: {fileID: 6820835159895126540}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: b914f6d404c481d43b55c8d4675825c0, type: 2}
+  m_Animation: {fileID: 7400000, guid: d95cbd114656ed640a94496b988c8046, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
---- !u!114 &294039354034095989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6820835159895126540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe1d7825a73b55418b4d6b18b21d0bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

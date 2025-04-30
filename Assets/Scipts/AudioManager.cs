@@ -13,6 +13,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip buttonClickSound;
     public AudioClip BookOpenSound;
     public AudioClip ToolsTouchingSound;
+    // Gameplay sounds
+    public AudioClip iceSound;
+    public AudioClip pourSound;
+    public AudioClip startSound;
+    public AudioClip yuckSound;
+    public AudioClip servedSound;
+    public AudioClip trashCanSound;
+    public AudioClip mixSound;
     
     
     // Audio manager is a singleton (only 1 instance throughout scenes)

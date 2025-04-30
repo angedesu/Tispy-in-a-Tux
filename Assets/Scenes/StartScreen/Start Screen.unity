@@ -813,9 +813,16 @@ MonoBehaviour:
   sfxSource: {fileID: 579577375}
   backgroundMusic: {fileID: 8300000, guid: dee422358faec4a4ea2df09b8d6fca22, type: 3}
   doorOpenSound: {fileID: 8300000, guid: 3faea29ecca355047a42a474e6111ff7, type: 3}
-  buttonClickSound: {fileID: 8300000, guid: b23a757eb00781145a2a8fbd866922dc, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: e29da3d743e362a46b249bf2b38a357f, type: 3}
   BookOpenSound: {fileID: 8300000, guid: e91a04ee15326594b9e85b558d7f14a6, type: 3}
   ToolsTouchingSound: {fileID: 8300000, guid: e098f11fd7c6eeb419f68464b5d63ba4, type: 3}
+  iceSound: {fileID: 8300000, guid: 6ca7e88053395b949aaa52b6f5121467, type: 3}
+  pourSound: {fileID: 8300000, guid: db6e47bc1a264ba4a886ec8c1bdbde37, type: 3}
+  startSound: {fileID: 8300000, guid: a146633d7ecf9d740a5201fa4d215abf, type: 3}
+  yuckSound: {fileID: 8300000, guid: 4fb3036dbfac70443aece25802e37edf, type: 3}
+  servedSound: {fileID: 8300000, guid: 44de0b520e935c4459840f3d5bdea3ab, type: 3}
+  trashCanSound: {fileID: 8300000, guid: 9970471261037cf43bad7931ef6c378e, type: 3}
+  mixSound: {fileID: 8300000, guid: 26f94dbf9723ce14ebdd762296e94db0, type: 3}
 --- !u!4 &858326871
 Transform:
   m_ObjectHideFlags: 0
