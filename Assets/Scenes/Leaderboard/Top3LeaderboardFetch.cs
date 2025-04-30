@@ -62,6 +62,8 @@ namespace Leaderboard
             //I can trim the list after the sort. Or maybe just pull it sorted?
             ranking = new List<LeaderboardEntry>();
         }
+        
+        /*
         static async Task<Top3Leaderboard> GetLeaderboard()
         {
             //Create a new leaderboard
@@ -73,9 +75,9 @@ namespace Leaderboard
             *Hopefully it doesn't have a memory leak or anything
             *I don't like garbage collecting languages
             *I don't know when stuff does get collected, or if it does
-            */
+        
             return newBoard;
-        }
+        }*/
         //Fetch for Leaderboard
         private void Fetch()
         {

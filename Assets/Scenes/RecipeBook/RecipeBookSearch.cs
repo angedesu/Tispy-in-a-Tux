@@ -155,6 +155,7 @@ namespace RecipeBook
             //Run code on scene loading
             //Set up the leaderboard
             StartCoroutine(this.Fetch("search.php?f=a"));
+            nameFilter.text = "";
             //this.SortMarshal();
             //Create objects for each item in the list
             recipeGameObjectList = new List<GameObject>();
@@ -183,6 +184,7 @@ namespace RecipeBook
             Recipe recipe = marshalRecipeList.GetValueOrDefault(name);
             return recipe.id;
         }
+        /*
         private static async Task<RecipeBook> GetRecipes()
         {
             //Create a new leaderboard
@@ -194,9 +196,9 @@ namespace RecipeBook
             *Hopefully it doesn't have a memory leak or anything
             *I don't like garbage collecting languages
             *I don't know when stuff does get collected, or if it does
-            */
+          
             return newBook;
-        }
+        }*/
         //Fetch for Leaderboard
         private IEnumerator Fetch(string searchType)
         {
@@ -271,10 +273,10 @@ namespace RecipeBook
                 Debug.Log("Creating Recipe: " + entry.name);
             }
             //Call the filter function
-            string temp = nameFilter.text;
-            nameFilter.text = "";
+            //string temp = nameFilter.text;
+            //nameFilter.text = "";
             FilterSergent();
-            nameFilter.text = temp;
+            //nameFilter.text = temp;
         }
         //The Marshal should only ever need to be sorted when it's fetched
         /*

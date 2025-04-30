@@ -51,7 +51,7 @@ public class SelectionManager : MonoBehaviour
     public void cardsSelected()
     {
         // change to correct scene
-        SceneManager.LoadScene("Scenes/HomeScreen/homeScreen");
+        SceneManager.LoadScene("Scenes/Flashcards/Flashcards");
     }
     
     public void PreviousScreen()
