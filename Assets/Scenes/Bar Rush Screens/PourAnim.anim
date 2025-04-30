@@ -210,4 +210,11 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: PlayParticles
+    data: 
+    objectReferenceParameter: {fileID: 4447814320287458762, guid: 4a0baa2236174bb419fbb2075cc1f534, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
