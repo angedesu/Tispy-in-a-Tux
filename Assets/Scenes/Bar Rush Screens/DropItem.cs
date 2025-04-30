@@ -37,7 +37,7 @@ public class DropItem : MonoBehaviour, IDropHandler
                 Animator itemAnimator = droppedObject.GetComponent<Animator>();
                 if (itemAnimator != null)
                 {
-                    if (itemName == "Ice cubes_0")
+                    if (itemName == "Ice cubes_0")  // Separate animation for ice
                     {
                         itemAnimator.SetTrigger(ICE_ANIM);
                     }
