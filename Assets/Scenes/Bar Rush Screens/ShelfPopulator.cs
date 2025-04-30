@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -46,8 +47,8 @@ public class ShelfPopulator : MonoBehaviour
                 // Assign sprite name from texture name
                 sprite.name = itemTextures[i].name;
                 
-                Debug.Log($"texture name {itemTextures[i].name}");
-                Debug.Log($"sprite name {sprite.name}");
+                //Debug.Log($"texture name {itemTextures[i].name}");
+                //Debug.Log($"sprite name {sprite.name}");
                 
                 // Assign sprite to image component
                 shelfSlotImage.sprite = sprite;
@@ -56,20 +57,20 @@ public class ShelfPopulator : MonoBehaviour
             {
                 Debug.LogError("No Image component found in the 1st child of the shelf slot prefab");
             }
+            
+            // Get the slot's Text component
+            TMP_Text shelfSlotLabel = newShelfSlot.transform.GetChild(1).GetComponent<TMP_Text>();
 
-            /*SpriteRenderer shelfItem = newShelfSlot.transform.GetChild(0).GetComponent<SpriteRenderer>();
-            if (shelfItem != null)
-            {   
-                // Create the sprite from the image
-                Sprite sprite = Sprite.Create(alcoholTextures[i], new Rect(0, 0, alcoholTextures[i].width, alcoholTextures[i].height), Vector2.one * 0.5f);
-                // Assign sprite to image component
-                shelfItem.sprite = sprite;
+            if (shelfSlotLabel != null)
+            {
+                shelfSlotLabel.text = itemTextures[i].name;
+                Debug.Log($"Shelf label {shelfSlotLabel.text}");
             }
             else
             {
-                Debug.LogError("No Image component found in the 1st child of the shelf slot prefab");
-            }*/
-            
+                Debug.LogError("No Text component found in the 2st child of the shelf slot prefab");
+            }
+
         }
         
     }

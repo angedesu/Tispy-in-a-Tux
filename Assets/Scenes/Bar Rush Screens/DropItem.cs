@@ -68,6 +68,7 @@ public class DropItem : MonoBehaviour, IDropHandler
     {
         yield return new WaitForSeconds(0.6f);
         itemToReturn.transform.SetParent(returnParent);
+        itemToReturn.transform.SetAsFirstSibling();
     }
     
 }
