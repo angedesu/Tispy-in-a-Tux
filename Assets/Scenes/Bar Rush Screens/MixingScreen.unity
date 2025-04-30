@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 32306440}
   - component: {fileID: 32306439}
   - component: {fileID: 32306438}
+  - component: {fileID: 32306441}
   m_Layer: 5
   m_Name: Trashcan (Reset)
   m_TagString: Untagged
@@ -614,6 +615,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32306436}
   m_CullTransparentMesh: 1
+--- !u!114 &32306441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32306436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021d43242cb8ab649bc889e7fef24f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &32442133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,6 +5533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203739881}
   - component: {fileID: 1203739882}
+  - component: {fileID: 1203739883}
   m_Layer: 0
   m_Name: yuck
   m_TagString: Untagged
@@ -5567,6 +5581,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1203739883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203739880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187c035a33ed6274193504b064fe68ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1246271924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5940,7 +5966,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1283857831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b86ce5789f510d45950b3e3b277e312, type: 3}
+  m_Script: {fileID: 11500000, guid: 05f3816b5828790459bc2bf8bef7db72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1284590347
@@ -9271,6 +9297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930707181}
   - component: {fileID: 1930707182}
+  - component: {fileID: 1930707183}
   m_Layer: 0
   m_Name: servedParent
   m_TagString: Untagged
@@ -9318,6 +9345,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1930707183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930707180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc962a423f176f64a947c428b4e49959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1944529490
 GameObject:
   m_ObjectHideFlags: 0
@@ -9583,6 +9622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091776955}
   - component: {fileID: 2091776956}
+  - component: {fileID: 2091776957}
   m_Layer: 5
   m_Name: startParent
   m_TagString: Untagged
@@ -9634,6 +9674,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2091776957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091776954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdbe39e6e7ff9a418003e229e0c7770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093662625
 GameObject:
   m_ObjectHideFlags: 0

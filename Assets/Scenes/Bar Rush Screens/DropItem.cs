@@ -41,6 +41,10 @@ public class DropItem : MonoBehaviour, IDropHandler
                     {
                         itemAnimator.SetTrigger(ICE_ANIM);
                     }
+                    else if (IngredientLibrary.Garnishes.Contains(itemName))
+                    {
+                        itemAnimator.SetTrigger(ICE_ANIM);
+                    }
                     else
                     {
                         itemAnimator.SetTrigger(POUR_ANIM);
