@@ -11,6 +11,7 @@ public class DropItem : MonoBehaviour, IDropHandler
 
     private const string POUR_ANIM = "pour"; // trigger for pour animation
     private const string ICE_ANIM = "dropIce"; // trigger for ice animation
+    private const string GARNISH_ANIM = "garnish"; // trigger for garnish animation
     
     public void OnDrop(PointerEventData eventData)
     {
@@ -43,7 +44,7 @@ public class DropItem : MonoBehaviour, IDropHandler
                     }
                     else if (IngredientLibrary.Garnishes.Contains(itemName))
                     {
-                        itemAnimator.SetTrigger(ICE_ANIM);
+                        itemAnimator.SetTrigger(GARNISH_ANIM);
                     }
                     else
                     {

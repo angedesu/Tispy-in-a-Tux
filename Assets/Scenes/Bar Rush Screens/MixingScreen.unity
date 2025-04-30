@@ -5759,7 +5759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3d7a343e3c6ec40829781addd98729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shelfSlotPrefab: {fileID: 898934036491197597, guid: 2e6f8914c8d3f994d92d99d44076a9e0, type: 3}
+  shelfSlotPrefab: {fileID: 898934036491197597, guid: 4427a1f871ca21641bd5b9781329e164, type: 3}
   itemImagePath: Garnishes/
 --- !u!114 &1260793314
 MonoBehaviour:
