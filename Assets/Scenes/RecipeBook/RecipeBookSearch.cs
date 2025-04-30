@@ -155,6 +155,7 @@ namespace RecipeBook
             //Run code on scene loading
             //Set up the leaderboard
             StartCoroutine(this.Fetch("search.php?f=a"));
+            nameFilter.text = "";
             //this.SortMarshal();
             //Create objects for each item in the list
             recipeGameObjectList = new List<GameObject>();
@@ -272,10 +273,10 @@ namespace RecipeBook
                 Debug.Log("Creating Recipe: " + entry.name);
             }
             //Call the filter function
-            string temp = nameFilter.text;
-            nameFilter.text = "";
+            //string temp = nameFilter.text;
+            //nameFilter.text = "";
             FilterSergent();
-            nameFilter.text = temp;
+            //nameFilter.text = temp;
         }
         //The Marshal should only ever need to be sorted when it's fetched
         /*
