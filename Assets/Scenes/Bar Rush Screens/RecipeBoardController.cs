@@ -21,8 +21,36 @@ public class RecipeBoardController : MonoBehaviour
 
     private readonly List<string> drinkNames = new List<string>
     {
-        "Screwdriver", "Americano", "Rusty Nail", "Stinger", "Negroni",
-        "Old Fashioned", "Dry Martini", "Manhattan", "Whiskey Sour", "Daiquiri"
+        "Screwdriver", 
+        "Americano", 
+        "Rusty Nail", 
+        "Stinger", 
+        "Negroni",
+        "Old Fashioned", 
+        "Dry Martini", 
+        "Manhattan", 
+        "Whiskey Sour", 
+        "Daiquiri",
+        "White Lady",
+        "Sidecar",
+        "Angel Face",
+        "Mary Pickford",
+        "Alexander",
+        "Casino",
+        "Tuxedo",
+        "Paradise",
+        "Between the Sheets",
+        "Aviation",
+        "John Collins",
+        "Monkey Gland",
+        "Clover Club",
+        "Bacardi",
+        "Derby",
+        "Planter’s Punch",
+        "Sazerac",
+        "Ramos Gin Fizz",
+        "Porto Flip",
+        "Gin Fizz"
     };
 
     public void ShowRandomDrink()
