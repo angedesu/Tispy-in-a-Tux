@@ -63,7 +63,21 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         // Restore item original alpha
         itemImage.color = originalColor;
         
-        //
+        // Turn raycast back on
         itemImage.raycastTarget = true;
+        
+        // Return item to shelf if not dropped on the mixer
+        if (eventData.pointerCurrentRaycast.gameObject == null)
+        {
+            transform.SetParent(originalParent);
+            transform.SetAsFirstSibling();
+        }
+        else if (eventData.pointerCurrentRaycast.gameObject.GetComponent<DropItem>() == null &&
+                 eventData.pointerCurrentRaycast.gameObject != gameObject)
+        {
+            transform.SetParent(originalParent);
+            transform.SetAsFirstSibling();
+        }
+        
     }
 }
