@@ -148,7 +148,7 @@ public class friendSystem : MonoBehaviour
         {
             fromGameID = UserSession.GameID,
             toGameID = toGameID
-        }, "Friend request sent"));
+        }, "Friend request sent", ShowAddableUsers));
     }
     // Accept a friend request from another user
     public void AcceptFriendRequest(int fromGameID)
@@ -157,7 +157,7 @@ public class friendSystem : MonoBehaviour
         {
             fromGameID = fromGameID,
             toGameID = UserSession.GameID
-        }, "Friend request accepted"));
+        }, "Friend request accepted", ShowRequests));
     }
     // Reject a friend request from another user
     public void RejectFriendRequest(int fromGameID)
@@ -166,7 +166,7 @@ public class friendSystem : MonoBehaviour
         {
             fromGameID = fromGameID,
             toGameID = UserSession.GameID
-        }, "Friend request rejected"));
+        }, "Friend request rejected", ShowRequests));
     }
     // Delete a friend
     public void DeleteFriend(int friendGameID)
@@ -175,10 +175,10 @@ public class friendSystem : MonoBehaviour
         {
             userGameID = UserSession.GameID,
             friendGameID = friendGameID
-        }, "Friend removed"));
+        }, "Friend removed", ShowFriends));
     }
     // Generic POST helper
-    private IEnumerator PostRequest(string url, object bodyObject, string successMessage)
+    private IEnumerator PostRequest(string url, object bodyObject, string successMessage, System.Action onSuccess = null)
     {
         string jsonBody = JsonConvert.SerializeObject(bodyObject);
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
@@ -198,6 +198,7 @@ public class friendSystem : MonoBehaviour
         else
         {
             Debug.Log(successMessage);
+            onSuccess?.Invoke();
         }
 
     }
