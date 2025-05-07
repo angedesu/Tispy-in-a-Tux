@@ -333,6 +333,19 @@ app.post('/reject-friend-request', async (req, res) => {
   }
 });
 
+app.put('/update-xp', async (req, res) => {
+  const { gameID, xpPoints, xpLevel } = req.body;
+  try {
+      const result = await User.updateOne(
+          { gameID },
+          { $set: { xpPoints, xpLevel } }
+      );
+      res.status(200).json({ message: "XP updated", result });
+  } catch (err) {
+      res.status(500).json({ error: "Failed to update XP" });
+  }
+});
+
 
 /*
 // get the streak_counter variable 

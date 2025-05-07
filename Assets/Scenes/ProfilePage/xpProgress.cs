@@ -1,6 +1,10 @@
+using System.Collections;
+using System.Text;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Networking;
 
 public class XpProgress : MonoBehaviour
 {
@@ -46,26 +50,27 @@ public class XpProgress : MonoBehaviour
 	// we will be calling this function when a user gains xp
 	public void AddXP(int gainXP)
 	{
-    	// Get current total XP
-    	int currentXP = PlayerPrefs.GetInt("xpPoints", 0);
-    	int currentLevel = PlayerPrefs.GetInt("xpLevel", 0);
+		// Get current total XP and level
+		int currentXP = PlayerPrefs.GetInt("xpPoints", 0);
+		int currentLevel = PlayerPrefs.GetInt("xpLevel", 0);
 
-    	// Add the new XP
-    	int totalXP = currentXP + gainXP;
+		// Add XP and calculate new level
+		int totalXP = currentXP + gainXP;
+		int newLevel = totalXP / max;
 
-    	// Calculate new level based on total XP
-    	int newLevel = totalXP / max;
+		// Save locally
+		PlayerPrefs.SetInt("xpPoints", totalXP);
+		PlayerPrefs.SetInt("xpLevel", newLevel);
+		PlayerPrefs.Save();
 
-    	// Update PlayerPrefs
-		// Need to update the backend with this data
-    	PlayerPrefs.SetInt("xpPoints", totalXP);
-    	PlayerPrefs.SetInt("xpLevel", newLevel);
-    	PlayerPrefs.Save();
+		// Update UI
+		UpdateLevelText();
+		CurrentFill();
 
-    	// Update UI
-    	UpdateLevelText();
-    	CurrentFill();
+		// Send to backend
+		StartCoroutine(UpdateXPBackend(UserSession.GameID, totalXP, newLevel));
 	}
+
 	public void CurrentFill()
 	{
 	    int points = PlayerPrefs.GetInt("xpPoints", 0);
@@ -79,4 +84,36 @@ public class XpProgress : MonoBehaviour
     	float fillAmount = (float)newPoints / (float)max;
     	mask.fillAmount = fillAmount;
 	}
+	
+	private IEnumerator UpdateXPBackend(int gameID, int xpPoints, int xpLevel)
+	{
+		string url = "http://localhost:3000/update-xp";
+
+		var body = new
+		{
+			gameID = gameID,
+			xpPoints = xpPoints,
+			xpLevel = xpLevel
+		};
+
+		string json = JsonConvert.SerializeObject(body);
+		byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+
+		UnityWebRequest request = new UnityWebRequest(url, "PUT");
+		request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+		request.downloadHandler = new DownloadHandlerBuffer();
+		request.SetRequestHeader("Content-Type", "application/json");
+
+		yield return request.SendWebRequest();
+
+		if (request.result != UnityWebRequest.Result.Success)
+		{
+			Debug.LogError("Failed to update XP on backend: " + request.error);
+		}
+		else
+		{
+			Debug.Log("XP updated on backend successfully");
+		}
+	}
+
 }

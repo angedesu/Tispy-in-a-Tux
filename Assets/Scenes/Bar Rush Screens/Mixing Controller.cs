@@ -26,6 +26,7 @@ public class MixingController : MonoBehaviour
     public GameObject settingsParent;
 
     private Dictionary<string, GameObject> glassMap;
+    private XpProgress xpProgress;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -175,6 +176,15 @@ public class MixingController : MonoBehaviour
         timesUpText.SetActive(false);
         finishedText.SetActive(true);
         finishAnim.SetTrigger("finished");
+        if (xpProgress != null)
+        {
+            xpProgress.AddXP(50); // Reward 50 XP, or whatever amount you want
+            Debug.Log("Awarded 50 XP for completing the game.");
+        }
+        else
+        {
+            Debug.LogWarning("XpProgress not found!");
+        }
         yield return new WaitForSeconds(2f);
         // yield return null;
         LoadGameOverScreen();
@@ -187,6 +197,11 @@ public class MixingController : MonoBehaviour
         timesUpText.SetActive(true);
         finishedText.SetActive(false);
         finishAnim.SetTrigger("finished");
+        if (xpProgress != null)
+        {
+            xpProgress.AddXP(20); // Less XP for not finishing in time
+            Debug.Log("Awarded 20 XP for playing until time ran out.");
+        }
         yield return new WaitForSeconds(2f);
         // yield return null;
         LoadGameOverScreen();
