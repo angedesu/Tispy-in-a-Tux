@@ -34,6 +34,7 @@ namespace profilePage
             // save the picture into  Player Prefs
             PlayerPrefs.SetString("profilePic", profiles[index]);
             PlayerPrefs.Save();
+            UserSession.profile_icon = index;
         }
 
         void SelectedImage(int index)

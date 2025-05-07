@@ -18,7 +18,6 @@ public class giftButton : MonoBehaviour
         CheckGiftStatus();
         // on start, display the current streak number, before they press the gift 
         CheckStreakNumber();
-        
     }
     public void OnClick()
     {
