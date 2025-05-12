@@ -93,7 +93,7 @@ public class DisplayAchievement : MonoBehaviour
     }
     
     // Update the database with user progress
-    private IEnumerator UpdateAchievementDatabase(int gameID, string achievementName, int newProgress)
+    /*public IEnumerator UpdateAchievementDatabase(int gameID, string achievementName, int newProgress)
     {
         string url = $"http://localhost:3000/achievements/{gameID}/{achievementName}";
         
@@ -115,37 +115,17 @@ public class DisplayAchievement : MonoBehaviour
         }
         
         
-    }
+    }*/
     
     // Check and Process achievements
     private IEnumerator WaitForAchievements()
     {
         // Wait for to populate displayedAchievements
         yield return new WaitUntil(() => achievementsLoaded);
-        FirstLaunchAchievement();
     }
     
-    private void FirstLaunchAchievement()
-    {   
-        Debug.Log("FirstLaunchAchievement() called");
-        Debug.Log("displayedAchievements contains keys: " + string.Join(", ", displayedAchievements.Keys));
-        Debug.Log($"First Launch key: {PlayerPrefs.GetInt(FirstLaunchKey, 0)}");
-        if (PlayerPrefs.GetInt(FirstLaunchKey, 0) == 1)
-        {  
-            if (displayedAchievements.ContainsKey("Welcome!"))
-            {
-                displayedAchievements["Welcome!"].UpdateProgress(1);
-                StartCoroutine(UpdateAchievementDatabase(UserSession.GameID, "Welcome!", 1));
-                PlayerPrefs.SetInt(FirstLaunchKey, 2);  // Change key
-                Debug.Log("first launch key changed");
-                PlayerPrefs.Save();
-            }
-            else
-            {
-                Debug.LogError("Welcome! not found in displayed achievement list");
-            }
-        }
-    }
+    
+    
     
     
     

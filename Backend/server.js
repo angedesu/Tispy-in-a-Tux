@@ -118,14 +118,13 @@ app.get('/check-username', async (req, res) => {
 
 // Static achievements
 const ACHIEVEMENTS = [
-  {name: "Welcome!", description: "Launch the game for the first time", target: 1},
-  {name: "DJ", description: "Change the sound settings", target: 1},
-  {name: "Power of friendship", description: "Send a friend request", target: 1},
-  {name: "Avatar", description: "Change your profile picture", target: 1}
+  {name: "Beginning", description: "Serve your first drink", target: 1},
+  {name: "Feel the Rush", description: "Play a game of Bar Rush on any difficulty", target: 1}
 ]
 
-// View user achivements
+// View user achievements
 app.get('/achievements/:gameID', async (req, res) => {
+  console.log("Achievement get used")
   try {
     const user = await User.findOne({ gameID: req.params.gameID }, 'achievements');
 
@@ -139,8 +138,10 @@ app.get('/achievements/:gameID', async (req, res) => {
   }
 });
 
-// Update user achivement progress
-app.put('achievements/:gameID/:achivementName', async (req, res) => {
+// Update user achievement progress
+app.post('achievements/:gameID/:achievementName', async (req, res) => {
+  console.log("Achievement post used")
+
   const { gameID, achievementName } = req.params;
   const { newProgress } = req.body;
 
@@ -148,10 +149,10 @@ app.put('achievements/:gameID/:achivementName', async (req, res) => {
     const user = await User.findOne({ gameID: gameID });
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    const achivementToUpdate = user.achievements.find(ach => ach.name == achievementName);
-    if (!achivementToUpdate) return res.status(404).json({ error: "Achievement not found" });
+    const achievementToUpdate = user.achievements.find(ach => ach.name == achievementName);
+    if (!achievementToUpdate) return res.status(404).json({ error: "Achievement not found" });
 
-    achivementToUpdate.progress = newProgress;
+    achievementToUpdate.progress = newProgress;
     await user.save();
 
     res.status(200).json({ message: "Achievement progress updated successfully" });
